@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/CLionProjects/LeagueOfGems/main.cpp
+/home/yenmari11/CLionProjects/LeagueOfGems/main.cpp
 iostream
 -
 allegro5/allegro.h
