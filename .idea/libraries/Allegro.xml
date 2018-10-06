@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Allegro" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file:///usr/include/allegro5" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file:///usr/include/allegro5" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
