@@ -16,6 +16,5 @@ int main(int argc, char **argv) {
 }
 
 void init(){
-    int depth, res;
-//    depth = desktop_color_depth();
+    std::cout<<"Hola"<<std::endl;
 }
