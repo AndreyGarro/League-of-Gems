@@ -89,6 +89,12 @@
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/main.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Screen.cpp">
+			<Option target="LeagueOfGems"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Screen.h">
+			<Option target="LeagueOfGems"/>
+		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

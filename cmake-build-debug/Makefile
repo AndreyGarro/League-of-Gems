@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/pantalla/Screen.o: src/pantalla/Screen.cpp.o
+
+.PHONY : src/pantalla/Screen.o
+
+# target to build an object file
+src/pantalla/Screen.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.o
+.PHONY : src/pantalla/Screen.cpp.o
+
+src/pantalla/Screen.i: src/pantalla/Screen.cpp.i
+
+.PHONY : src/pantalla/Screen.i
+
+# target to preprocess a source file
+src/pantalla/Screen.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.i
+.PHONY : src/pantalla/Screen.cpp.i
+
+src/pantalla/Screen.s: src/pantalla/Screen.cpp.s
+
+.PHONY : src/pantalla/Screen.s
+
+# target to generate assembly for a file
+src/pantalla/Screen.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.s
+.PHONY : src/pantalla/Screen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/pantalla/Screen.o"
+	@echo "... src/pantalla/Screen.i"
+	@echo "... src/pantalla/Screen.s"
 .PHONY : help
 
 

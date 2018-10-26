@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-add_executable(LeagueOfGems main.cpp)
+add_executable(LeagueOfGems main.cpp src/pantalla/Screen.cpp src/pantalla/Screen.h)
 INCLUDE_DIRECTORIES( allegro/5.0.11/include )
 
 LINK_DIRECTORIES( allegro/5.0.11/lib )
