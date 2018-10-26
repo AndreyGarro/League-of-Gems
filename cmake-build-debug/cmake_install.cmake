@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/CLionProjects/LeagueOfGems
+# Install script for directory: /home/christian/Escritorio/LOG3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/christian/Escritorio/LOG3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

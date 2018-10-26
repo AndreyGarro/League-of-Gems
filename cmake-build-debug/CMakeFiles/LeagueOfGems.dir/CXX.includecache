@@ -6,21 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Screen.cpp
-Screen.h
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Screen.h
-allegro5/allegro_native_dialog.h
--
-string
--
-iostream
--
-jmorecfg.h
--
-allegro5/allegro_primitives.h
--
-
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Screen.h
-allegro5/allegro.h
--
-

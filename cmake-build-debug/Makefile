@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/39/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/44/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/39/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
+CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
+CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG3/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/39/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/44/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/39/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/44/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG3/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG3/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG3/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,32 +150,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/pantalla/Screen.o: src/pantalla/Screen.cpp.o
+src/pantalla/Aplicacion.o: src/pantalla/Aplicacion.cpp.o
 
-.PHONY : src/pantalla/Screen.o
+.PHONY : src/pantalla/Aplicacion.o
 
 # target to build an object file
-src/pantalla/Screen.cpp.o:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.o
-.PHONY : src/pantalla/Screen.cpp.o
+src/pantalla/Aplicacion.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.o
+.PHONY : src/pantalla/Aplicacion.cpp.o
 
-src/pantalla/Screen.i: src/pantalla/Screen.cpp.i
+src/pantalla/Aplicacion.i: src/pantalla/Aplicacion.cpp.i
 
-.PHONY : src/pantalla/Screen.i
+.PHONY : src/pantalla/Aplicacion.i
 
 # target to preprocess a source file
-src/pantalla/Screen.cpp.i:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.i
-.PHONY : src/pantalla/Screen.cpp.i
+src/pantalla/Aplicacion.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.i
+.PHONY : src/pantalla/Aplicacion.cpp.i
 
-src/pantalla/Screen.s: src/pantalla/Screen.cpp.s
+src/pantalla/Aplicacion.s: src/pantalla/Aplicacion.cpp.s
 
-.PHONY : src/pantalla/Screen.s
+.PHONY : src/pantalla/Aplicacion.s
 
 # target to generate assembly for a file
-src/pantalla/Screen.cpp.s:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.s
-.PHONY : src/pantalla/Screen.cpp.s
+src/pantalla/Aplicacion.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.s
+.PHONY : src/pantalla/Aplicacion.cpp.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/pantalla/Screen.o"
-	@echo "... src/pantalla/Screen.i"
-	@echo "... src/pantalla/Screen.s"
+	@echo "... src/pantalla/Aplicacion.o"
+	@echo "... src/pantalla/Aplicacion.i"
+	@echo "... src/pantalla/Aplicacion.s"
 .PHONY : help
 
 

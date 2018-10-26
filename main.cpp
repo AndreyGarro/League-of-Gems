@@ -1,14 +1,22 @@
-#include <iostream>
-#include <allegro5/allegro.h>
-#include "src/pantalla/Screen.h"
 
-ALLEGRO_DISPLAY *display;
 
-int main(int argc, char **argv) {
+#include <cstdlib>
+#include <string>
 
-    auto principal = new Screen();
+#include <allegro5/allegro_image.h>
+#include "src/pantalla/Aplicacion.h"
 
-    principal->iniciar();
+int main(int argc, char** argv) {
+
+    std::string Title = "League Of Gems";
+    Application* oApp = new Application(1500, 900, Title);
+
+    oApp->initApp();
+
+
+    oApp->mainLoop();
+    delete oApp;
 
     return 0;
 }
+
