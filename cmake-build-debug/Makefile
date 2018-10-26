@@ -48,10 +48,10 @@ RM = /snap/clion/39/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yenmari11/CLionProjects/LeagueOfGems
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yenmari11/CLionProjects/LeagueOfGems/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yenmari11/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/yenmari11/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yenmari11/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/pantalla/Screen.o: src/pantalla/Screen.cpp.o
+
+.PHONY : src/pantalla/Screen.o
+
+# target to build an object file
+src/pantalla/Screen.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.o
+.PHONY : src/pantalla/Screen.cpp.o
+
+src/pantalla/Screen.i: src/pantalla/Screen.cpp.i
+
+.PHONY : src/pantalla/Screen.i
+
+# target to preprocess a source file
+src/pantalla/Screen.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.i
+.PHONY : src/pantalla/Screen.cpp.i
+
+src/pantalla/Screen.s: src/pantalla/Screen.cpp.s
+
+.PHONY : src/pantalla/Screen.s
+
+# target to generate assembly for a file
+src/pantalla/Screen.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Screen.cpp.s
+.PHONY : src/pantalla/Screen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/pantalla/Screen.o"
+	@echo "... src/pantalla/Screen.i"
+	@echo "... src/pantalla/Screen.s"
 .PHONY : help
 
 
