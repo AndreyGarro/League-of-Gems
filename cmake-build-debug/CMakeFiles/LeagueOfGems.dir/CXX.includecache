@@ -6,19 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.cpp
-AStarPathFinding.h
-/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.h
-../Estructuras/SimpleList.h
-/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/SimpleList.h
-../Estructuras/Pila.h
-/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems/main.cpp
+cstdlib
+-
+string
+-
+allegro5/allegro_image.h
+-
+src/pantalla/Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.h
 
-/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.h
-bits/stdc++.h
+/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.cpp
+Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.h
+iostream
+-
+allegro5/allegro_primitives.h
+-
+allegro5/allegro_native_dialog.h
+-
+allegro5/allegro_image.h
 -
 
-/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h
-
-/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.h
+string
+-
+allegro5/allegro5.h
+/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/allegro5/allegro5.h
 
