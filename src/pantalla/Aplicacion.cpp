@@ -3,10 +3,11 @@
 //
 
 #include "Aplicacion.h"
-#include <allegro5/allegro.h>
 #include <iostream>
 #include <allegro5/allegro_primitives.h>
-
+#include <allegro5/allegro_native_dialog.h>
+#include <allegro5/allegro_image.h>
+#define FPS 60.0
 
 void Application::initApp() {
     this->Display = al_create_display(this->Width, this->Height);
@@ -26,9 +27,19 @@ int Application::mainLoop() {
     int x,y;
     ////
     this->EventQueue = al_create_event_queue();
+    al_install_mouse();
+    al_init_image_addon();
+
+    ALLEGRO_BITMAP *fondo = al_load_bitmap("grassTexture.jpg");
+
+    ALLEGRO_TIMER *timer = al_create_timer(1.0 / FPS);
 
     al_register_event_source(this->EventQueue, al_get_mouse_event_source());
     al_register_event_source(this->EventQueue, al_get_display_event_source(this->Display));
+    al_register_event_source(EventQueue, al_get_timer_event_source(timer));
+
+
+    al_start_timer(timer);
 
 
     while (start) {
@@ -37,7 +48,6 @@ int Application::mainLoop() {
 
         if(oEvent.type == ALLEGRO_EVENT_DISPLAY_CLOSE){
             start = false;
-            return 0;
         }
         else if(oEvent.mouse.button & 1){
             std::cout << "Hola mundo" << std::endl;
@@ -54,17 +64,15 @@ int Application::mainLoop() {
             }
         }
 
-        al_draw_filled_rectangle(550, 410, 576, 438, al_map_rgb_f(1.0,1.0,0.0));
-        al_draw_filled_rectangle(550, 310, 570, 325, al_map_rgb_f(1.0,1.0,0.0));
-        al_draw_filled_rectangle(550, 510, 570, 525, al_map_rgb_f(1.0,1.0,0.0));
-        al_draw_filled_rectangle(550, 450, 570, 465, al_map_rgb_f(1.0,1.0,0.0));
-        al_draw_filled_rectangle(550, 350, 570, 365, al_map_rgb_f(1.0,1.0,0.0));
-        al_draw_filled_rectangle(0, 250, 75, 650, al_map_rgb_f(1.0,1.0,1.0));
-
-
+//        al_draw_bitmap(fondo, 0, 0, 0);
         al_flip_display();
         al_clear_to_color(al_map_rgb_f(0.0, 0.0, 0.0));
     }
 
+    al_destroy_display(Display);
+    al_destroy_timer(timer);
+    al_destroy_bitmap(fondo);
+    al_destroy_event_queue(EventQueue);
+    return 0;
 }
 Application::~Application() { }

@@ -78,7 +78,7 @@ public :
             for (int i = 0; i < this->length; i++) {
                 if (i == pos) {
                     prev->next = aux->next;
-                    free(aux->next);
+                    free(aux);
                     break;
                 }
                 prev = aux;
