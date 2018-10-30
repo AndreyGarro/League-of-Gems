@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG3
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG3/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG3/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG3/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG3/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/A*/AStarPathFinding.o: src/A*/AStarPathFinding.cpp.o
+
+.PHONY : src/A*/AStarPathFinding.o
+
+# target to build an object file
+src/A*/AStarPathFinding.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make "CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
+.PHONY : src/A*/AStarPathFinding.cpp.o
+
+src/A*/AStarPathFinding.i: src/A*/AStarPathFinding.cpp.i
+
+.PHONY : src/A*/AStarPathFinding.i
+
+# target to preprocess a source file
+src/A*/AStarPathFinding.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make "CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.i"
+.PHONY : src/A*/AStarPathFinding.cpp.i
+
+src/A*/AStarPathFinding.s: src/A*/AStarPathFinding.cpp.s
+
+.PHONY : src/A*/AStarPathFinding.s
+
+# target to generate assembly for a file
+src/A*/AStarPathFinding.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make "CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.s"
+.PHONY : src/A*/AStarPathFinding.cpp.s
+
 src/pantalla/Aplicacion.o: src/pantalla/Aplicacion.cpp.o
 
 .PHONY : src/pantalla/Aplicacion.o
@@ -189,6 +216,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/A*/AStarPathFinding.o"
+	@echo "... src/A*/AStarPathFinding.i"
+	@echo "... src/A*/AStarPathFinding.s"
 	@echo "... src/pantalla/Aplicacion.o"
 	@echo "... src/pantalla/Aplicacion.i"
 	@echo "... src/pantalla/Aplicacion.s"

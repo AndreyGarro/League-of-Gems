@@ -4,6 +4,11 @@
 CMakeFiles/LeagueOfGems.dir/main.cpp.o: ../main.cpp
 CMakeFiles/LeagueOfGems.dir/main.cpp.o: ../src/pantalla/Aplicacion.h
 
+CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o: ../src/A*/AStarPathFinding.cpp
+CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o: ../src/A*/AStarPathFinding.h
+CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o: ../src/Estructuras/Pila.h
+CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o: ../src/Estructuras/SimpleList.h
+
 CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.o: ../src/pantalla/Aplicacion.cpp
 CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.o: ../src/pantalla/Aplicacion.h
 

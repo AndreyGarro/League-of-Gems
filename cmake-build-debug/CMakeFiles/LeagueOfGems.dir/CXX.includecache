@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.cpp
+AStarPathFinding.h
+/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.h
+../Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/SimpleList.h
+../Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h
+
+/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.h
+bits/stdc++.h
+-
+
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h
+
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/SimpleList.h
+
