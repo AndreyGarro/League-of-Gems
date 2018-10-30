@@ -6,19 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/CLionProjects/LeagueOfGems/main.cpp
-cstdlib
--
-string
--
-allegro5/allegro_image.h
--
-src/pantalla/Aplicacion.h
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.h
-
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.cpp
+/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.cpp
 Aplicacion.h
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.h
+/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.h
 iostream
 -
 allegro5/allegro_primitives.h
@@ -27,10 +17,12 @@ allegro5/allegro_native_dialog.h
 -
 allegro5/allegro_image.h
 -
+math.h
+-
 
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/Aplicacion.h
+/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.h
 string
 -
 allegro5/allegro5.h
-/home/andrew/CLionProjects/LeagueOfGems/src/pantalla/allegro5/allegro5.h
+/home/christian/Escritorio/LOG/src/pantalla/allegro5/allegro5.h
 
