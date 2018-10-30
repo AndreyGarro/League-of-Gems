@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LeagueOfGems.dir/main.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.o"
+  "CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
   "LeagueOfGems.pdb"
   "LeagueOfGems"
 )

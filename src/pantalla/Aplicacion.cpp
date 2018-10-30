@@ -1,5 +1,5 @@
 //
-// Created by christian on 22/10/18.
+// Matriz[50][25]
 //
 
 #include "Aplicacion.h"
@@ -54,7 +54,7 @@ int Application::mainLoop() {
             }
         }
 
-        al_draw_filled_rectangle(550, 410, 560, 420, al_map_rgb_f(1.0,1.0,0.0));
+        al_draw_filled_rectangle(550, 410, 576, 438, al_map_rgb_f(1.0,1.0,0.0));
         al_draw_filled_rectangle(550, 310, 570, 325, al_map_rgb_f(1.0,1.0,0.0));
         al_draw_filled_rectangle(550, 510, 570, 525, al_map_rgb_f(1.0,1.0,0.0));
         al_draw_filled_rectangle(550, 450, 570, 465, al_map_rgb_f(1.0,1.0,0.0));
