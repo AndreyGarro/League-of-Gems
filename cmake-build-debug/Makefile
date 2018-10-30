@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
+CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
+CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ src/A*/AStarPathFinding.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make "CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.s"
 .PHONY : src/A*/AStarPathFinding.cpp.s
 
+src/LineaVista/LineaVista.o: src/LineaVista/LineaVista.cpp.o
+
+.PHONY : src/LineaVista/LineaVista.o
+
+# target to build an object file
+src/LineaVista/LineaVista.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o
+.PHONY : src/LineaVista/LineaVista.cpp.o
+
+src/LineaVista/LineaVista.i: src/LineaVista/LineaVista.cpp.i
+
+.PHONY : src/LineaVista/LineaVista.i
+
+# target to preprocess a source file
+src/LineaVista/LineaVista.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.i
+.PHONY : src/LineaVista/LineaVista.cpp.i
+
+src/LineaVista/LineaVista.s: src/LineaVista/LineaVista.cpp.s
+
+.PHONY : src/LineaVista/LineaVista.s
+
+# target to generate assembly for a file
+src/LineaVista/LineaVista.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.s
+.PHONY : src/LineaVista/LineaVista.cpp.s
+
 src/pantalla/Aplicacion.o: src/pantalla/Aplicacion.cpp.o
 
 .PHONY : src/pantalla/Aplicacion.o
@@ -219,6 +246,9 @@ help:
 	@echo "... src/A*/AStarPathFinding.o"
 	@echo "... src/A*/AStarPathFinding.i"
 	@echo "... src/A*/AStarPathFinding.s"
+	@echo "... src/LineaVista/LineaVista.o"
+	@echo "... src/LineaVista/LineaVista.i"
+	@echo "... src/LineaVista/LineaVista.s"
 	@echo "... src/pantalla/Aplicacion.o"
 	@echo "... src/pantalla/Aplicacion.i"
 	@echo "... src/pantalla/Aplicacion.s"

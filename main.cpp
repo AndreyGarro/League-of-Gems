@@ -20,3 +20,15 @@ int main(int argc, char** argv) {
     return 0;
 }
 
+
+//
+//#include "../LOG/src/LineaVista/LineaVista.h"
+//#include <iostream>
+//
+//int main() {
+//    Cola<int > rutaX;
+//    Cola<int > rutaY;
+//    LineaVista a ;
+//    a.lineaVista(0,2,5,7, &rutaX, &rutaY);
+//
+//}
