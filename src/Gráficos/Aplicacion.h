@@ -24,12 +24,10 @@ public:
     virtual int mainLoop();
     void initMatriz();
     void imprimirMatriz();
-    void colocarObstaculos();
-    int** getMatriz();
 
 protected:
     ALLEGRO_EVENT_QUEUE* EventQueue;
-
+    ALLEGRO_TIMER *timer;
     bool start = false;
     int tempX, tempY;
     int x,y;

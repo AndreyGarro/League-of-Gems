@@ -152,7 +152,7 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
             {
                 detallesCelda[i+1][j].parent_i = i;
                 detallesCelda[i+1][j].parent_j = j;
-                printf("The destination cell is found\n");
+                printf("Se encontró el destino\n");
                 trazarCamino(detallesCelda, destino);
                 foundDest = true;
                 return;

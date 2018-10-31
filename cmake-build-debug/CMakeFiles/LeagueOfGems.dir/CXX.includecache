@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.cpp
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.cpp
 Aplicacion.h
-/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.h
+Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
+Player.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Player.h
 iostream
 -
 allegro5/allegro_primitives.h
@@ -20,9 +24,25 @@ allegro5/allegro_image.h
 math.h
 -
 
-/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.h
 string
 -
 allegro5/allegro5.h
-/home/christian/Escritorio/LOG/src/pantalla/allegro5/allegro5.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/allegro5/allegro5.h
+
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Player.h
+allegro5/allegro_primitives.h
+-
+
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
+string
+-
+allegro5/haptic.h
+-
+allegro5/allegro.h
+-
+allegro5/allegro_primitives.h
+-
+Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
 

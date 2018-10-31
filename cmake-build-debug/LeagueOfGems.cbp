@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LeagueOfGems">
-				<Option output="/home/christian/Escritorio/LOG/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option output="/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/christian/Escritorio/LOG/allegro/5.0.11/include"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems/allegro/5.0.11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -55,20 +55,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LeagueOfGems/fast">
-				<Option output="/home/christian/Escritorio/LOG/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option output="/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/christian/Escritorio/LOG/allegro/5.0.11/include"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems/allegro/5.0.11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -79,44 +79,56 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/christian/Escritorio/LOG/main.cpp">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/main.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/A*/AStarPathFinding.cpp">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/A*/AStarPathFinding.h">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/Cola.h">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Cola.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/Pila.h">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/SimpleList.h">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/SimpleList.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.h">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.cpp">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Player.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.h">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Player.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/LOG/CMakeLists.txt">
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.cpp">
+			<Option target="LeagueOfGems"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h">
+			<Option target="LeagueOfGems"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/LineaVista/LineaVista.cpp">
+			<Option target="LeagueOfGems"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/src/LineaVista/LineaVista.h">
+			<Option target="LeagueOfGems"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
