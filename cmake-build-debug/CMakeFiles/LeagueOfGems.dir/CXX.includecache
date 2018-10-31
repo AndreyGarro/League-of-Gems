@@ -6,9 +6,81 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Cola.h
+/home/yenmari11/CLionProjects/Proyecto 2/main.cpp
+cstdlib
+-
+string
+-
+allegro5/allegro_image.h
+-
+src/Gráficos/Aplicacion.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Aplicacion.h
 
-/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/A*/AStarPathFinding.cpp
+AStarPathFinding.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/A*/AStarPathFinding.h
+../Estructuras/SimpleList.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/SimpleList.h
+../Estructuras/Pila.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/Pila.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/A*/AStarPathFinding.h
+bits/stdc++.h
+-
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/Cola.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/Pila.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/SimpleList.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Aplicacion.cpp
+Aplicacion.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Aplicacion.h
+Sprite.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.h
+Player.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Player.h
+iostream
+-
+allegro5/allegro_primitives.h
+-
+allegro5/allegro_native_dialog.h
+-
+allegro5/allegro_image.h
+-
+math.h
+-
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Aplicacion.h
+string
+-
+allegro5/allegro5.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/allegro5/allegro5.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Player.cpp
+allegro5/bitmap.h
+-
+allegro5/allegro.h
+-
+Player.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Player.h
+string
+-
+allegro5/allegro_image.h
+-
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Player.h
+allegro5/allegro_primitives.h
+-
+../Soldier.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Soldier.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.cpp
+Sprite.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.h
 string
 -
 allegro5/haptic.h
@@ -18,9 +90,13 @@ allegro5/allegro.h
 allegro5/allegro_primitives.h
 -
 Sprite.h
-/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.h
 
-/home/andrew/CLionProjects/LeagueOfGems/src/LineaVista/LineaVista.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/LineaVista/LineaVista.cpp
+LineaVista.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/LineaVista/LineaVista.h
+
+/home/yenmari11/CLionProjects/Proyecto 2/src/LineaVista/LineaVista.h
 iostream
 -
 math.h
@@ -34,23 +110,23 @@ stdbool.h
 string
 -
 ../Estructuras/Cola.h
-/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Cola.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/Cola.h
 
-/home/andrew/CLionProjects/LeagueOfGems/src/Soldier.cpp
+/home/yenmari11/CLionProjects/Proyecto 2/src/Soldier.cpp
 allegro5/bitmap.h
 -
 allegro5/allegro.h
 -
 Soldier.h
-/home/andrew/CLionProjects/LeagueOfGems/src/Soldier.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Soldier.h
 Gráficos/Sprite.h
-/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.h
 ../src/LineaVista/LineaVista.h
-/home/andrew/CLionProjects/LeagueOfGems/src/LineaVista/LineaVista.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/LineaVista/LineaVista.h
 
-/home/andrew/CLionProjects/LeagueOfGems/src/Soldier.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Soldier.h
 ../src/Estructuras/Cola.h
-/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Cola.h
+/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/Cola.h
 allegro5/bitmap.h
 -
 allegro5/allegro.h
