@@ -29,13 +29,13 @@ private:
     Cola<int> rutaY;
 
 public:
-    void lineaVista(int x, int y, int xd, int yd, Cola<int> *X, Cola<int > *Y, int matix[25][50]);
+    void lineaVista(int x, int y, int xd, int yd, Cola<int> *X, Cola<int > *Y, int matix[15][27]);
 
 private:
 
-    void rodearObstaculo(coordenada *origen, coordenada destino, int matrix[25][50]);
-    void buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[25][50]);
-    void buscarRuta(coordenada destino, coordenada origen, int matrix[25][50]);
+    void rodearObstaculo(coordenada *origen, coordenada destino, int matrix[15][27]);
+    void buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[15][27]);
+    void buscarRuta(coordenada destino, coordenada origen, int matrix[15][27]);
 
 };
 bool operator==(coordenada a, coordenada b);

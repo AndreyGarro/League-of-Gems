@@ -26,7 +26,7 @@ protected:
     ALLEGRO_TIMER *timer;
     bool start = false;
     int x,y;
-    int matriz[25][50];
+    int matriz[15][27];
     ALLEGRO_EVENT oEvent;
 
     /// Pantalla
