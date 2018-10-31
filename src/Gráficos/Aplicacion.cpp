@@ -8,8 +8,6 @@
 #include <allegro5/allegro_image.h>
 #include <math.h>
 
-
-
 void Application::initApp() {
     al_init();
     this->Display = al_create_display(this->Width, this->Height);
@@ -25,10 +23,13 @@ void Application::initApp() {
     imprimirMatriz();
     this->start = true;
     iFPS = al_get_display_refresh_rate(this->Display);
-    this->fondo = al_load_bitmap("../img/grassTexture.png");
+    this->fondo = al_load_bitmap("../img/grassTexture.bmp");
 }
 
 int Application::mainLoop(){
+    //
+    Player j1 = Player();
+
     if (iFPS == 0) {
         iFPS = 30;
     }
@@ -41,6 +42,7 @@ int Application::mainLoop(){
     al_start_timer(timer);
 
 
+
     while (true) {
         al_wait_for_event(this->EventQueue, &oEvent);
 
@@ -49,6 +51,7 @@ int Application::mainLoop(){
                 this->x = oEvent.mouse.x;
                 this->y = oEvent.mouse.y;
                 std::cout << x << " " << y << std::endl;
+                j1.setIJ(y/46, x/48, this->matriz);
             }
         }
         if(oEvent.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
@@ -62,6 +65,8 @@ int Application::mainLoop(){
         if (oEvent.type == ALLEGRO_EVENT_TIMER && oEvent.timer.source == timer) {
             al_clear_to_color(al_map_rgb(0,0,0));
             al_draw_bitmap(fondo, 0, 0, 0);
+            Sprite::dibujaObstaculo(matriz);
+            j1.dibujaJugador();
             al_flip_display();
         }
     }
@@ -69,15 +74,26 @@ int Application::mainLoop(){
 
 void Application::initMatriz() {
     srand(static_cast<unsigned int>(time(0)));
-    for (int i = 0; i < 25; ++i) {
-        for (int j = 0; j < 50; ++j) {
-            this->matriz[i][j] = static_cast<int>(random() % 15);
+    for (int i = 0; i < 15; ++i) {
+        for (int j = 0; j < 27; ++j) {
+            if(static_cast<int>(random() % 10) == 0){
+                this->matriz[i][j] = 0;
+            }
+            else{
+                this->matriz[i][j] = 1;
+            }
+            if(i>10 && j < 7){
+                this->matriz[i][j] = 2;
+            }
+            if(i < 5   && j> 20){
+                this->matriz[i][j] = 2;
+            }
         }
     }
 }
 void Application::imprimirMatriz(){
-    for (int i = 0; i < 25; ++i) {
-        for (int j = 0; j < 50; ++j) {
+    for (int i = 0; i < 15; ++i) {
+        for (int j = 0; j < 27; ++j) {
             std::cout << matriz[i][j] <<" ";
         }
         std::cout << std::endl;

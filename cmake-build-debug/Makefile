@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -285,6 +285,33 @@ src/LineaVista/LineaVista.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.s
 .PHONY : src/LineaVista/LineaVista.cpp.s
 
+src/Soldier.o: src/Soldier.cpp.o
+
+.PHONY : src/Soldier.o
+
+# target to build an object file
+src/Soldier.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o
+.PHONY : src/Soldier.cpp.o
+
+src/Soldier.i: src/Soldier.cpp.i
+
+.PHONY : src/Soldier.i
+
+# target to preprocess a source file
+src/Soldier.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.i
+.PHONY : src/Soldier.cpp.i
+
+src/Soldier.s: src/Soldier.cpp.s
+
+.PHONY : src/Soldier.s
+
+# target to generate assembly for a file
+src/Soldier.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.s
+.PHONY : src/Soldier.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -312,6 +339,9 @@ help:
 	@echo "... src/LineaVista/LineaVista.o"
 	@echo "... src/LineaVista/LineaVista.i"
 	@echo "... src/LineaVista/LineaVista.s"
+	@echo "... src/Soldier.o"
+	@echo "... src/Soldier.i"
+	@echo "... src/Soldier.s"
 .PHONY : help
 
 

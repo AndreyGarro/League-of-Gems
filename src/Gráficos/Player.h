@@ -6,21 +6,22 @@
 #define LEAGUEOFGEMS_PLAYER_H
 
 #include <allegro5/allegro_primitives.h>
+#include "../Soldier.h"
 
 
 class Player {
 private:
-    int curFrame = 0;
-    int frameCount = 0;
-    int frameDelay = 5;
-
-    ALLEGRO_BITMAP *image[12];
+    int vida;
+    int i,j;
+    Soldier s1;
 
 public:
+    Player();
+    void setIJ(int i, int j, int matriz[15][27]);
+    void dibujaJugador();
 
-    void caminaEste();
-    void loadCaminaEste();
-    void dibujaCaminaEste();
+private:
+
 };
 
 

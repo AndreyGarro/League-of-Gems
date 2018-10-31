@@ -14,7 +14,7 @@
  * @param Y ---//
  * @param matrix Matriz donde se hace la busquedad de la ruta
  */
-void LineaVista::lineaVista(int x, int y, int xd, int yd, Cola<int > *X, Cola<int > *Y, int matrix[25][50]) {
+void LineaVista::lineaVista(int x, int y, int xd, int yd, Cola<int > *X, Cola<int > *Y, int matrix[15][27]) {
     origen.x = x;
     origen.y = y;
     destino.x = xd;
@@ -28,7 +28,7 @@ void LineaVista::lineaVista(int x, int y, int xd, int yd, Cola<int > *X, Cola<in
     *Y = rutaY;
 };
 
-void LineaVista::rodearObstaculo(coordenada *origen, coordenada destino, int matrix[25][50]) {
+void LineaVista::rodearObstaculo(coordenada *origen, coordenada destino, int matrix[15][27]) {
     if (matrix[origen->x + 1][origen->y] == 0 && origen->x < destino.x) {
         while (matrix[origen->x + 1][origen->y] == 0) {
             rutaX.push(origen->x);
@@ -79,7 +79,7 @@ void LineaVista::rodearObstaculo(coordenada *origen, coordenada destino, int mat
     }
 };
 
-void LineaVista::buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[25][50]) {
+void LineaVista::buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[15][27]) {
     if (ruta1->x > destino1.x && matrix[ruta1->x - 1][ruta1->y] != 0) {
         rutaX.push(ruta1->x - 1);
         rutaY.push(ruta1->y);
@@ -135,7 +135,7 @@ void LineaVista::buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[2
         rodearObstaculo(ruta1, destino1, matrix);
     }
 };
-void LineaVista::buscarRuta(coordenada destino, coordenada origen, int matrix[25][50]) {
+void LineaVista::buscarRuta(coordenada destino, coordenada origen, int matrix[15][27]) {
     coordenada *ruta = new coordenada;
     ruta->x = origen.x;
     ruta->y = origen.y;
