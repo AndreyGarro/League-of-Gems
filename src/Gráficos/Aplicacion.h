@@ -13,10 +13,6 @@ public:
         this->Width = iWidth;
         this->Height = iHeight;
         this->title = sName;
-
-        al_init();
-        al_install_mouse();
-        al_install_keyboard();
     };
 
     void initApp();
@@ -29,13 +25,15 @@ protected:
     ALLEGRO_EVENT_QUEUE* EventQueue;
     ALLEGRO_TIMER *timer;
     bool start = false;
-    int tempX, tempY;
     int x,y;
+    int matriz[25][50];
+    ALLEGRO_EVENT oEvent;
 
     /// Pantalla
     ALLEGRO_DISPLAY *Display = NULL;
     int Width = 0;
     int Height = 0;
     std::string title;
-    int matriz[25][50];
+    int iFPS;
+    ALLEGRO_BITMAP *fondo;
 };
