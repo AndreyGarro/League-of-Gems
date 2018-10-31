@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
+CMAKE_SOURCE_DIR = "/home/yenmari11/CLionProjects/Proyecto 2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ src/A*/AStarPathFinding.s: src/A*/AStarPathFinding.cpp.s
 src/A*/AStarPathFinding.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make "CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.s"
 .PHONY : src/A*/AStarPathFinding.cpp.s
+
+src/Algoritmos/Dijkstra.o: src/Algoritmos/Dijkstra.cpp.o
+
+.PHONY : src/Algoritmos/Dijkstra.o
+
+# target to build an object file
+src/Algoritmos/Dijkstra.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o
+.PHONY : src/Algoritmos/Dijkstra.cpp.o
+
+src/Algoritmos/Dijkstra.i: src/Algoritmos/Dijkstra.cpp.i
+
+.PHONY : src/Algoritmos/Dijkstra.i
+
+# target to preprocess a source file
+src/Algoritmos/Dijkstra.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.i
+.PHONY : src/Algoritmos/Dijkstra.cpp.i
+
+src/Algoritmos/Dijkstra.s: src/Algoritmos/Dijkstra.cpp.s
+
+.PHONY : src/Algoritmos/Dijkstra.s
+
+# target to generate assembly for a file
+src/Algoritmos/Dijkstra.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.s
+.PHONY : src/Algoritmos/Dijkstra.cpp.s
 
 src/Gráficos/Aplicacion.o: src/Gráficos/Aplicacion.cpp.o
 
@@ -327,6 +354,9 @@ help:
 	@echo "... src/A*/AStarPathFinding.o"
 	@echo "... src/A*/AStarPathFinding.i"
 	@echo "... src/A*/AStarPathFinding.s"
+	@echo "... src/Algoritmos/Dijkstra.o"
+	@echo "... src/Algoritmos/Dijkstra.i"
+	@echo "... src/Algoritmos/Dijkstra.s"
 	@echo "... src/Gráficos/Aplicacion.o"
 	@echo "... src/Gráficos/Aplicacion.i"
 	@echo "... src/Gráficos/Aplicacion.s"
