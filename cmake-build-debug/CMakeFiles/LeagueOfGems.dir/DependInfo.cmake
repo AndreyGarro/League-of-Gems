@@ -4,10 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/christian/Escritorio/LOG/main.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
-  "/home/christian/Escritorio/LOG/src/A*/AStarPathFinding.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
-  "/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
-  "/home/christian/Escritorio/LOG/src/pantalla/Aplicacion.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/main.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Player.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/LineaVista/LineaVista.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

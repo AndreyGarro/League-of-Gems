@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,87 @@ src/A*/AStarPathFinding.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make "CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.s"
 .PHONY : src/A*/AStarPathFinding.cpp.s
 
+src/Gráficos/Aplicacion.o: src/Gráficos/Aplicacion.cpp.o
+
+.PHONY : src/Gráficos/Aplicacion.o
+
+# target to build an object file
+src/Gráficos/Aplicacion.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o
+.PHONY : src/Gráficos/Aplicacion.cpp.o
+
+src/Gráficos/Aplicacion.i: src/Gráficos/Aplicacion.cpp.i
+
+.PHONY : src/Gráficos/Aplicacion.i
+
+# target to preprocess a source file
+src/Gráficos/Aplicacion.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.i
+.PHONY : src/Gráficos/Aplicacion.cpp.i
+
+src/Gráficos/Aplicacion.s: src/Gráficos/Aplicacion.cpp.s
+
+.PHONY : src/Gráficos/Aplicacion.s
+
+# target to generate assembly for a file
+src/Gráficos/Aplicacion.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.s
+.PHONY : src/Gráficos/Aplicacion.cpp.s
+
+src/Gráficos/Player.o: src/Gráficos/Player.cpp.o
+
+.PHONY : src/Gráficos/Player.o
+
+# target to build an object file
+src/Gráficos/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o
+.PHONY : src/Gráficos/Player.cpp.o
+
+src/Gráficos/Player.i: src/Gráficos/Player.cpp.i
+
+.PHONY : src/Gráficos/Player.i
+
+# target to preprocess a source file
+src/Gráficos/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.i
+.PHONY : src/Gráficos/Player.cpp.i
+
+src/Gráficos/Player.s: src/Gráficos/Player.cpp.s
+
+.PHONY : src/Gráficos/Player.s
+
+# target to generate assembly for a file
+src/Gráficos/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.s
+.PHONY : src/Gráficos/Player.cpp.s
+
+src/Gráficos/Sprite.o: src/Gráficos/Sprite.cpp.o
+
+.PHONY : src/Gráficos/Sprite.o
+
+# target to build an object file
+src/Gráficos/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o
+.PHONY : src/Gráficos/Sprite.cpp.o
+
+src/Gráficos/Sprite.i: src/Gráficos/Sprite.cpp.i
+
+.PHONY : src/Gráficos/Sprite.i
+
+# target to preprocess a source file
+src/Gráficos/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.i
+.PHONY : src/Gráficos/Sprite.cpp.i
+
+src/Gráficos/Sprite.s: src/Gráficos/Sprite.cpp.s
+
+.PHONY : src/Gráficos/Sprite.s
+
+# target to generate assembly for a file
+src/Gráficos/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.s
+.PHONY : src/Gráficos/Sprite.cpp.s
+
 src/LineaVista/LineaVista.o: src/LineaVista/LineaVista.cpp.o
 
 .PHONY : src/LineaVista/LineaVista.o
@@ -204,33 +285,6 @@ src/LineaVista/LineaVista.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.s
 .PHONY : src/LineaVista/LineaVista.cpp.s
 
-src/pantalla/Aplicacion.o: src/pantalla/Aplicacion.cpp.o
-
-.PHONY : src/pantalla/Aplicacion.o
-
-# target to build an object file
-src/pantalla/Aplicacion.cpp.o:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.o
-.PHONY : src/pantalla/Aplicacion.cpp.o
-
-src/pantalla/Aplicacion.i: src/pantalla/Aplicacion.cpp.i
-
-.PHONY : src/pantalla/Aplicacion.i
-
-# target to preprocess a source file
-src/pantalla/Aplicacion.cpp.i:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.i
-.PHONY : src/pantalla/Aplicacion.cpp.i
-
-src/pantalla/Aplicacion.s: src/pantalla/Aplicacion.cpp.s
-
-.PHONY : src/pantalla/Aplicacion.s
-
-# target to generate assembly for a file
-src/pantalla/Aplicacion.cpp.s:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/pantalla/Aplicacion.cpp.s
-.PHONY : src/pantalla/Aplicacion.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,12 +300,18 @@ help:
 	@echo "... src/A*/AStarPathFinding.o"
 	@echo "... src/A*/AStarPathFinding.i"
 	@echo "... src/A*/AStarPathFinding.s"
+	@echo "... src/Gráficos/Aplicacion.o"
+	@echo "... src/Gráficos/Aplicacion.i"
+	@echo "... src/Gráficos/Aplicacion.s"
+	@echo "... src/Gráficos/Player.o"
+	@echo "... src/Gráficos/Player.i"
+	@echo "... src/Gráficos/Player.s"
+	@echo "... src/Gráficos/Sprite.o"
+	@echo "... src/Gráficos/Sprite.i"
+	@echo "... src/Gráficos/Sprite.s"
 	@echo "... src/LineaVista/LineaVista.o"
 	@echo "... src/LineaVista/LineaVista.i"
 	@echo "... src/LineaVista/LineaVista.s"
-	@echo "... src/pantalla/Aplicacion.o"
-	@echo "... src/pantalla/Aplicacion.i"
-	@echo "... src/pantalla/Aplicacion.s"
 .PHONY : help
 
 
