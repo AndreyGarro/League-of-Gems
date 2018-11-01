@@ -21,12 +21,12 @@ public:
     void initMatriz();
     void imprimirMatriz();
 
-protected:
+private:
     ALLEGRO_EVENT_QUEUE* EventQueue;
     ALLEGRO_TIMER *timer;
     bool start = false;
     int x,y;
-    int matriz[15][27];
+    int matriz[10][15];
     ALLEGRO_EVENT oEvent;
 
     /// Pantalla

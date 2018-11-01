@@ -17,6 +17,7 @@ CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Estructuras/C
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Estructuras/Pila.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Aplicacion.cpp
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Aplicacion.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Enemy.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Player.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Sprite.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Soldier.h

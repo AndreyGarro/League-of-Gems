@@ -25,16 +25,16 @@ void Soldier::caminarNorte(int x, int y) {
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/running n0001.bmp");
     Sprite::dibujaPersonaje(x, y, image);
 }
-void Soldier::setIJ(int i, int j, int matriz[15][27]) {
+void Soldier::setIJ(int i, int j, int matriz[10][15]) {
 
     //calcular Ruta
     AstarPathfinding AStar = AstarPathfinding();
-    cout <<"( " << tempY/46 <<","<< tempX/48 <<")( "<< i <<","<< j <<")"<<endl;
-    ruta2 = AStar.busquedaAStar(matriz, make_pair(tempY/46, tempX/48), make_pair(i, j));
+    cout <<"( " << tempY/70 <<","<< tempX/90 <<")( "<< i <<","<< j <<")"<<endl;
+    ruta2 = AStar.busquedaAStar(matriz, make_pair(tempY/70, tempX/90), make_pair(i, j));
 
 }
 Soldier::Soldier() {
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/running e0001.bmp");
+    ALLEGRO_BITMAP *image = al_load_bitmap("../img/enemy.png");
     this->tempX = 192;
     this->tempY = 644;
     xd = tempX;
@@ -45,19 +45,19 @@ void Soldier::seguirRuta(){
     if(ruta2.getLenght() > 0) {
         if (this->llegue == true) {
             Pair coorTemp = ruta2.pop();
-            xd = coorTemp.second * 48;
-            yd = coorTemp.first * 46;
+            xd = coorTemp.second * 90;
+            yd = coorTemp.first * 70;
             this->llegue = false;
         }
     }
 }
 
-void Soldier::escogerPunto(int matriz[15][27], int x, int y, int xd, int yd) {
+void Soldier::escogerPunto(int matriz[10][15], int x, int y, int xd, int yd) {
     int xf, yf;
-    while(matriz[15][27]){
+    while(matriz[10][15]){
 
     }
-    if(matriz[yd/46][xd/48] == 1){
+    if(matriz[yd/70][xd/90] == 1){
 
     }
 
@@ -97,7 +97,7 @@ void Soldier::dibujarSoldado() {
     else if(yd < tempY){
         tempY -= 2;
     }
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/running e0001.bmp");
+    ALLEGRO_BITMAP *image = al_load_bitmap("../img/soldier.png");
     Sprite::dibujaPersonaje(tempX, tempY, image);
 }
 

@@ -9,8 +9,8 @@ using namespace std;
 #include<bits/stdc++.h>
 #include "../Estructuras/Pila.h"
 
-#define FILA 15
-#define COLUMNA 27
+#define FILA 10
+#define COLUMNA 15
 
 typedef pair<int, int> Pair;
 typedef pair<double, pair<int, int>> pPair;

@@ -17,7 +17,7 @@ private:
 
 public:
     Player();
-    void setIJ(int i, int j, int matriz[15][27]);
+    void setIJ(int i, int j, int matriz[10][15]);
     void dibujaJugador();
 
 private:

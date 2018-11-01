@@ -17,6 +17,7 @@ private:
 
 public:
     void dibujaEnemigo();
+//    void atacar(int matriz[][]);
 
 };
 

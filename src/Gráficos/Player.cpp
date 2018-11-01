@@ -10,7 +10,7 @@
 
 using namespace std;
 
-void Player::setIJ(int i, int j, int matriz[15][27]) {
+void Player::setIJ(int i, int j, int matriz[10][15]) {
     if(this->i != i or this->j != j) {
         this->i = i;
         this->j = j;

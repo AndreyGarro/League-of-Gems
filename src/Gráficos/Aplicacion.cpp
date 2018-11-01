@@ -2,6 +2,7 @@
 #include "Aplicacion.h"
 #include "Sprite.h"
 #include "Player.h"
+#include "Enemy.h"
 #include <iostream>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_native_dialog.h>
@@ -29,6 +30,7 @@ void Application::initApp() {
 int Application::mainLoop(){
     //
     Player j1 = Player();
+    Enemy e1 = Enemy();
 
     if (iFPS == 0) {
         iFPS = 30;
@@ -51,7 +53,7 @@ int Application::mainLoop(){
                 this->x = oEvent.mouse.x;
                 this->y = oEvent.mouse.y;
                 std::cout << x << " " << y << std::endl;
-                j1.setIJ(y/46, x/48, this->matriz);
+                j1.setIJ(y/70, x/90, this->matriz);
             }
         }
         if(oEvent.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
@@ -66,8 +68,9 @@ int Application::mainLoop(){
         if (oEvent.type == ALLEGRO_EVENT_TIMER && oEvent.timer.source == timer) {
             al_clear_to_color(al_map_rgb(0,0,0));
             al_draw_bitmap(fondo, 0, 0, 0);
-            Sprite::dibujaObstaculo(matriz);
             j1.dibujaJugador();
+            e1.dibujaEnemigo();
+            Sprite::dibujaObstaculo(matriz);
             al_flip_display();
         }
     }
@@ -75,26 +78,26 @@ int Application::mainLoop(){
 
 void Application::initMatriz() {
     srand(static_cast<unsigned int>(time(0)));
-    for (int i = 0; i < 15; ++i) {
-        for (int j = 0; j < 27; ++j) {
-            if(static_cast<int>(random() % 10) == 0){
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 15; ++j) {
+            if(static_cast<int>(random() % 5) == 0){
                 this->matriz[i][j] = 0;
             }
             else{
                 this->matriz[i][j] = 1;
             }
-            if(i>10 && j < 7){
+            if(i>6 && j < 5){
                 this->matriz[i][j] = 1;
             }
-            if(i < 5   && j> 20){
+            if(i < 4   && j> 10){
                 this->matriz[i][j] = 1  ;
             }
         }
     }
 }
 void Application::imprimirMatriz(){
-    for (int i = 0; i < 15; ++i) {
-        for (int j = 0; j < 27; ++j) {
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 15; ++j) {
             std::cout << matriz[i][j] <<" ";
         }
         std::cout << std::endl;
