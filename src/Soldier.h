@@ -6,17 +6,21 @@
 #define LEAGUEOFGEMS_SOLDIER_H
 
 #include "../src/Estructuras/Cola.h"
+#include "Estructuras/Pila.h"
+#include "A*/AStarPathFinding.h"
 #include <allegro5/bitmap.h>
 #include <allegro5/allegro.h>
+#include <utility>
 
+using namespace std;
 class Soldier {
 private:
     int vida = 7;
     int xd, yd, tempX, tempY;
     bool llegue = false;
 
-    Cola<int> *colaX = new Cola<int >;
-    Cola<int> *colaY = new Cola<int >;
+    Cola<Pair> ruta = Cola<Pair>();
+    Pila<Pair> ruta2 = Pila<Pair>();
 
 public:
     Soldier();
@@ -26,6 +30,8 @@ public:
     void caminarSur(int , int);
     void caminarNorte(int , int);
     void dibujarSoldado();
+    void seguirRuta();
+    void escogerPunto(int matriz[15][27], int x, int y, int xd, int yd);
 
 
 };

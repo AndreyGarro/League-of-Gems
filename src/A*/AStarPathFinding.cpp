@@ -4,7 +4,6 @@
 
 #include "AStarPathFinding.h"
 #include "../Estructuras/SimpleList.h"
-#include "../Estructuras/Pila.h"
 
 //Revisa si una celda dada es valida o no
 bool AstarPathfinding::esValido(int fila, int columna) {
@@ -24,8 +23,7 @@ double AstarPathfinding::calcularValorH(int fila, int columna, Pair destino) {
     return ((double)sqrt((fila-destino.first)*(fila-destino.first) + (columna-destino.second) * (columna-destino.second)));
 }
 
-void AstarPathfinding::trazarCamino(celda detallesCelda[][COLUMNA], Pair destino) {
-    printf("\n La ruta es: ");
+Pila<Pair> AstarPathfinding::trazarCamino(celda detallesCelda[][COLUMNA], Pair destino) {
     int fila = destino.first;
     int columna = destino.second;
 
@@ -42,24 +40,25 @@ void AstarPathfinding::trazarCamino(celda detallesCelda[][COLUMNA], Pair destino
 
     Path.push(make_pair(fila, columna));
 
-    while (Path.getLenght() != 0){
-        pair<int, int> p = Path.pop();
-        cout<<"-> ("<<p.first<<", "<<p.second<<") ";
-    }
+    return Path;
+
+
 }
 
-void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair destino) {
+Pila<Pair> AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair destino) {
 
     //Si el inicio está fuera de rango
     if(!esValido(inicio.first, inicio.second)){
         printf("Inicio inválido");
-        return;
+        Pila<Pair> vacia;
+        return vacia;
     }
 
     //Si el destino está fuera de rango
     if(!esValido(destino.first, destino.second)){
         printf("Destino inválido");
-        return;
+        Pila<Pair> vacia;
+        return vacia;
     }
 
     //Si el inicio o el destino estan bloqueados
@@ -67,13 +66,15 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
        !estaDesbloqueda(grid, destino.first, destino.second))
     {
         printf("Destino o inicio están bloqueados");
-        return;
+        Pila<Pair> vacia;
+        return vacia;
     }
 
     //Si el destino es igual al inicio
     if(esDestino(inicio.first, inicio.second, destino)){
         printf("Ya se encuentra en el destino");
-        return;
+        Pila<Pair> vacia;
+        return vacia;
     }
 
     bool closedList[FILA][COLUMNA];
@@ -125,9 +126,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i-1][j].parent_i = i;
                 detallesCelda[i-1][j].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino(detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             }
             else if(!closedList[i - 1][j] && estaDesbloqueda(grid, i-1, j)){
                 gNew = detallesCelda[i][j].g + 1.0;
@@ -153,9 +154,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i+1][j].parent_i = i;
                 detallesCelda[i+1][j].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino(detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             }
 
             else if (!closedList[i + 1][j] &&
@@ -184,9 +185,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i][j+1].parent_i = i;
                 detallesCelda[i][j+1].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino(detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             }
             else if (!closedList[i][j + 1] &&
                      estaDesbloqueda (grid, i, j+1))
@@ -218,9 +219,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i][j-1].parent_i = i;
                 detallesCelda[i][j-1].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino(detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             }
             else if (!closedList[i][j - 1] &&
                      estaDesbloqueda(grid, i, j-1))
@@ -248,9 +249,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i-1][j+1].parent_i = i;
                 detallesCelda[i-1][j+1].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino (detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             }
 
             else if (!closedList[i - 1][j + 1] && estaDesbloqueda(grid, i-1, j+1))
@@ -281,9 +282,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i-1][j-1].parent_i = i;
                 detallesCelda[i-1][j-1].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino (detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             }
             else if (!closedList[i-1][j-1] && estaDesbloqueda(grid, i-1, j-1))
             {
@@ -311,9 +312,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i+1][j+1].parent_i = i;
                 detallesCelda[i+1][j+1].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino (detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             }
             else if (!closedList[i + 1][j + 1] && estaDesbloqueda(grid, i+1, j+1))
             {
@@ -342,9 +343,9 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
                 detallesCelda[i + 1][j - 1].parent_i = i;
                 detallesCelda[i + 1][j - 1].parent_j = j;
                 printf("Se encontró el destino\n");
-                trazarCamino(detallesCelda, destino);
+                Pila<Pair> camino = trazarCamino(detallesCelda, destino);
                 foundDest = true;
-                return;
+                return camino;
             } else if (!closedList[i + 1][j - 1] &&
                        estaDesbloqueda(grid, i + 1, j - 1)) {
                 gNew = detallesCelda[i][j].g + 1.414;
@@ -368,6 +369,7 @@ void AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair dest
 
     if(foundDest == false){
         printf("Error al encontrar el destino\n");
-        return;
+        Pila<Pair> vacia;
+        return vacia;
     }
 }
