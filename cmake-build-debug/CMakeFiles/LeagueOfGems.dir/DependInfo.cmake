@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yenmari11/CLionProjects/Proyecto 2/main.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
-  "/home/yenmari11/CLionProjects/Proyecto 2/src/A*/AStarPathFinding.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
-  "/home/yenmari11/CLionProjects/Proyecto 2/src/Algoritmos/Dijkstra.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
-  "/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Aplicacion.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o"
-  "/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Player.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o"
-  "/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o"
-  "/home/yenmari11/CLionProjects/Proyecto 2/src/LineaVista/LineaVista.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
-  "/home/yenmari11/CLionProjects/Proyecto 2/src/Soldier.cpp" "/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o"
+  "/home/christian/Escritorio/LOG/main.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
+  "/home/christian/Escritorio/LOG/src/A*/AStarPathFinding.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
+  "/home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
+  "/home/christian/Escritorio/LOG/src/Gráficos/Aplicacion.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o"
+  "/home/christian/Escritorio/LOG/src/Gráficos/Player.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o"
+  "/home/christian/Escritorio/LOG/src/Gráficos/Sprite.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o"
+  "/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
+  "/home/christian/Escritorio/LOG/src/Soldier.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

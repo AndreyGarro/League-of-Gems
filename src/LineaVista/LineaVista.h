@@ -25,11 +25,10 @@ private:
     coordenada destino;
     coordenada origen;
 
-    Cola<int> rutaX;
-    Cola<int> rutaY;
+    Cola<pair<int, int>> *ruta = new Cola<pair<int, int >>;
 
 public:
-    void lineaVista(int x, int y, int xd, int yd, Cola<int> *X, Cola<int > *Y, int matix[15][27]);
+    Cola<pair<int, int >> lineaVista(int x, int y, int xd, int yd, int matix[15][27]);
 
 private:
 

@@ -61,6 +61,7 @@ int Application::mainLoop(){
             al_destroy_timer(timer);
             return 0;
         }
+
         //// Actualiza la pantalla cada frame de la pantalla
         if (oEvent.type == ALLEGRO_EVENT_TIMER && oEvent.timer.source == timer) {
             al_clear_to_color(al_map_rgb(0,0,0));
@@ -83,10 +84,10 @@ void Application::initMatriz() {
                 this->matriz[i][j] = 1;
             }
             if(i>10 && j < 7){
-                this->matriz[i][j] = 2;
+                this->matriz[i][j] = 1;
             }
             if(i < 5   && j> 20){
-                this->matriz[i][j] = 2;
+                this->matriz[i][j] = 1  ;
             }
         }
     }

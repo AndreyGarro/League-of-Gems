@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug"/>
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug"/>
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug"/>
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LeagueOfGems">
-				<Option output="/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug"/>
+				<Option output="/home/christian/Escritorio/LOG/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yenmari11/CLionProjects/Proyecto 2/allegro/5.0.11/include"/>
+					<Add directory="/home/christian/Escritorio/LOG/allegro/5.0.11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -55,20 +55,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LeagueOfGems/fast">
-				<Option output="/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yenmari11/CLionProjects/Proyecto 2/cmake-build-debug"/>
+				<Option output="/home/christian/Escritorio/LOG/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yenmari11/CLionProjects/Proyecto 2/allegro/5.0.11/include"/>
+					<Add directory="/home/christian/Escritorio/LOG/allegro/5.0.11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -79,68 +79,68 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yenmari11/CLionProjects/Proyecto\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/main.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/main.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/A*/AStarPathFinding.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/src/A*/AStarPathFinding.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/A*/AStarPathFinding.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/A*/AStarPathFinding.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Algoritmos/Dijkstra.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Algoritmos/Dijkstra.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/Cola.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/Cola.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/Pila.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/Pila.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Estructuras/SimpleList.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/SimpleList.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Aplicacion.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Gráficos/Aplicacion.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Aplicacion.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Gráficos/Aplicacion.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Player.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Gráficos/Player.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Player.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Gráficos/Player.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Gráficos/Sprite.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Gráficos/Sprite.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Gráficos/Sprite.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/LineaVista/LineaVista.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/LineaVista/LineaVista.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Soldier.cpp">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Soldier.cpp">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/src/Soldier.h">
+		<Unit filename="/home/christian/Escritorio/LOG/src/Soldier.h">
 			<Option target="LeagueOfGems"/>
 		</Unit>
-		<Unit filename="/home/yenmari11/CLionProjects/Proyecto 2/CMakeLists.txt">
+		<Unit filename="/home/christian/Escritorio/LOG/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
