@@ -21,6 +21,10 @@ CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o
  /home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Player.h
  /home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
  /home/andrew/CLionProjects/LeagueOfGems/src/Soldier.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o
+ /home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Enemy.cpp
+ /home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Enemy.h
+ /home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o
  /home/andrew/CLionProjects/LeagueOfGems/src/A*/AStarPathFinding.h
  /home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Cola.h
