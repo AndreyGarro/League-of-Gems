@@ -6,6 +6,6 @@
 #include "Sprite.h"
 
 void Enemy::dibujaEnemigo() {
-    Sprite::dibujaPersonaje()
+    //Sprite::dibujaPersonaje();
 
 }
