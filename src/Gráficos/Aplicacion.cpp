@@ -9,6 +9,8 @@
 #include <allegro5/allegro_image.h>
 #include <math.h>
 
+
+int Application::matriz[10][15] = {};
 void Application::initApp() {
     al_init();
     this->Display = al_create_display(this->Width, this->Height);
@@ -53,7 +55,7 @@ int Application::mainLoop(){
                 this->x = oEvent.mouse.x;
                 this->y = oEvent.mouse.y;
                 std::cout << x << " " << y << std::endl;
-                j1.setIJ(y/70, x/90, this->matriz);
+                j1.setIJ(y/70, x/90, Application::matriz);
             }
         }
         if(oEvent.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
@@ -68,10 +70,14 @@ int Application::mainLoop(){
         if (oEvent.type == ALLEGRO_EVENT_TIMER && oEvent.timer.source == timer) {
             al_clear_to_color(al_map_rgb(0,0,0));
             al_draw_bitmap(fondo, 0, 0, 0);
-            j1.dibujaJugador();
+            resetMatriz();
             e1.dibujaEnemigo();
-            Sprite::dibujaObstaculo(matriz);
+            Sprite::dibujaObstaculo(Application::matriz);
+            j1.dibujaJugador();
             al_flip_display();
+
+            cout <<endl;
+            imprimirMatriz();
         }
     }
 }
@@ -81,16 +87,16 @@ void Application::initMatriz() {
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 15; ++j) {
             if(static_cast<int>(random() % 5) == 0){
-                this->matriz[i][j] = 0;
+                Application::matriz[i][j] = 0;
             }
             else{
-                this->matriz[i][j] = 1;
+                Application::matriz[i][j] = 1;
             }
             if(i>6 && j < 5){
-                this->matriz[i][j] = 1;
+                Application::matriz[i][j] = 1;
             }
             if(i < 4   && j> 10){
-                this->matriz[i][j] = 1  ;
+                Application::matriz[i][j] = 1  ;
             }
         }
     }
@@ -98,11 +104,22 @@ void Application::initMatriz() {
 void Application::imprimirMatriz(){
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 15; ++j) {
-            std::cout << matriz[i][j] <<" ";
+            std::cout << Application::matriz[i][j] <<" ";
         }
         std::cout << std::endl;
     }
 }
 
+void Application::resetMatriz() {
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 15; ++j) {
+            if(Application::matriz[i][j] == 3){
+                Application::matriz[i][j] = 1;
+            }
+        }
+    }
+
+}
 Application::~Application() {
 }
+

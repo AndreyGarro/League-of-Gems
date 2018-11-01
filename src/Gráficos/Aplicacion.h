@@ -20,13 +20,16 @@ public:
     virtual int mainLoop();
     void initMatriz();
     void imprimirMatriz();
+    void resetMatriz();
+
+    // 2 enemigo, 3 soldado, 0 obstaculo, 1 espacio libre
+    static int matriz[10][15];
 
 private:
     ALLEGRO_EVENT_QUEUE* EventQueue;
     ALLEGRO_TIMER *timer;
     bool start = false;
     int x,y;
-    int matriz[10][15];
     ALLEGRO_EVENT oEvent;
 
     /// Pantalla
@@ -37,3 +40,4 @@ private:
     int iFPS;
     ALLEGRO_BITMAP *fondo;
 };
+

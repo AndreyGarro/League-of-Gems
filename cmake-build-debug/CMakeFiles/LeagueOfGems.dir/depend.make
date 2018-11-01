@@ -22,6 +22,7 @@ CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Pla
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Sprite.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Soldier.h
 
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Aplicacion.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Enemy.cpp
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Enemy.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Sprite.h
@@ -33,6 +34,7 @@ CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Gráficos/Player.
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Gráficos/Player.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Soldier.h
 
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o: ../src/Gráficos/Aplicacion.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o: ../src/Gráficos/Sprite.cpp
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o: ../src/Gráficos/Sprite.h
 
@@ -43,6 +45,7 @@ CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o: ../src/LineaVista/L
 CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o: ../src/A*/AStarPathFinding.h
 CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o: ../src/Estructuras/Cola.h
 CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o: ../src/Estructuras/Pila.h
+CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o: ../src/Gráficos/Aplicacion.h
 CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o: ../src/Gráficos/Sprite.h
 CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o: ../src/LineaVista/LineaVista.h
 CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o: ../src/Soldier.cpp

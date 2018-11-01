@@ -14,17 +14,34 @@ void Player::setIJ(int i, int j, int matriz[10][15]) {
     if(this->i != i or this->j != j) {
         this->i = i;
         this->j = j;
-        s1.setIJ(i, j, matriz);
+
+        this->s1.setIJ(i,j, matriz);
+        this->s2.setIJ(i,j, matriz);
+        this->s4.setIJ(i,j, matriz);
+        this->s3.setIJ(i,j, matriz);
+        this->s4.setIJ(i,j, matriz);
+        this->s5.setIJ(i,j, matriz);
+        this->s6.setIJ(i,j, matriz);
     }
 }
 
 void Player::dibujaJugador() {
-    s1.dibujarSoldado();
+    this->s1.dibujarSoldado();
+    this->s2.dibujarSoldado();
+    this->s3.dibujarSoldado();
+    this->s4.dibujarSoldado();
+    this->s5.dibujarSoldado();
+    this->s6.dibujarSoldado();
 
 }
 
 Player::Player() {
-    s1 = Soldier();
+    this->s1;
+    this->s2;
+    this->s3;
+    this->s4;
+    this->s5;
+    this->s6;
 }
 
 
