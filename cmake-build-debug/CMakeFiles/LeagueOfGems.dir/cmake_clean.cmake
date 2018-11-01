@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
+  "CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o"
   "LeagueOfGems.pdb"
   "LeagueOfGems"
 )
