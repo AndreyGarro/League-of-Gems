@@ -11,19 +11,19 @@
 
 void Soldier::caminarEste(int x, int y) {
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/running e0001.bmp");
-    Sprite::dibujaSoldado(x, y, image);
+    Sprite::dibujaPersonaje(x, y, image);
 }
 void Soldier::caminarOEste(int x, int y) {
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/running o0001.bmp");
-    Sprite::dibujaSoldado(x, y, image);
+    Sprite::dibujaPersonaje(x, y, image);
 }
 void Soldier::caminarSur(int x, int y) {
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/running s0001.bmp");
-    Sprite::dibujaSoldado(x, y, image);
+    Sprite::dibujaPersonaje(x, y, image);
 }
 void Soldier::caminarNorte(int x, int y) {
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/running n0001.bmp");
-    Sprite::dibujaSoldado(x, y, image);
+    Sprite::dibujaPersonaje(x, y, image);
 }
 void Soldier::setIJ(int i, int j, int matriz[15][27]) {
 
@@ -39,7 +39,7 @@ Soldier::Soldier() {
     this->tempY = 644;
     xd = tempX;
     yd = tempY;
-    Sprite::dibujaSoldado(192, 644, image);
+    Sprite::dibujaPersonaje(192, 644, image);
 }
 void Soldier::seguirRuta(){
     if(ruta2.getLenght() > 0) {
