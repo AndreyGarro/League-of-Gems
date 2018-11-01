@@ -98,7 +98,7 @@ void Soldier::dibujarSoldado() {
         tempY -= 2;
     }
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/running e0001.bmp");
-    Sprite::dibujaSoldado(tempX, tempY, image);
+    Sprite::dibujaPersonaje(tempX, tempY, image);
 }
 
 

@@ -17,7 +17,7 @@ class Sprite {
 
 public:
     static void dibujaObstaculo(int matriz[15][27]);
-    static void dibujaSoldado(int x, int y, ALLEGRO_BITMAP *);
+    static void dibujaPersonaje(int x, int y, ALLEGRO_BITMAP *);
 };
 
 #endif //LEAGUEOFGEMS_SPRITE_H

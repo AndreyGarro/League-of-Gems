@@ -18,7 +18,7 @@ void Sprite::dibujaObstaculo(int matriz[15][27]) {
     al_destroy_bitmap(tree);
 }
 
-void Sprite::dibujaSoldado(int x, int y,ALLEGRO_BITMAP *soldier) {
+void Sprite::dibujaPersonaje(int x, int y,ALLEGRO_BITMAP *soldier) {
     al_convert_mask_to_alpha(soldier, al_map_rgb(106, 76,48));
     al_draw_scaled_bitmap(soldier, 0, 0, 96, 96, x, y, 55, 46, 0);
     al_destroy_bitmap(soldier);

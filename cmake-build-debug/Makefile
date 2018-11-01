@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,33 @@ src/Gráficos/Aplicacion.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.s
 .PHONY : src/Gráficos/Aplicacion.cpp.s
 
+src/Gráficos/Enemy.o: src/Gráficos/Enemy.cpp.o
+
+.PHONY : src/Gráficos/Enemy.o
+
+# target to build an object file
+src/Gráficos/Enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o
+.PHONY : src/Gráficos/Enemy.cpp.o
+
+src/Gráficos/Enemy.i: src/Gráficos/Enemy.cpp.i
+
+.PHONY : src/Gráficos/Enemy.i
+
+# target to preprocess a source file
+src/Gráficos/Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.i
+.PHONY : src/Gráficos/Enemy.cpp.i
+
+src/Gráficos/Enemy.s: src/Gráficos/Enemy.cpp.s
+
+.PHONY : src/Gráficos/Enemy.s
+
+# target to generate assembly for a file
+src/Gráficos/Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.s
+.PHONY : src/Gráficos/Enemy.cpp.s
+
 src/Gráficos/Player.o: src/Gráficos/Player.cpp.o
 
 .PHONY : src/Gráficos/Player.o
@@ -360,6 +387,9 @@ help:
 	@echo "... src/Gráficos/Aplicacion.o"
 	@echo "... src/Gráficos/Aplicacion.i"
 	@echo "... src/Gráficos/Aplicacion.s"
+	@echo "... src/Gráficos/Enemy.o"
+	@echo "... src/Gráficos/Enemy.i"
+	@echo "... src/Gráficos/Enemy.s"
 	@echo "... src/Gráficos/Player.o"
 	@echo "... src/Gráficos/Player.i"
 	@echo "... src/Gráficos/Player.s"
