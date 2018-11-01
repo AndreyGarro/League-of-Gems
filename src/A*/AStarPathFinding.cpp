@@ -62,7 +62,7 @@ Pila<Pair> AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pai
     }
 
     //Si el inicio o el destino estan bloqueados
-    if(!estaDesbloqueda(grid, inicio.first, inicio.second) ||
+    if(/*!estaDesbloqueda(grid, inicio.first, inicio.second) ||*/
        !estaDesbloqueda(grid, destino.first, destino.second))
     {
         printf("Destino o inicio están bloqueados");

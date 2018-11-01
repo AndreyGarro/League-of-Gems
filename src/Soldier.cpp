@@ -2,48 +2,36 @@
 // Created by andrew on 31/10/18.
 //
 
-#include <allegro5/bitmap.h>
 #include <allegro5/allegro.h>
 #include "Soldier.h"
 #include "Gráficos/Sprite.h"
 #include "../src/LineaVista/LineaVista.h"
 #include "A*/AStarPathFinding.h"
 
-void Soldier::caminarEste(int x, int y) {
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/running e0001.bmp");
-    Sprite::dibujaPersonaje(x, y, image);
+Soldier::Soldier(int x , int y) {
+    ALLEGRO_BITMAP *image = al_load_bitmap("../img/enemy.png");
+    this->tempX = x;
+    this->tempY = y;
+    xd = tempX;
+    yd = tempY;
+    Sprite::dibujaPersonaje(192, 644, image, 3);
 }
-void Soldier::caminarOEste(int x, int y) {
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/running o0001.bmp");
-    Sprite::dibujaPersonaje(x, y, image);
-}
-void Soldier::caminarSur(int x, int y) {
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/running s0001.bmp");
-    Sprite::dibujaPersonaje(x, y, image);
-}
-void Soldier::caminarNorte(int x, int y) {
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/running n0001.bmp");
-    Sprite::dibujaPersonaje(x, y, image);
-}
+Soldier::Soldier() {}
+
 void Soldier::setIJ(int i, int j, int matriz[10][15]) {
 
     //calcular Ruta
+//    Pair posff = escogerPunto(matriz,i,j);
+    Pair posff = make_pair(i,j);
     AstarPathfinding AStar = AstarPathfinding();
-    cout <<"( " << tempY/70 <<","<< tempX/90 <<")( "<< i <<","<< j <<")"<<endl;
-    ruta2 = AStar.busquedaAStar(matriz, make_pair(tempY/70, tempX/90), make_pair(i, j));
+    ruta2 = AStar.busquedaAStar(matriz, make_pair(tempY/70, tempX/90), posff);
+//    Application::matriz[posff.first][posff.second] = 4;
 
-}
-Soldier::Soldier() {
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/enemy.png");
-    this->tempX = 192;
-    this->tempY = 644;
-    xd = tempX;
-    yd = tempY;
-    Sprite::dibujaPersonaje(192, 644, image);
+
 }
 void Soldier::seguirRuta(){
     if(ruta2.getLenght() > 0) {
-        if (this->llegue == true) {
+        if (this->llegue) {
             Pair coorTemp = ruta2.pop();
             xd = coorTemp.second * 90;
             yd = coorTemp.first * 70;
@@ -52,17 +40,21 @@ void Soldier::seguirRuta(){
     }
 }
 
-void Soldier::escogerPunto(int matriz[10][15], int x, int y, int xd, int yd) {
-    int xf, yf;
-    while(matriz[10][15]){
-
+Pair Soldier::escogerPunto(int matriz[10][15], int id, int jd) {
+    srand(static_cast<unsigned int>(time(0)));
+    while(true){
+        int iff = (id +1) , jff = jd;
+        if(matriz[id][jd] == 1){
+            return make_pair(id, jd);
+        }
+        else {
+            if(matriz[iff][jff] == 1){
+                return make_pair(iff, jff);
+            }
+            id = iff; jd = jff;
+        }
     }
-    if(matriz[yd/70][xd/90] == 1){
-
-    }
-
 }
-
 
 void Soldier::dibujarSoldado() {
     seguirRuta();
@@ -98,7 +90,10 @@ void Soldier::dibujarSoldado() {
         tempY -= 2;
     }
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/soldier.png");
-    Sprite::dibujaPersonaje(tempX, tempY, image);
+    Sprite::dibujaPersonaje(tempX, tempY, image, 3);
+    Application::matriz[yd/70][xd/90] = 3;
+
+
 }
 
 

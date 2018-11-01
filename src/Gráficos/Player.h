@@ -13,7 +13,12 @@ class Player {
 private:
     int vida;
     int i,j;
-    Soldier s1;
+    Soldier s1 = Soldier(96,500);
+    Soldier s2 = Soldier(2*48, 600);
+    Soldier s3 = Soldier(3*48, 600);
+    Soldier s4 = Soldier(4*48, 600);
+    Soldier s5 = Soldier(4*48, 600);
+    Soldier s6 = Soldier(48, 600);
 
 public:
     Player();

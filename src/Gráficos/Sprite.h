@@ -11,14 +11,18 @@
 #include <allegro5/allegro_primitives.h>
 #include "Sprite.h"
 
+#include "Aplicacion.h"
+
 using namespace std;
 
 class Sprite {
 
 public:
     static void dibujaObstaculo(int matriz[10][15]);
-    static void dibujaPersonaje(int x, int y, ALLEGRO_BITMAP *);
-    static void dibujaGema(int x, int y, ALLEGRO_BITMAP *);
-};
 
+    static void dibujaPersonaje(int x, int y, ALLEGRO_BITMAP *, int flag);
+
+    static void dibujaGema(int x, int y, ALLEGRO_BITMAP *);
+
+};
 #endif //LEAGUEOFGEMS_SPRITE_H
