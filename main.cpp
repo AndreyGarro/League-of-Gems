@@ -9,7 +9,7 @@
 int main(int argc, char** argv) {
 
     std::string Title = "League Of Gems";
-    Application* oApp = new Application(1296, 690, Title);
+    Application* oApp = new Application(1350, 700, Title);
 
     oApp->initApp();
 

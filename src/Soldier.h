@@ -24,14 +24,14 @@ private:
 
 public:
     Soldier();
-    void setIJ(int i, int j, int matriz[15][27]);
+    void setIJ(int i, int j, int matriz[10][15]);
     void caminarEste(int , int);
     void caminarOEste(int , int);
     void caminarSur(int , int);
     void caminarNorte(int , int);
     void dibujarSoldado();
     void seguirRuta();
-    void escogerPunto(int matriz[15][27], int x, int y, int xd, int yd);
+    void escogerPunto(int matriz[10][15], int x, int y, int xd, int yd);
 
 
 };
