@@ -29,7 +29,5 @@ public:
     void dibujarSoldado();
     void seguirRuta();
     Pair escogerPunto(int matriz[10][15], int xd, int yd);
-
-
 };
 #endif //LEAGUEOFGEMS_SOLDIER_H

@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/christian/Escritorio/LOG git"
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/christian/Escritorio/LOG git/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/christian/Escritorio/LOG git/cmake-build-debug/CMakeFiles" "/home/christian/Escritorio/LOG git/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/christian/Escritorio/LOG git/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -204,6 +204,33 @@ src/Algoritmos/Dijkstra.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.s
 .PHONY : src/Algoritmos/Dijkstra.cpp.s
 
+src/Enemy.o: src/Enemy.cpp.o
+
+.PHONY : src/Enemy.o
+
+# target to build an object file
+src/Enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o
+.PHONY : src/Enemy.cpp.o
+
+src/Enemy.i: src/Enemy.cpp.i
+
+.PHONY : src/Enemy.i
+
+# target to preprocess a source file
+src/Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.i
+.PHONY : src/Enemy.cpp.i
+
+src/Enemy.s: src/Enemy.cpp.s
+
+.PHONY : src/Enemy.s
+
+# target to generate assembly for a file
+src/Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.s
+.PHONY : src/Enemy.cpp.s
+
 src/Gráficos/Aplicacion.o: src/Gráficos/Aplicacion.cpp.o
 
 .PHONY : src/Gráficos/Aplicacion.o
@@ -231,32 +258,32 @@ src/Gráficos/Aplicacion.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.s
 .PHONY : src/Gráficos/Aplicacion.cpp.s
 
-src/Gráficos/Enemy.o: src/Gráficos/Enemy.cpp.o
+src/Gráficos/EnemyController.o: src/Gráficos/EnemyController.cpp.o
 
-.PHONY : src/Gráficos/Enemy.o
+.PHONY : src/Gráficos/EnemyController.o
 
 # target to build an object file
-src/Gráficos/Enemy.cpp.o:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o
-.PHONY : src/Gráficos/Enemy.cpp.o
+src/Gráficos/EnemyController.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o
+.PHONY : src/Gráficos/EnemyController.cpp.o
 
-src/Gráficos/Enemy.i: src/Gráficos/Enemy.cpp.i
+src/Gráficos/EnemyController.i: src/Gráficos/EnemyController.cpp.i
 
-.PHONY : src/Gráficos/Enemy.i
+.PHONY : src/Gráficos/EnemyController.i
 
 # target to preprocess a source file
-src/Gráficos/Enemy.cpp.i:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.i
-.PHONY : src/Gráficos/Enemy.cpp.i
+src/Gráficos/EnemyController.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.i
+.PHONY : src/Gráficos/EnemyController.cpp.i
 
-src/Gráficos/Enemy.s: src/Gráficos/Enemy.cpp.s
+src/Gráficos/EnemyController.s: src/Gráficos/EnemyController.cpp.s
 
-.PHONY : src/Gráficos/Enemy.s
+.PHONY : src/Gráficos/EnemyController.s
 
 # target to generate assembly for a file
-src/Gráficos/Enemy.cpp.s:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.s
-.PHONY : src/Gráficos/Enemy.cpp.s
+src/Gráficos/EnemyController.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.s
+.PHONY : src/Gráficos/EnemyController.cpp.s
 
 src/Gráficos/Player.o: src/Gráficos/Player.cpp.o
 
@@ -384,12 +411,15 @@ help:
 	@echo "... src/Algoritmos/Dijkstra.o"
 	@echo "... src/Algoritmos/Dijkstra.i"
 	@echo "... src/Algoritmos/Dijkstra.s"
+	@echo "... src/Enemy.o"
+	@echo "... src/Enemy.i"
+	@echo "... src/Enemy.s"
 	@echo "... src/Gráficos/Aplicacion.o"
 	@echo "... src/Gráficos/Aplicacion.i"
 	@echo "... src/Gráficos/Aplicacion.s"
-	@echo "... src/Gráficos/Enemy.o"
-	@echo "... src/Gráficos/Enemy.i"
-	@echo "... src/Gráficos/Enemy.s"
+	@echo "... src/Gráficos/EnemyController.o"
+	@echo "... src/Gráficos/EnemyController.i"
+	@echo "... src/Gráficos/EnemyController.s"
 	@echo "... src/Gráficos/Player.o"
 	@echo "... src/Gráficos/Player.i"
 	@echo "... src/Gráficos/Player.s"
