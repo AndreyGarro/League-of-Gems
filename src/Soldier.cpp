@@ -21,11 +21,11 @@ Soldier::Soldier() {}
 void Soldier::setIJ(int i, int j, int matriz[10][15]) {
 
     //calcular Ruta
-//    Pair posff = escogerPunto(matriz,i,j);
-    Pair posff = make_pair(i,j);
+    Pair posff = escogerPunto(matriz,i,j);
+//    Pair posff = make_pair(i,j);
     AstarPathfinding AStar = AstarPathfinding();
-    ruta2 = AStar.busquedaAStar(matriz, make_pair(tempY/70, tempX/90), posff);
-//    Application::matriz[posff.first][posff.second] = 4;
+    ruta2 = AStar.busquedaAStar(matriz, make_pair(yd/70, xd/90), posff);
+    Application::matriz[posff.first][posff.second] = 4;
 
 
 }
@@ -41,18 +41,41 @@ void Soldier::seguirRuta(){
 }
 
 Pair Soldier::escogerPunto(int matriz[10][15], int id, int jd) {
-    srand(static_cast<unsigned int>(time(0)));
+    if(matriz[id][jd] == 1){
+        return make_pair(id,jd);
+    }
+    int a=3, b=3;
     while(true){
-        int iff = (id +1) , jff = jd;
-        if(matriz[id][jd] == 1){
-            return make_pair(id, jd);
-        }
-        else {
-            if(matriz[iff][jff] == 1){
-                return make_pair(iff, jff);
+        cout<<"0"<< endl;
+        id -=1;
+        jd -=1;
+        try {
+            for (int i = 0; i < a; ++i) {
+                for (int j = 0; j < b; ++j) {
+                    if ((id + i) < 0) {
+                        cout<<"1"<< endl;
+                        id = 0;
+                    }
+                    if ((id + i )> 9) {
+                        cout<<"2"<< endl;
+                        id -= abs((i + 1));
+                    }
+                    if ((jd + j) < 0) {
+                        cout<<"3"<< endl;
+                        jd = 0;
+                    }
+                    if ((jd + j) > 14) {
+                        cout<<"4"<< endl;
+                        jd = abs(jd - (j + 1));
+                    }
+                    if (matriz[id + i][jd + j] == 1) {
+                        return make_pair(id + i, jd + j);
+                    }
+                }
             }
-            id = iff; jd = jff;
         }
+        catch(...) { }
+        a++,b++;
     }
 }
 
@@ -60,34 +83,37 @@ void Soldier::dibujarSoldado() {
     seguirRuta();
     if(tempX == xd && tempY == yd){
         this->llegue = true;
+        ALLEGRO_BITMAP *image = al_load_bitmap("../img/soldier.png");
+        Sprite::dibujaPersonaje(tempX, tempY, image, 3);
+//        Application::matriz[yd/70][xd/90] = 3;
     }
     else if(xd > tempX && yd > tempY){
-        tempX += 2;
-        tempY += 2;
+        tempX += 5;
+        tempY += 5;
     }
     else if(xd < tempX && yd < tempY){
-        tempX -= 2;
-        tempY -= 2;
+        tempX -= 5;
+        tempY -= 5;
     }
     else if(xd > tempX && yd < tempY){
-        tempX += 2;
-        tempY -= 2;
+        tempX += 5;
+        tempY -= 5;
     }
     else if(xd < tempX && yd > tempY){
-        tempX -= 2;
-        tempY += 2;
+        tempX -= 5;
+        tempY += 5;
     }
     else if(xd > tempX){
-        tempX += 2;
+        tempX += 5;
     }
     else if(xd < tempX){
-        tempX -= 2;
+        tempX -= 5;
     }
     else if(yd > tempY){
-        tempY += 2;
+        tempY += 5;
     }
     else if(yd < tempY){
-        tempY -= 2;
+        tempY -= 5;
     }
     ALLEGRO_BITMAP *image = al_load_bitmap("../img/soldier.png");
     Sprite::dibujaPersonaje(tempX, tempY, image, 3);

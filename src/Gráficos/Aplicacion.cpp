@@ -45,8 +45,6 @@ int Application::mainLoop(){
     al_register_event_source(this->EventQueue, al_get_timer_event_source(timer));
     al_start_timer(timer);
 
-
-
     while (true) {
         al_wait_for_event(this->EventQueue, &oEvent);
 
@@ -55,6 +53,7 @@ int Application::mainLoop(){
                 this->x = oEvent.mouse.x;
                 this->y = oEvent.mouse.y;
                 std::cout << x << " " << y << std::endl;
+                resetMatriz();
                 j1.setIJ(y/70, x/90, Application::matriz);
             }
         }
@@ -76,8 +75,8 @@ int Application::mainLoop(){
             e1.dibujaEnemigo();
             al_flip_display();
 
-//            cout <<endl;
-//            imprimirMatriz();
+            cout <<endl;
+            imprimirMatriz();
         }
     }
 }
@@ -113,7 +112,7 @@ void Application::imprimirMatriz(){
 void Application::resetMatriz() {
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 15; ++j) {
-            if(Application::matriz[i][j] == 3){
+            if(Application::matriz[i][j] == 3 || Application::matriz[i][j] == 4){
                 Application::matriz[i][j] = 1;
             }
         }
