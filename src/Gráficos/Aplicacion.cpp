@@ -2,7 +2,7 @@
 #include "Aplicacion.h"
 #include "Sprite.h"
 #include "Player.h"
-#include "Enemy.h"
+#include "../Gráficos/EnemyController.h"
 #include <iostream>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_native_dialog.h>
@@ -32,7 +32,7 @@ void Application::initApp() {
 int Application::mainLoop(){
     //
     Player j1 = Player();
-    Enemy e1 = Enemy();
+    EnemyController e1 = EnemyController();
 
     if (iFPS == 0) {
         iFPS = 30;
@@ -71,13 +71,13 @@ int Application::mainLoop(){
             al_clear_to_color(al_map_rgb(0,0,0));
             al_draw_bitmap(fondo, 0, 0, 0);
             resetMatriz();
-            e1.dibujaEnemigo();
             Sprite::dibujaObstaculo(Application::matriz);
             j1.dibujaJugador();
+            e1.dibujaEnemigo();
             al_flip_display();
 
-            cout <<endl;
-            imprimirMatriz();
+//            cout <<endl;
+//            imprimirMatriz();
         }
     }
 }
@@ -95,7 +95,7 @@ void Application::initMatriz() {
             if(i>6 && j < 5){
                 Application::matriz[i][j] = 1;
             }
-            if(i < 4   && j> 10){
+            if(i < 5   && j> 9){
                 Application::matriz[i][j] = 1  ;
             }
         }

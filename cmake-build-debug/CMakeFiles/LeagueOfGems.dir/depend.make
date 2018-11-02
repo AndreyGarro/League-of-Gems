@@ -12,20 +12,30 @@ CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o: ../src/Estructuras/Si
 CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o: ../src/Algoritmos/Dijkstra.cpp
 CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o: ../src/Algoritmos/Dijkstra.h
 
+CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o: ../src/Enemy.cpp
+CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o: ../src/Enemy.h
+CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o: ../src/Estructuras/SimpleList.h
+CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o: ../src/Gráficos/Aplicacion.h
+CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o: ../src/Gráficos/Sprite.h
+
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/A*/AStarPathFinding.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Enemy.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Estructuras/Cola.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Estructuras/Pila.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Estructuras/SimpleList.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Aplicacion.cpp
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Aplicacion.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Enemy.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/EnemyController.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Player.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Sprite.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Soldier.h
 
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Aplicacion.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Enemy.cpp
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Enemy.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Enemy.cpp.o: ../src/Gráficos/Sprite.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Enemy.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Estructuras/SimpleList.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Gráficos/Aplicacion.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Gráficos/EnemyController.cpp
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Gráficos/EnemyController.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Gráficos/Sprite.h
 
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/A*/AStarPathFinding.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Estructuras/Cola.h

@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/christian/Escritorio/LOG git/src/A*/AStarPathFinding.h
-bits/stdc++.h
--
-../Estructuras/Pila.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
-
-/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
-
-/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
-
-/home/christian/Escritorio/LOG git/src/Gráficos/Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.h
 string
 -
 allegro5/allegro5.h
-/home/christian/Escritorio/LOG git/src/Gráficos/allegro5/allegro5.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/allegro5/allegro5.h
 
-/home/christian/Escritorio/LOG git/src/Gráficos/Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.cpp
+Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
+Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.h
+
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
 string
 -
 allegro5/haptic.h
@@ -32,49 +28,7 @@ allegro5/allegro.h
 allegro5/allegro_primitives.h
 -
 Sprite.h
-/home/christian/Escritorio/LOG git/src/Gráficos/Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Sprite.h
 Aplicacion.h
-/home/christian/Escritorio/LOG git/src/Gráficos/Aplicacion.h
-
-/home/christian/Escritorio/LOG git/src/LineaVista/LineaVista.h
-iostream
--
-math.h
--
-stdio.h
--
-limits.h
--
-stdbool.h
--
-string
--
-../Estructuras/Cola.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
-
-/home/christian/Escritorio/LOG git/src/Soldier.cpp
-allegro5/allegro.h
--
-Soldier.h
-/home/christian/Escritorio/LOG git/src/Soldier.h
-Gráficos/Sprite.h
-/home/christian/Escritorio/LOG git/src/Gráficos/Sprite.h
-../src/LineaVista/LineaVista.h
-/home/christian/Escritorio/LOG git/src/LineaVista/LineaVista.h
-A*/AStarPathFinding.h
-/home/christian/Escritorio/LOG git/src/A*/AStarPathFinding.h
-
-/home/christian/Escritorio/LOG git/src/Soldier.h
-../src/Estructuras/Cola.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
-Estructuras/Pila.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
-A*/AStarPathFinding.h
-/home/christian/Escritorio/LOG git/src/A*/AStarPathFinding.h
-allegro5/bitmap.h
--
-allegro5/allegro.h
--
-utility
--
+/home/andrew/CLionProjects/LeagueOfGems/src/Gráficos/Aplicacion.h
 

@@ -13,7 +13,7 @@ void Sprite::dibujaObstaculo(int matriz[10][15]) {
             if(matriz[i][j] == 0){
                 float x =  j*90;
                 float y = i*70;
-                al_draw_scaled_bitmap(tree, 0, 0, 726, 798, x-3, y-10 ,90, 90,0);
+                al_draw_scaled_bitmap(tree, 0, 0, 726, 798, x, y-15 ,85, 80,0);
                 Application::matriz[i][j] = 0;
             }
         }
@@ -22,13 +22,15 @@ void Sprite::dibujaObstaculo(int matriz[10][15]) {
 }
 
 void Sprite::dibujaPersonaje(int x, int y, ALLEGRO_BITMAP *image, int flag) {
-    //al_convert_mask_to_alpha(soldier, al_map_rgb(106, 76,48));
-    al_draw_scaled_bitmap(image, 0, 0, 62, 76, x+23, y-10, 50, 60, 0);
-    al_destroy_bitmap(image);
 
     if (flag == 2){
         Application::matriz[y/70][x/90] = flag;
+        al_draw_scaled_bitmap(image, 0, 0, 55, 59, x+23, y+5, 50, 60, 0);
     }
+    else{
+        al_draw_scaled_bitmap(image, 0, 0, 62, 76, x+20, y+7, 50, 60, 0);
+    }
+    al_destroy_bitmap(image);
 }
 
 void Sprite::dibujaGema(int x, int y, ALLEGRO_BITMAP *image) {
