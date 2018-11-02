@@ -17,7 +17,6 @@ void Player::setIJ(int i, int j, int matriz[10][15]) {
 
         this->s1.setIJ(i,j, matriz);
         this->s2.setIJ(i,j, matriz);
-        this->s4.setIJ(i,j, matriz);
         this->s3.setIJ(i,j, matriz);
         this->s4.setIJ(i,j, matriz);
         this->s5.setIJ(i,j, matriz);
@@ -36,12 +35,6 @@ void Player::dibujaJugador() {
 }
 
 Player::Player() {
-    this->s1;
-    this->s2;
-    this->s3;
-    this->s4;
-    this->s5;
-    this->s6;
 }
 
 

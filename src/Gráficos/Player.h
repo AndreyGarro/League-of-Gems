@@ -13,19 +13,18 @@ class Player {
 private:
     int vida;
     int i,j;
-    Soldier s1 = Soldier(96,500);
-    Soldier s2 = Soldier(2*48, 600);
-    Soldier s3 = Soldier(3*48, 600);
-    Soldier s4 = Soldier(4*48, 600);
-    Soldier s5 = Soldier(4*48, 600);
-    Soldier s6 = Soldier(48, 600);
+    Soldier s1 = Soldier(0,560);
+    Soldier s2 = Soldier(90,560);
+    Soldier s3 = Soldier(180,560);
+    Soldier s4 = Soldier(0,620);
+    Soldier s5 = Soldier(90,620);
+    Soldier s6 = Soldier(180,620);
+
 
 public:
     Player();
     void setIJ(int i, int j, int matriz[10][15]);
     void dibujaJugador();
-
-private:
 
 };
 
