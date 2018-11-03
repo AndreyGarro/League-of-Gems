@@ -108,7 +108,7 @@ Pila<Pair> AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pai
 
     while (!openList.isEmpty()){
 
-        pPair p = openList.getData(0);
+        pPair p = *openList.getData(0);
 
         openList.deleteNode(0);
 

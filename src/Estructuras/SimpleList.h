@@ -9,7 +9,6 @@ template<class T>
 struct nodoS{
     T data;
     nodoS *next = nullptr;
-    nodoS *prev = nullptr;
 
     nodoS(T data) {
         this->data = data;
@@ -19,7 +18,7 @@ struct nodoS{
 template <class T>
 class SimpleList{
 
-    int length;
+    int length = 0;
     nodoS<T> *primero;
 
 public :
@@ -39,17 +38,16 @@ public :
                 temp = temp->next;
             }
             temp->next = nuevo;
-            nuevo->prev = temp;
         }
         this->length ++;
     }
 
-    T getData(int pos){
+    T* getData(int pos){
         nodoS<T> *temp = primero;
         for(int i = 0; i < pos; i++){
             temp = temp->next;
         }
-        return temp->data;
+        return &temp->data;
     }
 
     void setData(int pos, T newData) {

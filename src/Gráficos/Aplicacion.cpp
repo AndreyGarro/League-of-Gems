@@ -73,10 +73,10 @@ int Application::mainLoop(){
             Sprite::dibujaObstaculo(Application::matriz);
             j1.dibujaJugador();
             e1.dibujaEnemigo();
+            e1.atacar(matriz);
             al_flip_display();
-
-            cout <<endl;
-            imprimirMatriz();
+//            cout <<endl;
+//            imprimirMatriz();
         }
     }
 }

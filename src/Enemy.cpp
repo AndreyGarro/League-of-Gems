@@ -21,6 +21,10 @@ ALLEGRO_BITMAP *Enemy::getEnemy() const {
     return enemy;
 }
 
+void Enemy::setEnemy(ALLEGRO_BITMAP *enemy) {
+    Enemy::enemy = enemy;
+}
+
 //void Enemy::atacar() {
 //
 //}

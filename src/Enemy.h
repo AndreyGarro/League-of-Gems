@@ -12,12 +12,16 @@
 class Enemy {
 
 private:
-    ALLEGRO_BITMAP *enemy;
+    ALLEGRO_BITMAP *enemy = al_load_bitmap("../img/enemy.png");
     int posX;
     int posY;
     int vida;
+
 public:
     int getPosX() const;
+
+    void setEnemy(ALLEGRO_BITMAP *enemy);
+
     int getPosY() const;
 
     ALLEGRO_BITMAP *getEnemy() const;
