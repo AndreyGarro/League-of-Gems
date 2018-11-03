@@ -25,6 +25,11 @@ void Enemy::setEnemy(ALLEGRO_BITMAP *enemy) {
     Enemy::enemy = enemy;
 }
 
+pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
+    int posIX = this->getPosX();
+    int posIY = this->getPosY();
+}
+
 //void Enemy::atacar() {
 //
 //}

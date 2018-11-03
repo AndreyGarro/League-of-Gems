@@ -34,7 +34,7 @@ private:
 public:
     Enemy(){};
     Enemy(int x, int y);
-//    void atacar(int matriz[][]);
+    pair<int, int> revisaAtaque(int matriz[10][15]);
 
 };
 
