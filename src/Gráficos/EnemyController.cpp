@@ -2,6 +2,7 @@
 // Created by andrew on 01/11/18.
 //
 
+#include <iostream>
 #include "EnemyController.h"
 
 EnemyController::EnemyController() {
@@ -25,10 +26,20 @@ EnemyController::EnemyController() {
 
 
 void EnemyController::dibujaEnemigo() {
-    for(int i = 0; i < 8; i++){
-        Sprite::dibujaPersonaje(listaEnemigos.getData(i).getPosX(), listaEnemigos.getData(i).getPosY(),
-                al_load_bitmap("../img/enemy.png"), 2);
+    for(int i = 0; i < listaEnemigos.getLength(); i++){
+        Sprite::dibujaPersonaje(listaEnemigos.getData(i)->getPosX(), listaEnemigos.getData(i)->getPosY(),
+                listaEnemigos.getData(i)->getEnemy(), 2);
     }
     Sprite::dibujaGema(13*90, 0, al_load_bitmap("../img/gem.png"));
+}
+
+void EnemyController::atacar(int matriz[10][15]) {
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            if(matriz[(listaEnemigos.getData(i)->getPosY()/70) + 1 -i][(listaEnemigos.getData(i)->getPosX()/90) - 1 + j] == 3){
+                listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/enemyAttackN01.png"));
+            }
+        }
+    }
 }
 

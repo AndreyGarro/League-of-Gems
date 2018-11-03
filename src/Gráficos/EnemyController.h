@@ -17,6 +17,7 @@ private:
 public:
     EnemyController();
     void dibujaEnemigo();
+    void atacar(int matriz[10][15]);
 };
 
 
