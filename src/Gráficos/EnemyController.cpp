@@ -36,8 +36,11 @@ void EnemyController::dibujaEnemigo() {
 void EnemyController::atacar(int matriz[10][15]) {
     for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
-            if(matriz[(listaEnemigos.getData(i)->getPosY()/70) + 1 -i][(listaEnemigos.getData(i)->getPosX()/90) - 1 + j] == 3){
-                listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/enemyAttackN01.png"));
+            if(matriz[(listaEnemigos.getData(i)->getPosY()/70) -i][(listaEnemigos.getData(i)->getPosX()/90) -j] == 3){
+                listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/attackEast.png"));
+            }
+            else{
+//                listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/enemy.png"));
             }
         }
     }
