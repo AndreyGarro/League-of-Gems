@@ -22,10 +22,11 @@ void Soldier::setIJ(int i, int j, int matriz[10][15]) {
 
     //calcular Ruta
     Pair posff = escogerPunto(matriz,i,j);
-//    Pair posff = make_pair(i,j);
+//   Pair posff = make_pair(i,j);
     AstarPathfinding AStar = AstarPathfinding();
     ruta2 = AStar.busquedaAStar(matriz, make_pair(yd/70, xd/90), posff);
     Application::matriz[posff.first][posff.second] = 4;
+
 
 
 }
@@ -37,6 +38,8 @@ void Soldier::seguirRuta(){
             yd = coorTemp.first * 70;
             this->llegue = false;
         }
+    }else{
+        flagAttack = true;
     }
 }
 
@@ -68,7 +71,7 @@ Pair Soldier::escogerPunto(int matriz[10][15], int id, int jd) {
                         cout<<"4"<< endl;
                         jd = abs(jd - (j + 1));
                     }
-                    if (matriz[id + i][jd + j] == 1) {
+                    if (matriz[abs(id + i)][abs(jd + j)] == 1) {
                         return make_pair(id + i, jd + j);
                     }
                 }
@@ -81,11 +84,15 @@ Pair Soldier::escogerPunto(int matriz[10][15], int id, int jd) {
 
 void Soldier::dibujarSoldado() {
     seguirRuta();
+
+    ALLEGRO_BITMAP *image;
+    image = al_load_bitmap("../img/soldier.png");
+
     if(tempX == xd && tempY == yd){
         this->llegue = true;
-        ALLEGRO_BITMAP *image = al_load_bitmap("../img/soldier.png");
-        Sprite::dibujaPersonaje(tempX, tempY, image, 3);
-//        Application::matriz[yd/70][xd/90] = 3;
+        if(atacar(yd/70, xd/90, Application::matriz) && flagAttack) {
+            image = al_load_bitmap("../img/enemy.png");
+        }
     }
     else if(xd > tempX && yd > tempY){
         tempX += 5;
@@ -115,12 +122,23 @@ void Soldier::dibujarSoldado() {
     else if(yd < tempY){
         tempY -= 5;
     }
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/soldier.png");
     Sprite::dibujaPersonaje(tempX, tempY, image, 3);
     Application::matriz[yd/70][xd/90] = 3;
-
-
 }
+
+bool Soldier::atacar(int i, int j, int matriz[10][15]) {
+    i--; j--;
+    for (int k = 0; k < 3; ++k) {
+        for (int l = 0; l < 3; ++l) {
+            if(matriz[abs(i+k)][abs(j+l)] == 2){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+
 
 
 

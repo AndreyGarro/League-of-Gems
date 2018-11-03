@@ -14,29 +14,40 @@
 #include "../Estructuras/Cola.h"
 
 struct coordenada {
-    int x = 0;
-    int y = 0;
+    int i = 0;
+    int j = 0;
+    bool operator ==(coordenada a){
+        if (this->i == a.i) {
+            if (this->j == a.j) {
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
+    }
 };
 
 using namespace std;
+
 
 class LineaVista {
 private:
     coordenada destino;
     coordenada origen;
 
-    Cola<pair<int, int>> *ruta = new Cola<pair<int, int >>;
+
 
 public:
-    Cola<pair<int, int >> lineaVista(int x, int y, int xd, int yd, int matix[15][27]);
+    Cola<pair<int, int >> lineaVista(int i, int j, int id, int jd, int matix[10][15]);
 
 private:
 
-    void rodearObstaculo(coordenada *origen, coordenada destino, int matrix[15][27]);
-    void buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[15][27]);
-    void buscarRuta(coordenada destino, coordenada origen, int matrix[15][27]);
+    void rodearObstaculo(coordenada *origen, coordenada destino, int matrix[10][15], Cola<pair<int, int>> *ruta);
+    void buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[10][15], Cola<pair<int, int>> *ruta);
+    void buscarRuta(coordenada destino, coordenada origen, int matrix[10][15], Cola<pair<int, int>> *ruta);
 
 };
-bool operator==(coordenada a, coordenada b);
+
 
 #endif //LEAGUEOFGEMS_LINEAVISTA_H

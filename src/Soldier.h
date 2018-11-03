@@ -17,7 +17,7 @@ class Soldier {
 private:
     int vida = 7;
     int xd, yd, tempX, tempY;
-    bool llegue = false;
+    bool llegue = false, flagAttack = false;
 
     Cola<Pair> ruta = Cola<Pair>();
     Pila<Pair> ruta2 = Pila<Pair>();
@@ -29,5 +29,6 @@ public:
     void dibujarSoldado();
     void seguirRuta();
     Pair escogerPunto(int matriz[10][15], int xd, int yd);
+    bool atacar(int i , int j, int matriz [10][15]);
 };
 #endif //LEAGUEOFGEMS_SOLDIER_H
