@@ -6,22 +6,22 @@
 #include "EnemyController.h"
 
 EnemyController::EnemyController() {
-    auto e1 = new Enemy(10*90, 0*70);
-    auto e2 = new Enemy(12*90, 0*70);
-    auto e3 = new Enemy(10*90, 2*70);
-    auto e4 = new Enemy(12*90, 2*70);
-    auto e5 = new Enemy(14*90, 2*70);
-    auto e6 = new Enemy(10*90, 4*70);
-    auto e7 = new Enemy(12*90, 4*70);
-    auto e8 = new Enemy(14*90, 4*70);
-    listaEnemigos.add(*e1);
-    listaEnemigos.add(*e2);
-    listaEnemigos.add(*e3);
-    listaEnemigos.add(*e4);
-    listaEnemigos.add(*e5);
-    listaEnemigos.add(*e6);
-    listaEnemigos.add(*e7);
-    listaEnemigos.add(*e8);
+    auto e1 = Enemy(10*90, 0*70);
+    auto e2 = Enemy(12*90, 0*70);
+    auto e3 = Enemy(10*90, 2*70);
+    auto e4 = Enemy(12*90, 2*70);
+    auto e5 = Enemy(14*90, 2*70);
+    auto e6 = Enemy(10*90, 4*70);
+    auto e7 = Enemy(12*90, 4*70);
+    auto e8 = Enemy(14*90, 4*70);
+    listaEnemigos.add(e1);
+    listaEnemigos.add(e2);
+    listaEnemigos.add(e3);
+    listaEnemigos.add(e4);
+    listaEnemigos.add(e5);
+    listaEnemigos.add(e6);
+    listaEnemigos.add(e7);
+    listaEnemigos.add(e8);
 }
 
 
@@ -33,16 +33,22 @@ void EnemyController::dibujaEnemigo() {
     Sprite::dibujaGema(13*90, 0, al_load_bitmap("../img/gem.png"));
 }
 
-void EnemyController::atacar(int matriz[10][15]) {
-    for(int i = 0; i < 3; i++){
-        for(int j = 0; j < 3; j++){
-            if(matriz[(listaEnemigos.getData(i)->getPosY()/70) -i][(listaEnemigos.getData(i)->getPosX()/90) -j] == 3){
-                listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/attackEast.png"));
-            }
-            else{
-//                listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/enemy.png"));
-            }
+SimpleList<pair<int, pair<int, int>>> EnemyController::atacar(int matriz[10][15]) {
+
+    auto listaAtacados = SimpleList<pair<int, pair<int, int>>>();
+    for(int i = 0; i < listaEnemigos.getLength(); i++){
+        pair <int, int> par = listaEnemigos.getData(i)->revisaAtaque(matriz);
+        if(par.first != -1) {
+            listaAtacados.add(make_pair(1, par));
         }
+        if(listaEnemigos.getData(i)->atacando){
+            listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/attackEast.png"));
+        }
+        else{
+            listaEnemigos.getData(i)->setEnemy(al_load_bitmap("../img/enemy.png"));
+        }
+
     }
+    return listaAtacados;
 }
 
