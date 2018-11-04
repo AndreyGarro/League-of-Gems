@@ -38,7 +38,7 @@ SimpleList<pair<int, pair<int, int>>> EnemyController::atacar(int matriz[10][15]
     auto listaAtacados = SimpleList<pair<int, pair<int, int>>>();
     for(int i = 0; i < listaEnemigos.getLength(); i++){
         pair <int, int> par = listaEnemigos.getData(i)->revisaAtaque(matriz);
-        if(par.first != -1) {
+        if(par.first != -1 && par.second != -1) {
             listaAtacados.add(make_pair(1, par));
         }
         if(listaEnemigos.getData(i)->atacando){

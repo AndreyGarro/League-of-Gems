@@ -29,9 +29,8 @@ void Sprite::dibujaPersonaje(int x, int y, ALLEGRO_BITMAP *image, int flag) {
     }
     else{
         al_draw_scaled_bitmap(image, 0, 0, 62, 76, x+20, y+7, 50, 60, 0);
-        al_destroy_bitmap(image);
     }
-
+    al_destroy_bitmap(image);
 }
 
 void Sprite::dibujaGema(int x, int y, ALLEGRO_BITMAP *image) {
