@@ -30,7 +30,9 @@ struct coordenada {
 
 using namespace std;
 
-
+/**
+ * Llegar de un punto a otro seguiendo una linea recta
+ */
 class LineaVista {
 private:
     coordenada destino;

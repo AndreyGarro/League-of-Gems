@@ -7,29 +7,41 @@
 #include "Gráficos/Sprite.h"
 #include "../src/LineaVista/LineaVista.h"
 #include "A*/AStarPathFinding.h"
-
+/**
+ * Construtuor con parametros
+ * @param x posicion horizontal donde se dibujara el soldado la primera vez
+ * @param y posicion vertical donde se dibujara el soldado la primera vez
+ */
 Soldier::Soldier(int x , int y) {
-    ALLEGRO_BITMAP *image = al_load_bitmap("../img/enemy.png");
+    image = al_load_bitmap("../img/soldier.png");
     this->tempX = x;
     this->tempY = y;
     xd = tempX;
     yd = tempY;
     Sprite::dibujaPersonaje(192, 644, image, 3);
 }
+/**
+ * Constructor
+ */
 Soldier::Soldier() {}
 
+/**
+ * Insertar posiciones a cada soldado
+ * @param i
+ * @param j
+ * @param matriz
+ */
 void Soldier::setIJ(int i, int j, int matriz[10][15]) {
 
     //calcular Ruta
     Pair posff = escogerPunto(matriz,i,j);
-//   Pair posff = make_pair(i,j);
     AstarPathfinding AStar = AstarPathfinding();
     ruta2 = AStar.busquedaAStar(matriz, make_pair(yd/70, xd/90), posff);
     Application::matriz[posff.first][posff.second] = 4;
-
-
-
 }
+/**
+ * Toma la ruta punto a punto dada por el algoritmo de busquedad
+ */
 void Soldier::seguirRuta(){
     if(ruta2.getLenght() > 0) {
         if (this->llegue) {
@@ -38,11 +50,16 @@ void Soldier::seguirRuta(){
             yd = coorTemp.first * 70;
             this->llegue = false;
         }
-    }else{
-        flagAttack = true;
     }
 }
 
+/**
+ * Escoge un punto libre los mas cercano al punto seleccionado por el jugador
+ * @param matriz
+ * @param id  Punto de destino
+ * @param jd Punto de destino
+ * @return Punto escogido
+ */
 Pair Soldier::escogerPunto(int matriz[10][15], int id, int jd) {
     if(matriz[id][jd] == 1){
         return make_pair(id,jd);
@@ -81,16 +98,16 @@ Pair Soldier::escogerPunto(int matriz[10][15], int id, int jd) {
         a++,b++;
     }
 }
-
+/**
+ * Realiza el efecto caminar de punto a punto dados por el algoritmo de busqueda
+ */
 void Soldier::dibujarSoldado() {
     seguirRuta();
-
-    ALLEGRO_BITMAP *image;
     image = al_load_bitmap("../img/soldier.png");
 
     if(tempX == xd && tempY == yd){
         this->llegue = true;
-        if(atacar(yd/70, xd/90, Application::matriz) && flagAttack) {
+        if(flagAttack){
             image = al_load_bitmap("../img/enemy.png");
         }
     }
@@ -125,17 +142,29 @@ void Soldier::dibujarSoldado() {
     Sprite::dibujaPersonaje(tempX, tempY, image, 3);
     Application::matriz[yd/70][xd/90] = 3;
 }
-
-bool Soldier::atacar(int i, int j, int matriz[10][15]) {
-    i--; j--;
-    for (int k = 0; k < 3; ++k) {
-        for (int l = 0; l < 3; ++l) {
-            if(matriz[abs(i+k)][abs(j+l)] == 2){
-                return true;
+/**
+ * Revida si es posible atacar a un enemgio dentro del rango
+ * @param matriz
+ * @return Posicion a la que ataco
+ */
+pair<int, int> Soldier::atacar(int matriz[10][15]) {
+    if (this->freAtaque > 20 && this->freAtaque > 10){
+        this->freAtaque = 0;
+    }
+    this->freAtaque++;
+    if(this->freAtaque < 10) {
+        int i = (yd / 70) - 1, j = (xd / 90) - 1;
+        for (int k = 0; k < 3; ++k) {
+            for (int l = 0; l < 3; ++l) {
+                if (matriz[abs(i + k)][abs(j + l)] == 2) {
+                    flagAttack = true;
+                    return make_pair(abs(i + k), abs(j + l));
+                }
             }
         }
     }
-    return false;
+    flagAttack = false;
+    return make_pair(-1,-1);
 }
 
 

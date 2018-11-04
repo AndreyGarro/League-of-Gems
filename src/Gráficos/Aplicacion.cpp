@@ -1,7 +1,7 @@
 
 #include "Aplicacion.h"
 #include "Sprite.h"
-#include "Player.h"
+#include "SoldierController.h"
 #include "../Gráficos/EnemyController.h"
 #include <iostream>
 #include <allegro5/allegro_primitives.h>
@@ -31,7 +31,7 @@ void Application::initApp() {
 
 int Application::mainLoop(){
     //
-    Player j1 = Player();
+    SoldierController j1 = SoldierController();
     EnemyController e1 = EnemyController();
 
     if (iFPS == 0) {
@@ -75,9 +75,10 @@ int Application::mainLoop(){
             e1.dibujaEnemigo();
             SimpleList<pair<int, pair<int, int>>> lista;
             lista = e1.atacar(matriz);
+            j1.atacar(matriz);
             al_flip_display();
-//            cout <<endl;
-//            imprimirMatriz();
+            cout <<endl;
+            imprimirMatriz();
         }
     }
 }
@@ -86,7 +87,7 @@ void Application::initMatriz() {
     srand(static_cast<unsigned int>(time(0)));
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 15; ++j) {
-            if(static_cast<int>(random() % 5) == 0){
+            if(static_cast<int>(random() % 4) == 0){
                 Application::matriz[i][j] = 0;
             }
             else{
@@ -96,7 +97,7 @@ void Application::initMatriz() {
                 Application::matriz[i][j] = 1;
             }
             if(i < 5   && j> 9){
-                Application::matriz[i][j] = 1  ;
+                Application::matriz[i][j] = 1;
             }
         }
     }

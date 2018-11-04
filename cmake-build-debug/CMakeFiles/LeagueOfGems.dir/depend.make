@@ -26,7 +26,7 @@ CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Estructuras/S
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Aplicacion.cpp
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Aplicacion.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/EnemyController.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Player.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/SoldierController.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Gráficos/Sprite.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o: ../src/Soldier.h
 
@@ -37,12 +37,13 @@ CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Gráfico
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Gráficos/EnemyController.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o: ../src/Gráficos/Sprite.h
 
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/A*/AStarPathFinding.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Estructuras/Cola.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Estructuras/Pila.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Gráficos/Player.cpp
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Gráficos/Player.h
-CMakeFiles/LeagueOfGems.dir/src/Gráficos/Player.cpp.o: ../src/Soldier.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o: ../src/A*/AStarPathFinding.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o: ../src/Estructuras/Cola.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o: ../src/Estructuras/Pila.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o: ../src/Estructuras/SimpleList.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o: ../src/Gráficos/SoldierController.cpp
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o: ../src/Gráficos/SoldierController.h
+CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o: ../src/Soldier.h
 
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o: ../src/Gráficos/Aplicacion.h
 CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o: ../src/Gráficos/Sprite.cpp

@@ -25,7 +25,13 @@ Cola<pair<int, int>> LineaVista::lineaVista(int i, int j, int id, int jd, int ma
 
     return *ruta;
 };
-
+/**
+ * Bordea un obstaculo
+ * @param ruta1 Punto donde se encuentra el soldado
+ * @param destino1
+ * @param matrix
+ * @param ruta Cola donde almacena la ruta para bordear el obstaculo
+ */
 void LineaVista::rodearObstaculo(coordenada *ruta1, coordenada destino1, int matrix[10][15], Cola<pair<int, int>> *ruta) {
     if (ruta1->i > destino1.i && matrix[ruta1->i - 1][ruta1->j] == 1) {
         ruta1->i--;
@@ -72,7 +78,13 @@ void LineaVista::rodearObstaculo(coordenada *ruta1, coordenada destino1, int mat
         ruta->push(a);
     }
 };
-
+/**
+ * Busca una dirreccion en la que caminar la cual lleve al punto de destino
+ * @param ruta1  ultima posicon de la ruta que lleva formada
+ * @param destino1
+ * @param matrix
+ * @param ruta Cola donde se almacena el punto encontra
+ */
 void LineaVista::buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[10][15], Cola<pair<int, int>> *ruta) {
     if (ruta1->i > destino1.i && matrix[ruta1->i - 1][ruta1->j] == 1) {
         ruta1->i--;
@@ -121,6 +133,13 @@ void LineaVista::buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[1
         rodearObstaculo(ruta1, destino1, matrix, ruta);
     }
 };
+/**
+ * Busca un punto para ir del punto de inicio hasta el destino
+ * @param destino
+ * @param origen
+ * @param matrix
+ * @param ruta Cola donde se devuelve la ruta
+ */
 void LineaVista::buscarRuta(coordenada destino, coordenada origen, int matrix[10][15], Cola<pair<int, int>> *ruta) {
     coordenada *XYtemp = new coordenada;
     *XYtemp = origen;

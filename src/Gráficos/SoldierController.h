@@ -7,24 +7,22 @@
 
 #include <allegro5/allegro_primitives.h>
 #include "../Soldier.h"
+#include "../Estructuras/SimpleList.h"
 
-
-class Player {
+/**
+ * Clase jugardor controla todos los soldados que se muestran
+ */
+class SoldierController {
 private:
     int vida;
     int i,j;
-    Soldier s1 = Soldier(0,560);
-    Soldier s2 = Soldier(90,560);
-    Soldier s3 = Soldier(180,560);
-    Soldier s4 = Soldier(0,620);
-    Soldier s5 = Soldier(90,620);
-    Soldier s6 = Soldier(180,620);
-
+    SimpleList<Soldier> listSoldier =  SimpleList<Soldier>();
 
 public:
-    Player();
+    SoldierController();
     void setIJ(int i, int j, int matriz[10][15]);
     void dibujaJugador();
+    SimpleList<pair<int, pair<int ,int >>> atacar (int matriz [10][15]);
 
 };
 
