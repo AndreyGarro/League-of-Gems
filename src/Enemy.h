@@ -15,6 +15,7 @@ private:
     ALLEGRO_BITMAP *enemy = al_load_bitmap("../img/enemy.png");
     int posX;
     int posY;
+    int cont = 0;
     int vida = 7;
     int defensa = 5;
     int ataque = 5;
