@@ -13,11 +13,13 @@ class EnemyController {
 
 private:
     SimpleList<Enemy> listaEnemigos;
+    int contAtaque = 0;
 
 public:
     EnemyController();
     void dibujaEnemigo();
-    void atacar(int matriz[10][15]);
+    SimpleList<pair<int, pair<int, int>>> atacar(int matriz[10][15]);
+
 };
 
 

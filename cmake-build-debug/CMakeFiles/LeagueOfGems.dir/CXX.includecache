@@ -6,43 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy.h
-Gráficos/Sprite.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Sprite.h
-Estructuras/SimpleList.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
-
-/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
-
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Aplicacion.h
-string
+/home/andrew/CLionProjects/LeagueOfGems1/src/A*/AStarPathFinding.h
+bits/stdc++.h
 -
-allegro5/allegro5.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/allegro5/allegro5.h
+../Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
 
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/EnemyController.cpp
-iostream
--
-EnemyController.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/EnemyController.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Cola.h
 
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/EnemyController.h
-../Estructuras/SimpleList.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
-../Enemy.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
 
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Sprite.h
-string
--
-allegro5/haptic.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Player.cpp
+allegro5/bitmap.h
 -
 allegro5/allegro.h
 -
+Player.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Player.h
+string
+-
+allegro5/allegro_image.h
+-
+
+/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Player.h
 allegro5/allegro_primitives.h
 -
-Sprite.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Sprite.h
-Aplicacion.h
-/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Aplicacion.h
+../Soldier.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier.h
+
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier.h
+../src/Estructuras/Cola.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Cola.h
+Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
+A*/AStarPathFinding.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/A*/AStarPathFinding.h
+allegro5/bitmap.h
+-
+allegro5/allegro.h
+-
+utility
+-
 

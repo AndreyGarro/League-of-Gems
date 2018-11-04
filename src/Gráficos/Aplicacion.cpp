@@ -73,7 +73,8 @@ int Application::mainLoop(){
             Sprite::dibujaObstaculo(Application::matriz);
             j1.dibujaJugador();
             e1.dibujaEnemigo();
-            e1.atacar(matriz);
+            SimpleList<pair<int, pair<int, int>>> lista;
+            lista = e1.atacar(matriz);
             al_flip_display();
 //            cout <<endl;
 //            imprimirMatriz();

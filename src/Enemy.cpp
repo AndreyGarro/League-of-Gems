@@ -2,6 +2,7 @@
 // Created by andrew on 31/10/18.
 //
 
+#include <iostream>
 #include "Enemy.h"
 
 Enemy::Enemy(int x, int y) {
@@ -26,8 +27,18 @@ void Enemy::setEnemy(ALLEGRO_BITMAP *enemy) {
 }
 
 pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
-    int posIX = this->getPosX();
-    int posIY = this->getPosY();
+    int posIX = (this->getPosX()/90) - 1;
+    int posIY = (this->getPosY()/70) - 1;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            if(matriz[abs(posIY + i)][abs(posIX + j)] == 3){
+                this->atacando = true;
+                return make_pair(abs(posIY+i), abs(posIX+j));
+            }
+        }
+    }
+    this->atacando = false;
+    return make_pair(-1, -1);
 }
 
 //void Enemy::atacar() {
