@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
+CMAKE_SOURCE_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,114 @@ src/Algoritmos/Dijkstra.s: src/Algoritmos/Dijkstra.cpp.s
 src/Algoritmos/Dijkstra.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.s
 .PHONY : src/Algoritmos/Dijkstra.cpp.s
+
+src/Algoritmos/Graph.o: src/Algoritmos/Graph.cpp.o
+
+.PHONY : src/Algoritmos/Graph.o
+
+# target to build an object file
+src/Algoritmos/Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o
+.PHONY : src/Algoritmos/Graph.cpp.o
+
+src/Algoritmos/Graph.i: src/Algoritmos/Graph.cpp.i
+
+.PHONY : src/Algoritmos/Graph.i
+
+# target to preprocess a source file
+src/Algoritmos/Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.i
+.PHONY : src/Algoritmos/Graph.cpp.i
+
+src/Algoritmos/Graph.s: src/Algoritmos/Graph.cpp.s
+
+.PHONY : src/Algoritmos/Graph.s
+
+# target to generate assembly for a file
+src/Algoritmos/Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.s
+.PHONY : src/Algoritmos/Graph.cpp.s
+
+src/Algoritmos/GraphMaker.o: src/Algoritmos/GraphMaker.cpp.o
+
+.PHONY : src/Algoritmos/GraphMaker.o
+
+# target to build an object file
+src/Algoritmos/GraphMaker.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o
+.PHONY : src/Algoritmos/GraphMaker.cpp.o
+
+src/Algoritmos/GraphMaker.i: src/Algoritmos/GraphMaker.cpp.i
+
+.PHONY : src/Algoritmos/GraphMaker.i
+
+# target to preprocess a source file
+src/Algoritmos/GraphMaker.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.i
+.PHONY : src/Algoritmos/GraphMaker.cpp.i
+
+src/Algoritmos/GraphMaker.s: src/Algoritmos/GraphMaker.cpp.s
+
+.PHONY : src/Algoritmos/GraphMaker.s
+
+# target to generate assembly for a file
+src/Algoritmos/GraphMaker.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.s
+.PHONY : src/Algoritmos/GraphMaker.cpp.s
+
+src/Algoritmos/Kruskal.o: src/Algoritmos/Kruskal.cpp.o
+
+.PHONY : src/Algoritmos/Kruskal.o
+
+# target to build an object file
+src/Algoritmos/Kruskal.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o
+.PHONY : src/Algoritmos/Kruskal.cpp.o
+
+src/Algoritmos/Kruskal.i: src/Algoritmos/Kruskal.cpp.i
+
+.PHONY : src/Algoritmos/Kruskal.i
+
+# target to preprocess a source file
+src/Algoritmos/Kruskal.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.i
+.PHONY : src/Algoritmos/Kruskal.cpp.i
+
+src/Algoritmos/Kruskal.s: src/Algoritmos/Kruskal.cpp.s
+
+.PHONY : src/Algoritmos/Kruskal.s
+
+# target to generate assembly for a file
+src/Algoritmos/Kruskal.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.s
+.PHONY : src/Algoritmos/Kruskal.cpp.s
+
+src/Algoritmos/Prim.o: src/Algoritmos/Prim.cpp.o
+
+.PHONY : src/Algoritmos/Prim.o
+
+# target to build an object file
+src/Algoritmos/Prim.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o
+.PHONY : src/Algoritmos/Prim.cpp.o
+
+src/Algoritmos/Prim.i: src/Algoritmos/Prim.cpp.i
+
+.PHONY : src/Algoritmos/Prim.i
+
+# target to preprocess a source file
+src/Algoritmos/Prim.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.i
+.PHONY : src/Algoritmos/Prim.cpp.i
+
+src/Algoritmos/Prim.s: src/Algoritmos/Prim.cpp.s
+
+.PHONY : src/Algoritmos/Prim.s
+
+# target to generate assembly for a file
+src/Algoritmos/Prim.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.s
+.PHONY : src/Algoritmos/Prim.cpp.s
 
 src/Enemy.o: src/Enemy.cpp.o
 
@@ -411,6 +519,18 @@ help:
 	@echo "... src/Algoritmos/Dijkstra.o"
 	@echo "... src/Algoritmos/Dijkstra.i"
 	@echo "... src/Algoritmos/Dijkstra.s"
+	@echo "... src/Algoritmos/Graph.o"
+	@echo "... src/Algoritmos/Graph.i"
+	@echo "... src/Algoritmos/Graph.s"
+	@echo "... src/Algoritmos/GraphMaker.o"
+	@echo "... src/Algoritmos/GraphMaker.i"
+	@echo "... src/Algoritmos/GraphMaker.s"
+	@echo "... src/Algoritmos/Kruskal.o"
+	@echo "... src/Algoritmos/Kruskal.i"
+	@echo "... src/Algoritmos/Kruskal.s"
+	@echo "... src/Algoritmos/Prim.o"
+	@echo "... src/Algoritmos/Prim.i"
+	@echo "... src/Algoritmos/Prim.s"
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"

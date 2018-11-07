@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/christian/Escritorio/LOG/allegro/5.0.11/include 
+CXX_INCLUDES = -I"/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/allegro/5.0.11/include" 
 
