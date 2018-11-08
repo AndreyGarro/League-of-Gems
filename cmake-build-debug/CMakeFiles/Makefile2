@@ -59,10 +59,17 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems1
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug
+=======
 CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 
 #=============================================================================
 # Target rules for target CMakeFiles/LeagueOfGems.dir
@@ -71,7 +78,11 @@ CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
 CMakeFiles/LeagueOfGems.dir/all:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/depend
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/build
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target LeagueOfGems"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target LeagueOfGems"
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 .PHONY : CMakeFiles/LeagueOfGems.dir/all
 
 # Include target in all.
@@ -81,9 +92,15 @@ all: CMakeFiles/LeagueOfGems.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LeagueOfGems.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LeagueOfGems.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles 0
+=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LeagueOfGems.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 .PHONY : CMakeFiles/LeagueOfGems.dir/rule
 
 # Convenience name for target.

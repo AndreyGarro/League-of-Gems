@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+/snap/clion/44/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" /home/andrew/CLionProjects/LeagueOfGems1
+=======
 /snap/clion/44/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/christian/Escritorio/LOG
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 -- The C compiler identification is GNU 7.3.0
 -- The CXX compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +19,8 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
+<<<<<<< HEAD
+-- Build files have been written to: /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug
+=======
 -- Build files have been written to: /home/christian/Escritorio/LOG/cmake-build-debug
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2

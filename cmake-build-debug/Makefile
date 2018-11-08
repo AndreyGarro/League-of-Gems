@@ -48,10 +48,17 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
+CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems1
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug
+=======
 CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +87,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles 0
+=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 .PHONY : all
 
 # The main clean target
