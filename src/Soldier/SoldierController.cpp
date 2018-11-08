@@ -56,7 +56,34 @@ SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][
             atacados.add(make_pair(1, temp));
         }
     }
+//    for (int l = 0; l < atacados.getLength(); ++l) {
+//        cout << atacados.getData(l)->second.first<<" "<< atacados.getData(l)->second.second<<endl;
+//    }
     return atacados;
 }
+
+void SoldierController::disminuirVida(SimpleList<pair<int, pair<int, int>>> listaAtacados) {
+    if(!listaAtacados.isEmpty()){
+        for (int k = 0; k < listaAtacados.getLength(); ++k) {
+            int numS = buscarSoldado(listaAtacados.getData(k)->second.first, listaAtacados.getData(k)->second.second);
+            if(numS != -1){
+                listSoldier.getData(numS)->disminuirVida(listaAtacados.getData(k)->first);
+                if(listSoldier.getData(numS)->getVida() == 0){
+                    listSoldier.deleteNode(numS);
+                }
+            }
+        }
+    }
+
+}
+int SoldierController::buscarSoldado(int i, int j) {
+    for (int k = 0; k < listSoldier.getLength(); ++k) {
+        if(listSoldier.getData(k)->getYd()/70 == i && listSoldier.getData(k)->getXd()/90 == j){
+            return k;
+        }
+    }
+    return -1;
+}
+
 
 

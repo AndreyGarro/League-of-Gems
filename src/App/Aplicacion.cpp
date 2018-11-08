@@ -78,6 +78,7 @@ int Application::mainLoop(){
             listaEnemigos = e1.atacar(matriz);
             listaSoldados = j1.atacar(matriz);
             e1.disminuirVida(listaSoldados);
+            j1.disminuirVida(listaEnemigos);
             al_flip_display();
 //            cout<<endl;
 //            imprimirMatriz();

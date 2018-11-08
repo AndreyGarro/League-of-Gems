@@ -28,6 +28,9 @@ private:
     Pila<Pair> ruta2 = Pila<Pair>();
 
 public:
+    int getVida() const;
+    int getXd() const;
+    int getYd() const;
     Soldier(int x, int y);
     Soldier();
     void setIJ(int i, int j, int matriz[10][15]);
@@ -35,5 +38,6 @@ public:
     void seguirRuta();
     Pair escogerPunto(int matriz[10][15], int xd, int yd);
     pair<int, int > atacar(int matriz [10][15]);
+    void disminuirVida(int vida);
 };
 #endif //LEAGUEOFGEMS_SOLDIER_H
