@@ -5,10 +5,17 @@
 #include <iostream>
 #include "Enemy.h"
 
+/**
+ * Constructor
+ * @param x posicion en X donde se va a colocar
+ * @param y posicion en Y donde se va a colocar
+ */
 Enemy::Enemy(int x, int y) {
     this->posX = x;
     this->posY = y;
 }
+
+//_________________________GETTERS AND SETTERS__________________________________
 
 int Enemy::getPosX() const {
     return posX;
@@ -26,6 +33,31 @@ void Enemy::setEnemy(ALLEGRO_BITMAP *enemy) {
     Enemy::enemy = enemy;
 }
 
+int Enemy::getVida() const {
+    return vida;
+}
+
+void Enemy::setVida(int vida) {
+    Enemy::vida = vida;
+}
+
+void Enemy::setAtaque(int ataque) {
+    Enemy::ataque = ataque;
+}
+
+int Enemy::getAtaque() const {
+    return ataque;
+}
+
+
+//___________________FIN GETTERS AND SETTERS_________________________________
+
+/**
+ * Método complementario de la clase EnemyController para devolver
+ * la posición del soldado al cual se está atacando
+ * @param matriz matriz actual de posiciones
+ * @return
+ */
 pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
     if (this->cont > 30){
         this->cont = 0;
@@ -49,11 +81,4 @@ pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
     return make_pair(-1, -1);
 }
 
-int Enemy::getVida() const {
-    return vida;
-}
-
-void Enemy::setVida(int vida) {
-    Enemy::vida = vida;
-}
 

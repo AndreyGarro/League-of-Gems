@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/AStarPathFinding.h
 bits/stdc++.h
 -
 ../Estructuras/Pila.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
 
-/home/christian/Escritorio/LOG git/src/App/Aplicacion.cpp
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Aplicacion.cpp
 Aplicacion.h
-/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Aplicacion.h
 Sprite.h
-/home/christian/Escritorio/LOG git/src/App/Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Sprite.h
 ../Soldier/SoldierController.h
-/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/SoldierController.h
 ../Enemy/EnemyController.h
-/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/EnemyController.h
 iostream
 -
 allegro5/allegro_primitives.h
@@ -32,13 +32,13 @@ allegro5/allegro_image.h
 math.h
 -
 
-/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Aplicacion.h
 string
 -
 allegro5/allegro5.h
-/home/christian/Escritorio/LOG git/src/App/allegro5/allegro5.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/allegro5/allegro5.h
 
-/home/christian/Escritorio/LOG git/src/App/Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Sprite.h
 string
 -
 allegro5/haptic.h
@@ -48,69 +48,35 @@ allegro5/allegro.h
 allegro5/allegro_primitives.h
 -
 Sprite.h
-/home/christian/Escritorio/LOG git/src/App/Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Sprite.h
 Aplicacion.h
-/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Aplicacion.h
 
-/home/christian/Escritorio/LOG git/src/Enemy/Enemy.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/Enemy.h
 ../App/Sprite.h
-/home/christian/Escritorio/LOG git/src/App/Sprite.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/App/Sprite.h
 ../Estructuras/SimpleList.h
-/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
 
-/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.cpp
-iostream
--
-EnemyController.h
-/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
-
-/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/EnemyController.h
 ../Estructuras/SimpleList.h
-/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
 Enemy.h
-/home/christian/Escritorio/LOG git/src/Enemy/Enemy.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/Enemy.h
 
-/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Cola.h
 
-/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
 
-/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
 
-/home/christian/Escritorio/LOG git/src/LineaVista/LineaVista.h
-iostream
--
-math.h
--
-stdio.h
--
-limits.h
--
-stdbool.h
--
-string
--
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/Soldier.h
 ../Estructuras/Cola.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
-
-/home/christian/Escritorio/LOG git/src/Soldier/Soldier.cpp
-allegro5/allegro.h
--
-Soldier.h
-/home/christian/Escritorio/LOG git/src/Soldier/Soldier.h
-../App/Sprite.h
-/home/christian/Escritorio/LOG git/src/App/Sprite.h
-../LineaVista/LineaVista.h
-/home/christian/Escritorio/LOG git/src/LineaVista/LineaVista.h
-../Algoritmos/AStarPathFinding.h
-/home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
-
-/home/christian/Escritorio/LOG git/src/Soldier/Soldier.h
-../Estructuras/Cola.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Cola.h
 ../Estructuras/Pila.h
-/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
 ../Algoritmos/AStarPathFinding.h
-/home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/AStarPathFinding.h
 allegro5/bitmap.h
 -
 allegro5/allegro.h
@@ -118,23 +84,11 @@ allegro5/allegro.h
 utility
 -
 
-/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.cpp
-allegro5/bitmap.h
--
-allegro5/allegro.h
--
-SoldierController.h
-/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.h
-string
--
-allegro5/allegro_image.h
--
-
-/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/SoldierController.h
 allegro5/allegro_primitives.h
 -
 Soldier.h
-/home/christian/Escritorio/LOG git/src/Soldier/Soldier.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/Soldier.h
 ../Estructuras/SimpleList.h
-/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
 
