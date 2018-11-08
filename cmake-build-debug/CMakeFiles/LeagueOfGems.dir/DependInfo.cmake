@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/main.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/A*/AStarPathFinding.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Algoritmos/Dijkstra.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Algoritmos/Graph.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Algoritmos/GraphMaker.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Algoritmos/Kruskal.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Algoritmos/Prim.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Enemy.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Gráficos/Aplicacion.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Gráficos/EnemyController.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Gráficos/SoldierController.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Gráficos/Sprite.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/LineaVista/LineaVista.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
-  "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/src/Soldier.cpp" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/Git Proyecto/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/main.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/A*/AStarPathFinding.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Dijkstra.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Graph.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/GraphMaker.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Kruskal.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Prim.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Aplicacion.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/EnemyController.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/SoldierController.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Gráficos/Sprite.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/LineaVista/LineaVista.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier.cpp" "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
