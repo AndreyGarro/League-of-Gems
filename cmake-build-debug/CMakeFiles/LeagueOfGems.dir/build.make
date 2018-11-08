@@ -43,10 +43,17 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems1
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LeagueOfGems.dir/depend.make
@@ -59,6 +66,7 @@ include CMakeFiles/LeagueOfGems.dir/flags.make
 
 CMakeFiles/LeagueOfGems.dir/main.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
 CMakeFiles/LeagueOfGems.dir/main.cpp.o: ../main.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LeagueOfGems.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/main.cpp.o -c /home/andrew/CLionProjects/LeagueOfGems1/main.cpp
 
@@ -238,19 +246,200 @@ CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.i: cmake_force
 CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Prim.cpp -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LeagueOfGems.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/main.cpp.o -c /home/christian/Escritorio/LOG/main.cpp
+
+CMakeFiles/LeagueOfGems.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/main.cpp > CMakeFiles/LeagueOfGems.dir/main.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/main.cpp -o CMakeFiles/LeagueOfGems.dir/main.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o: ../src/App/Aplicacion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o -c /home/christian/Escritorio/LOG/src/App/Aplicacion.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/App/Aplicacion.cpp > CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/App/Aplicacion.cpp -o CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o: ../src/Algoritmos/AStarPathFinding.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o -c /home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.cpp > CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.cpp -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o: ../src/LineaVista/LineaVista.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o -c /home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp > CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp -o CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o: ../src/App/Sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o -c /home/christian/Escritorio/LOG/src/App/Sprite.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/App/Sprite.cpp > CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/App/Sprite.cpp -o CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o: ../src/Soldier/SoldierController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o -c /home/christian/Escritorio/LOG/src/Soldier/SoldierController.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Soldier/SoldierController.cpp > CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Soldier/SoldierController.cpp -o CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o: ../src/Soldier/Soldier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o -c /home/christian/Escritorio/LOG/src/Soldier/Soldier.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Soldier/Soldier.cpp > CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Soldier/Soldier.cpp -o CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o: ../src/Algoritmos/Dijkstra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o -c /home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.cpp > CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.cpp -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o: ../src/Enemy/Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o -c /home/christian/Escritorio/LOG/src/Enemy/Enemy.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Enemy/Enemy.cpp > CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Enemy/Enemy.cpp -o CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o: ../src/Enemy/EnemyController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o -c /home/christian/Escritorio/LOG/src/Enemy/EnemyController.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Enemy/EnemyController.cpp > CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Enemy/EnemyController.cpp -o CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o: ../src/Algoritmos/Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o -c /home/christian/Escritorio/LOG/src/Algoritmos/Graph.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Algoritmos/Graph.cpp > CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Algoritmos/Graph.cpp -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o: ../src/Algoritmos/GraphMaker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o -c /home/christian/Escritorio/LOG/src/Algoritmos/GraphMaker.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Algoritmos/GraphMaker.cpp > CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Algoritmos/GraphMaker.cpp -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o: ../src/Algoritmos/Kruskal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o -c /home/christian/Escritorio/LOG/src/Algoritmos/Kruskal.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Algoritmos/Kruskal.cpp > CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Algoritmos/Kruskal.cpp -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.s
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o: CMakeFiles/LeagueOfGems.dir/flags.make
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o: ../src/Algoritmos/Prim.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o -c /home/christian/Escritorio/LOG/src/Algoritmos/Prim.cpp
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christian/Escritorio/LOG/src/Algoritmos/Prim.cpp > CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.i
+
+CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christian/Escritorio/LOG/src/Algoritmos/Prim.cpp -o CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.s
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 
 # Object files for target LeagueOfGems
 LeagueOfGems_OBJECTS = \
 "CMakeFiles/LeagueOfGems.dir/main.cpp.o" \
-"CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o" \
-"CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o" \
+"CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o" \
+"CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o" \
 "CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o" \
-"CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o" \
-"CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o" \
-"CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o" \
+"CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o" \
+"CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o" \
+"CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o" \
 "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o" \
-"CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o" \
-"CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o" \
+"CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o" \
+"CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o" \
 "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o" \
 "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o" \
 "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o" \
@@ -260,22 +449,26 @@ LeagueOfGems_OBJECTS = \
 LeagueOfGems_EXTERNAL_OBJECTS =
 
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/main.cpp.o
-LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Gráficos/Aplicacion.cpp.o
-LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/A*/AStarPathFinding.cpp.o
+LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o
+LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o
-LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Gráficos/Sprite.cpp.o
-LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Gráficos/SoldierController.cpp.o
-LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Soldier.cpp.o
+LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o
+LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o
+LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o
-LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Enemy.cpp.o
-LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Gráficos/EnemyController.cpp.o
+LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o
+LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/build.make
 LeagueOfGems: CMakeFiles/LeagueOfGems.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable LeagueOfGems"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable LeagueOfGems"
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LeagueOfGems.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -288,6 +481,10 @@ CMakeFiles/LeagueOfGems.dir/clean:
 .PHONY : CMakeFiles/LeagueOfGems.dir/clean
 
 CMakeFiles/LeagueOfGems.dir/depend:
+<<<<<<< HEAD
 	cd /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andrew/CLionProjects/LeagueOfGems1 /home/andrew/CLionProjects/LeagueOfGems1 /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/christian/Escritorio/LOG/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/christian/Escritorio/LOG /home/christian/Escritorio/LOG /home/christian/Escritorio/LOG/cmake-build-debug /home/christian/Escritorio/LOG/cmake-build-debug /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 .PHONY : CMakeFiles/LeagueOfGems.dir/depend
 

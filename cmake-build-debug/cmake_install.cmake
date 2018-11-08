@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/andrew/CLionProjects/LeagueOfGems1
+=======
+# Install script for directory: /home/christian/Escritorio/LOG
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +49,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/home/christian/Escritorio/LOG/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

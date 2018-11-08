@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/christian/Escritorio/LOG/main.cpp
+cstdlib
+-
+string
+-
+allegro5/allegro_image.h
+-
+src/App/Aplicacion.h
+/home/christian/Escritorio/LOG/src/App/Aplicacion.h
+
+/home/christian/Escritorio/LOG/src/App/Aplicacion.h
+string
+-
+allegro5/allegro5.h
+/home/christian/Escritorio/LOG/src/App/allegro5/allegro5.h
+

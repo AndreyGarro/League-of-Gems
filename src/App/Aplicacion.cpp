@@ -1,8 +1,8 @@
 
 #include "Aplicacion.h"
 #include "Sprite.h"
-#include "SoldierController.h"
-#include "../Gráficos/EnemyController.h"
+#include "../Soldier/SoldierController.h"
+#include "../Enemy/EnemyController.h"
 #include <iostream>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_native_dialog.h>
@@ -73,12 +73,11 @@ int Application::mainLoop(){
             Sprite::dibujaObstaculo(Application::matriz);
             j1.dibujaJugador();
             e1.dibujaEnemigo();
-            SimpleList<pair<int, pair<int, int>>> lista;
-            lista = e1.atacar(matriz);
-            j1.atacar(matriz);
+            SimpleList<pair<int, pair<int, int>>> listaEnemigos;
+            SimpleList<pair<int, pair<int, int>>> listaSoldados;
+            listaEnemigos = e1.atacar(matriz);
+            listaSoldados = j1.atacar(matriz);
             al_flip_display();
-            cout <<endl;
-            imprimirMatriz();
         }
     }
 }

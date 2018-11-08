@@ -70,13 +70,13 @@ public :
         nodoS<T> *aux = primero;
         if(pos == 0){
             primero = aux->next;
-            free(aux);
+            delete(aux);
         } else {
             nodoS<T> * prev = aux;
             for (int i = 0; i < this->length; i++) {
                 if (i == pos) {
                     prev->next = aux->next;
-                    free(aux);
+                    delete(aux);
                     break;
                 }
                 prev = aux;

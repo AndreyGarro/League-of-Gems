@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/CMakeFiles/LeagueOfGems.dir
+=======
+/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir
+>>>>>>> 94c190edde02266b6105453636234975c49cb0e2

@@ -6,7 +6,7 @@
 #define LEAGUEOFGEMS_PLAYER_H
 
 #include <allegro5/allegro_primitives.h>
-#include "../Soldier.h"
+#include "Soldier.h"
 #include "../Estructuras/SimpleList.h"
 
 /**
