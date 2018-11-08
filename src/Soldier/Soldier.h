@@ -5,9 +5,9 @@
 #ifndef LEAGUEOFGEMS_SOLDIER_H
 #define LEAGUEOFGEMS_SOLDIER_H
 
-#include "../src/Estructuras/Cola.h"
-#include "Estructuras/Pila.h"
-#include "A*/AStarPathFinding.h"
+#include "../Estructuras/Cola.h"
+#include "../Estructuras/Pila.h"
+#include "../Algoritmos/AStarPathFinding.h"
 #include <allegro5/bitmap.h>
 #include <allegro5/allegro.h>
 #include <utility>

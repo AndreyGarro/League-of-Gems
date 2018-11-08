@@ -6,8 +6,8 @@
 #define LEAGUEOFGEMS_ENEMY_H
 
 
-#include "Gráficos/Sprite.h"
-#include "Estructuras/SimpleList.h"
+#include "../App/Sprite.h"
+#include "../Estructuras/SimpleList.h"
 
 class Enemy {
 

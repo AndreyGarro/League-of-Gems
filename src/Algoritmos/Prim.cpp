@@ -28,13 +28,13 @@ Pila<pair<int, int>> Prim::primAlgorithm(int currentRow, int currentColumn, int 
     SimpleList<Path> prev;
     prev.add(Path{current.row, current.column, -1, -1});
     while (!queue.isEmpty()) {
-        current = queue.getData(0);
+        current = *queue.getData(0);
         queue.deleteNode(0);
         if (current.row == destRow && current.column == destColumn) {
             break;
         }
         for (int i = 0; i < current.edge->getLength(); i++) {
-            temp = current.edge->getData(i);
+            temp = *current.edge->getData(i);
             if (!isVisited(temp)) {
                 visited.add(temp);
                 temp.weight = current.weight + 1;
@@ -54,7 +54,7 @@ Pila<pair<int, int>> Prim::primAlgorithm(int currentRow, int currentColumn, int 
  */
 bool Prim::isVisited(Vertex vertex) {
     for (int i = 0; i < visited.getLength(); i++) {
-        if (visited.getData(i).column == vertex.column && visited.getData(i).row == vertex.row) {
+        if (visited.getData(i)->column == vertex.column && visited.getData(i)->row == vertex.row) {
             return true;
         }
     }
@@ -75,8 +75,8 @@ Prim::queueGenerator(int row, int column, int destRow, int destColumn, SimpleLis
     Pila<pair<int, int>> pila;
     Path tempPath;
     for (int i = 0; i < cola.getLength(); i++) {
-        if (cola.getData(i).row == destRow && cola.getData(i).column == destColumn) {
-            tempPath = cola.getData(i);
+        if (cola.getData(i)->row == destRow && cola.getData(i)->column == destColumn) {
+            tempPath = *cola.getData(i);
         }
     }
     while (true) {
@@ -102,7 +102,7 @@ Prim::queueGenerator(int row, int column, int destRow, int destColumn, SimpleLis
 Path Prim::findPrevPath(int prevRow, int prevColumn, SimpleList<Path> path) {
     Path temp;
     for (int i = 0; i < path.getLength(); i++) {
-        temp = path.getData(i);
+        temp = *path.getData(i);
         if (temp.row == prevRow && temp.column == prevColumn) {
             return temp;
         }

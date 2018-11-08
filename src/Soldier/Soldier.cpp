@@ -4,9 +4,9 @@
 
 #include <allegro5/allegro.h>
 #include "Soldier.h"
-#include "Gráficos/Sprite.h"
-#include "../src/LineaVista/LineaVista.h"
-#include "A*/AStarPathFinding.h"
+#include "../App/Sprite.h"
+#include "../LineaVista/LineaVista.h"
+#include "../Algoritmos/AStarPathFinding.h"
 /**
  * Construtuor con parametros
  * @param x posicion horizontal donde se dibujara el soldado la primera vez
