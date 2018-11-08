@@ -47,3 +47,11 @@ pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
     return make_pair(-1, -1);
 }
 
+int Enemy::getVida() const {
+    return vida;
+}
+
+void Enemy::setVida(int vida) {
+    Enemy::vida = vida;
+}
+

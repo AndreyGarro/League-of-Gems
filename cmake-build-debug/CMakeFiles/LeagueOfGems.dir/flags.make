@@ -6,9 +6,5 @@ CXX_FLAGS =  -std=c++11 -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-<<<<<<< HEAD
 CXX_INCLUDES = -I/home/andrew/CLionProjects/LeagueOfGems1/allegro/5.0.11/include 
-=======
-CXX_INCLUDES = -I/home/christian/Escritorio/LOG/allegro/5.0.11/include 
->>>>>>> 94c190edde02266b6105453636234975c49cb0e2
 

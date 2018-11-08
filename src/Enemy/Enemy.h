@@ -16,7 +16,7 @@ private:
     int posX;
     int posY;
     int cont = 0;
-    int vida = 7;
+    int vida = 20;
     int defensa = 5;
     int ataque = 5;
     int rango = 1;
@@ -32,6 +32,9 @@ public:
 
     bool atacando = false;
 
+    int getVida() const;
+
+    void setVida(int vida);
 };
 
 

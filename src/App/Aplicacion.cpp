@@ -77,7 +77,10 @@ int Application::mainLoop(){
             SimpleList<pair<int, pair<int, int>>> listaSoldados;
             listaEnemigos = e1.atacar(matriz);
             listaSoldados = j1.atacar(matriz);
+            e1.disminuirVida(listaSoldados);
             al_flip_display();
+//            cout<<endl;
+//            imprimirMatriz();
         }
     }
 }

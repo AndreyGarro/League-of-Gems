@@ -66,26 +66,21 @@ Pair Soldier::escogerPunto(int matriz[10][15], int id, int jd) {
     }
     int a=3, b=3;
     while(true){
-        cout<<"0"<< endl;
         id -=1;
         jd -=1;
         try {
             for (int i = 0; i < a; ++i) {
                 for (int j = 0; j < b; ++j) {
                     if ((id + i) < 0) {
-                        cout<<"1"<< endl;
                         id = 0;
                     }
                     if ((id + i )> 9) {
-                        cout<<"2"<< endl;
                         id -= abs((i + 1));
                     }
                     if ((jd + j) < 0) {
-                        cout<<"3"<< endl;
                         jd = 0;
                     }
                     if ((jd + j) > 14) {
-                        cout<<"4"<< endl;
                         jd = abs(jd - (j + 1));
                     }
                     if (matriz[abs(id + i)][abs(jd + j)] == 1) {

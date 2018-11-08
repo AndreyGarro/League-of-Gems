@@ -6,19 +6,49 @@
 
 #IncludeRegexTransform: 
 
-/home/christian/Escritorio/LOG/main.cpp
-cstdlib
+/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/AStarPathFinding.h
+bits/stdc++.h
 -
+../Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
+
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Cola.h
+
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
+
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
+
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/Soldier.h
+../Estructuras/Cola.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Cola.h
+../Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h
+../Algoritmos/AStarPathFinding.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/AStarPathFinding.h
+allegro5/bitmap.h
+-
+allegro5/allegro.h
+-
+utility
+-
+
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/SoldierController.cpp
+allegro5/bitmap.h
+-
+allegro5/allegro.h
+-
+SoldierController.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/SoldierController.h
 string
 -
 allegro5/allegro_image.h
 -
-src/App/Aplicacion.h
-/home/christian/Escritorio/LOG/src/App/Aplicacion.h
 
-/home/christian/Escritorio/LOG/src/App/Aplicacion.h
-string
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/SoldierController.h
+allegro5/allegro_primitives.h
 -
-allegro5/allegro5.h
-/home/christian/Escritorio/LOG/src/App/allegro5/allegro5.h
+Soldier.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/Soldier.h
+../Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h
 
