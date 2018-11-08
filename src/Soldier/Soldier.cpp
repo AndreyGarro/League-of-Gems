@@ -103,7 +103,7 @@ void Soldier::dibujarSoldado() {
     if(tempX == xd && tempY == yd){
         this->llegue = true;
         if(flagAttack){
-            image = al_load_bitmap("../img/enemy.png");
+            image = al_load_bitmap("../img/soldierAttack.png");
         }
     }
     else if(xd > tempX && yd > tempY){
@@ -143,11 +143,11 @@ void Soldier::dibujarSoldado() {
  * @return Posicion a la que ataco
  */
 pair<int, int> Soldier::atacar(int matriz[10][15]) {
-    if (this->freAtaque > 20 && this->freAtaque > 10){
+    if (this->freAtaque > 20){
         this->freAtaque = 0;
     }
     this->freAtaque++;
-    if(this->freAtaque < 10) {
+    if(this->freAtaque <= 1) {
         int i = (yd / 70) - 1, j = (xd / 90) - 1;
         for (int k = 0; k < 3; ++k) {
             for (int l = 0; l < 3; ++l) {
@@ -158,8 +158,26 @@ pair<int, int> Soldier::atacar(int matriz[10][15]) {
             }
         }
     }
-    flagAttack = false;
+    if(this->freAtaque > 10){
+        flagAttack = false;
+    }
     return make_pair(-1,-1);
+}
+
+int Soldier::getXd() const {
+    return xd;
+}
+
+int Soldier::getYd() const {
+    return yd;
+}
+
+void Soldier::disminuirVida(int vida) {
+    this->vida -= vida;
+}
+
+int Soldier::getVida() const {
+    return vida;
 }
 
 

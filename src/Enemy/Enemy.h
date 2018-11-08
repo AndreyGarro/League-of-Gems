@@ -16,7 +16,7 @@ private:
     int posX;
     int posY;
     int cont = 0;
-    int vida = 20;
+    int vida = 7;
     int defensa = 5;
     int ataque = 5;
     int rango = 1;

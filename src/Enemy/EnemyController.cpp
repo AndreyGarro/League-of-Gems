@@ -60,6 +60,7 @@ void EnemyController::disminuirVida(SimpleList<pair<int, pair<int, int>>> listaE
                 && listaEnemigos1.getData(0)->second.second == listaEnemigos.getData(i)->getPosX() / 90) {
                 listaEnemigos.getData(i)->setVida(listaEnemigos.getData(i)->getVida() - 1);
                 if(listaEnemigos.getData(i)->getVida() == 0){
+                    Application::matriz[listaEnemigos.getData(i)->getPosY()/70][listaEnemigos.getData(i)->getPosX()/90] = 1;
                     listaEnemigos.deleteNode(i);
                 }
                 break;

@@ -27,11 +27,11 @@ void Enemy::setEnemy(ALLEGRO_BITMAP *enemy) {
 }
 
 pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
-    if (this->cont > 20 && this->cont > 10){
+    if (this->cont > 30){
         this->cont = 0;
     }
     this->cont ++;
-    if(this->cont < 10) {
+    if(this->cont <= 1) {
         int posIX = (this->getPosX() / 90) - 1;
         int posIY = (this->getPosY() / 70) - 1;
         for (int i = 0; i < 3; ++i) {
@@ -43,7 +43,9 @@ pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
             }
         }
     }
-    this->atacando = false;
+    if(this->cont > 10) {
+        this->atacando = false;
+    }
     return make_pair(-1, -1);
 }
 
