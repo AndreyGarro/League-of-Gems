@@ -37,7 +37,7 @@ public:
     void dibujarSoldado();
     void seguirRuta();
     Pair escogerPunto(int matriz[10][15], int xd, int yd);
-    pair<int, int > atacar(int matriz [10][15]);
+    pair<int, int > atacar(int matriz [10][15], int fast);
     void disminuirVida(int vida);
 };
 #endif //LEAGUEOFGEMS_SOLDIER_H

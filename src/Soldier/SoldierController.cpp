@@ -36,12 +36,12 @@ void SoldierController::dibujaJugador() {
  * Costructor
  */
 SoldierController::SoldierController() {
+    listSoldier.add(Soldier(0,490));
+    listSoldier.add(Soldier(90,490));
+    listSoldier.add(Soldier(180,490));
     listSoldier.add(Soldier(0,560));
     listSoldier.add(Soldier(90,560));
     listSoldier.add(Soldier(180,560));
-    listSoldier.add(Soldier(0,620));
-    listSoldier.add(Soldier(90,620));
-    listSoldier.add(Soldier(180,620));
 }
 /**
  * Verfica si hay enemigos cerca de los soldados a los que se pueden atacar
@@ -51,9 +51,9 @@ SoldierController::SoldierController() {
 SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][15]) {
     SimpleList< pair<int, pair<int, int>> > atacados = SimpleList<pair<int, pair<int, int >>>();
     for (int k = 0; k < listSoldier.getLength(); ++k) {
-        pair<int, int> temp = listSoldier.getData(k)->atacar(matriz);
+        pair<int, int> temp = listSoldier.getData(k)->atacar(matriz,this->fast);
         if (temp.first != -1 && temp.second != -1) {
-            atacados.add(make_pair(1, temp));
+            atacados.add(make_pair(this->dano, temp));
         }
     }
 //    for (int l = 0; l < atacados.getLength(); ++l) {
@@ -83,6 +83,31 @@ int SoldierController::buscarSoldado(int i, int j) {
         }
     }
     return -1;
+}
+
+void SoldierController::escogerAtaque(int i, int j) {
+    if(tiempo > 30) {
+        this->tiempo = 0;
+        this->dano = 1;
+        this->fast = 1;
+    }
+    else{
+        if (j == 0) {
+            this->fast = 3;
+            this->dano = 1;
+            cout << "Se eligio fast"<<endl;
+        } else if (j == 1) {
+            this->dano = 3;
+            this->fast = 1;
+            cout << "Se eligio dano"<<endl;
+        } else if (j == 2) {
+
+        } else if (j == 3) {
+
+        }
+    }
+    this->tiempo++;
+
 }
 
 

@@ -14,7 +14,7 @@
  */
 class SoldierController {
 private:
-    int vida;
+    int vida, fast = 1, dano = 1, tiempo = 30;
     int i,j;
     SimpleList<Soldier> listSoldier =  SimpleList<Soldier>();
 
@@ -25,6 +25,7 @@ public:
     SimpleList<pair<int, pair<int ,int >>> atacar (int matriz [10][15]);
     void disminuirVida(SimpleList<pair<int, pair<int, int>>> listaAtacados );
     int buscarSoldado(int i, int j);
+    void escogerAtaque(int i, int j);
 
 };
 

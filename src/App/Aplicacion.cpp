@@ -54,7 +54,11 @@ int Application::mainLoop(){
                 this->y = oEvent.mouse.y;
                 std::cout << x << " " << y << std::endl;
                 resetMatriz();
-                j1.setIJ(y/70, x/90, Application::matriz);
+                if (y / 70 > 8 && x / 90 < 4) {
+                    j1.escogerAtaque(y / 70, x / 90);
+                } else {
+                    j1.setIJ(y / 70, x / 90, Application::matriz);
+                }
             }
         }
         if(oEvent.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
@@ -71,6 +75,7 @@ int Application::mainLoop(){
             al_draw_bitmap(fondo, 0, 0, 0);
             resetMatriz();
             Sprite::dibujaObstaculo(Application::matriz);
+            Sprite::dibujaBarraAtaques(Application::matriz);
             j1.dibujaJugador();
             e1.dibujaEnemigo();
             SimpleList<pair<int, pair<int, int>>> listaEnemigos;
@@ -90,7 +95,7 @@ void Application::initMatriz() {
     srand(static_cast<unsigned int>(time(0)));
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 15; ++j) {
-            if(static_cast<int>(random() % 4) == 0){
+            if(static_cast<int>(random() % 5) == 0){
                 Application::matriz[i][j] = 0;
             }
             else{
@@ -98,6 +103,8 @@ void Application::initMatriz() {
             }
             if(i>6 && j < 5){
                 Application::matriz[i][j] = 1;
+            }if(i>8 && j < 4){
+                Application::matriz[i][j] = 6;
             }
             if(i < 5   && j> 9){
                 Application::matriz[i][j] = 1;

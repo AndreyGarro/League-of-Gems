@@ -20,6 +20,8 @@ class Sprite {
 public:
     static void dibujaObstaculo(int matriz[10][15]);
 
+    static void dibujaBarraAtaques(int matriz[10][15]);
+
     static void dibujaPersonaje(int x, int y, ALLEGRO_BITMAP *, int flag);
 
     static void dibujaGema(int x, int y, ALLEGRO_BITMAP *);

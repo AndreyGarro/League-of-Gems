@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LOG"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LOG">
+				<Option output="/home/christian/Escritorio/LOG/cmake-build-debug/LOG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/christian/Escritorio/LOG/."/>
+					<Add directory="/home/christian/Escritorio/LOG/ImagenesWiki"/>
+					<Add directory="/home/christian/Escritorio/LOG/img"/>
+					<Add directory="/home/christian/Escritorio/LOG/src"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Algoritmos"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/App"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Enemy"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Estructuras"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/LineaVista"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Soldier"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LOG"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LOG/fast">
+				<Option output="/home/christian/Escritorio/LOG/cmake-build-debug/LOG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/christian/Escritorio/LOG/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/christian/Escritorio/LOG/."/>
+					<Add directory="/home/christian/Escritorio/LOG/ImagenesWiki"/>
+					<Add directory="/home/christian/Escritorio/LOG/img"/>
+					<Add directory="/home/christian/Escritorio/LOG/src"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Algoritmos"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/App"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Enemy"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Estructuras"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/LineaVista"/>
+					<Add directory="/home/christian/Escritorio/LOG/src/Soldier"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LOG/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/christian/Escritorio/LOG/ImagenesWiki/ClasesLOG.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/ImagenesWiki/Cola.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/ImagenesWiki/Grafos.jpg">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/ImagenesWiki/Pila.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/ImagenesWiki/listas.jpg">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/Red_Nexus.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/attackEast.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/enemy.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/enemyAttackN01.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/enemyDead.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/gem.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/grassTexture.bmp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/soldier.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/soldierAttack.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/img/treeSprite.png">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/main.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Graph.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Graph.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/GraphMaker.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/GraphMaker.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Kruskal.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Kruskal.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Prim.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Algoritmos/Prim.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/App/Aplicacion.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/App/Aplicacion.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/App/Sprite.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/App/Sprite.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Enemy/Enemy.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Enemy/Enemy.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Enemy/EnemyController.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Enemy/EnemyController.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/Cola.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/Pila.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Estructuras/SimpleList.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/LineaVista/LineaVista.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Soldier/Soldier.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Soldier/Soldier.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Soldier/SoldierController.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/src/Soldier/SoldierController.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/christian/Escritorio/LOG/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
