@@ -142,12 +142,12 @@ void Soldier::dibujarSoldado() {
  * @param matriz
  * @return Posicion a la que ataco
  */
-pair<int, int> Soldier::atacar(int matriz[10][15]) {
-    if (this->freAtaque > 20){
+pair<int, int> Soldier::atacar(int matriz[10][15], int fast) {
+    if (this->freAtaque > 30){
         this->freAtaque = 0;
     }
     this->freAtaque++;
-    if(this->freAtaque <= 1) {
+    if(this->freAtaque <= fast) {
         int i = (yd / 70) - 1, j = (xd / 90) - 1;
         for (int k = 0; k < 3; ++k) {
             for (int l = 0; l < 3; ++l) {
