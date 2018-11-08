@@ -52,3 +52,19 @@ SimpleList<pair<int, pair<int, int>>> EnemyController::atacar(int matriz[10][15]
     return listaAtacados;
 }
 
+void EnemyController::disminuirVida(SimpleList<pair<int, pair<int, int>>> listaEnemigos1) {
+
+    if(!listaEnemigos1.isEmpty()) {
+        for (int i = 0; i < listaEnemigos.getLength(); ++i) {
+            if (listaEnemigos1.getData(0)->second.first == listaEnemigos.getData(i)->getPosY() / 70
+                && listaEnemigos1.getData(0)->second.second == listaEnemigos.getData(i)->getPosX() / 90) {
+                listaEnemigos.getData(i)->setVida(listaEnemigos.getData(i)->getVida() - 1);
+                if(listaEnemigos.getData(i)->getVida() == 0){
+                    listaEnemigos.deleteNode(i);
+                }
+                break;
+            }
+        }
+    }
+}
+

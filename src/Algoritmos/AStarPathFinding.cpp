@@ -5,24 +5,56 @@
 #include "AStarPathFinding.h"
 #include "../Estructuras/SimpleList.h"
 
-//Revisa si una celda dada es valida o no
+/**
+ * Revisa si la posicion dada se encuentra en el rango de la matriz
+ * @param fila
+ * @param columna
+ * @return true o false
+ */
 bool AstarPathfinding::esValido(int fila, int columna) {
     return (fila>=0) && (fila< FILA) &&
            (columna >= 0) && (columna < COLUMNA);
 }
 
+/**
+ * Revisa si la posicion de está desbloqueada
+ * @param grid matriz a revisar
+ * @param fila
+ * @param columna
+ * @return true o false
+ */
 bool AstarPathfinding::estaDesbloqueda(int grid[][COLUMNA], int fila, int columna) {
     return grid[fila][columna] == 1;
 }
 
+/**
+ * Revisa si la posicion dada es el destino
+ * @param fila
+ * @param columna
+ * @param destino
+ * @return true o false
+ */
 bool AstarPathfinding::esDestino(int fila, int columna, Pair destino) {
     return fila == destino.first && columna == destino.second;
 }
 
+/**
+ * Calcula el valor de heuristico del destino
+ * @param fila
+ * @param columna
+ * @param destino
+ * @return valor
+ */
 double AstarPathfinding::calcularValorH(int fila, int columna, Pair destino) {
     return ((double)sqrt((fila-destino.first)*(fila-destino.first) + (columna-destino.second) * (columna-destino.second)));
 }
 
+/**
+ * Retorna la pila con el camino encontrado
+ * @param detallesCelda
+ * @param destino
+ * @return
+ */
 Pila<Pair> AstarPathfinding::trazarCamino(celda detallesCelda[][COLUMNA], Pair destino) {
     int fila = destino.first;
     int columna = destino.second;
@@ -45,6 +77,13 @@ Pila<Pair> AstarPathfinding::trazarCamino(celda detallesCelda[][COLUMNA], Pair d
 
 }
 
+/**
+ * Método principal que busca la ruta más corta
+ * @param grid matriz a buscar la ruta
+ * @param inicio
+ * @param destino
+ * @return Pila con la ruta
+ */
 Pila<Pair> AstarPathfinding::busquedaAStar(int grid[][COLUMNA], Pair inicio, Pair destino) {
 
     //Si el inicio está fuera de rango
