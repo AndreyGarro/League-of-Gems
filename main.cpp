@@ -4,7 +4,7 @@
 #include <string>
 
 #include <allegro5/allegro_image.h>
-#include "src/Gráficos/Aplicacion.h"
+#include "src/App/Aplicacion.h"
 
 int main(int argc, char** argv) {
 

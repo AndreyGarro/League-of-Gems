@@ -13,7 +13,7 @@
  */
 bool Graph::addVertex(int row, int column) {
     for (int i = 0; i < vertexs.getLength(); i++) {
-        if (vertexs.getData(i).column == column && vertexs.getData(i).row == row) {
+        if (vertexs.getData(i)->column == column && vertexs.getData(i)->row == row) {
             return false;
         }
     }
@@ -34,10 +34,10 @@ bool Graph::addEdge(int row, int column, int adyRow, int adyColumn) {
     Vertex temp;
     Vertex adyTemp;
     for (int i = 0; i < this->vertexs.getLength(); i++) {
-        temp = vertexs.getData(i);
+        temp = *vertexs.getData(i);
         if (temp.row == row && temp.column == column) {
             for (int j = 0; j < temp.edge->getLength(); j++) {
-                adyTemp = temp.edge->getData(j);
+                adyTemp = *temp.edge->getData(j);
                 if (adyTemp.column == adyColumn && adyTemp.row == adyRow) {
                     return false;
                 }
@@ -60,7 +60,7 @@ bool Graph::addEdge(int row, int column, int adyRow, int adyColumn) {
 Vertex Graph::getVertex(int row, int column) {
     Vertex temp;
     for (int i = 0; i < vertexs.getLength(); i++) {
-        temp = vertexs.getData(i);
+        temp = *vertexs.getData(i);
         if (temp.row == row && temp.column == column) {
             return temp;
         }
@@ -72,10 +72,10 @@ void Graph::printGraph() {
     Vertex temp;
     Vertex temp2;
     for (int i = 0; i < vertexs.getLength(); i++) {
-        temp = vertexs.getData(i);
+        temp = *vertexs.getData(i);
         std::cout << "El vertice (" << temp.row << ", " << temp.column << ")" << std::endl;
         for (int j = 0; j < temp.edge->getLength(); j++) {
-            temp2 = temp.edge->getData(j);
+            temp2 = *temp.edge->getData(j);
             std::cout << "(" << temp2.row << ", " << temp2.column << ") -> ";
         }
         std::cout << std::endl;
@@ -92,7 +92,7 @@ int Graph::getNumber() const {
 
 int Graph::findByCoord(int row, int column) {
     for (int i = 0; i < vertexs.getLength(); i++) {
-        Vertex temp = vertexs.getData(i);
+        Vertex temp = *vertexs.getData(i);
         if (row == temp.row && column == temp.column){
             return i;
         }

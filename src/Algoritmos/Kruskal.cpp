@@ -41,10 +41,10 @@ SimpleList<EdgePath> Kruskal::makeEdges(Graph graph, int currentRow, int current
     SimpleList<Vertex> queue;
     queue.add(currentV);
     while (!queue.isEmpty()) {
-        currentV = queue.getData(0);
+        currentV = *queue.getData(0);
         queue.deleteNode(0);
         for (int j = 0; j < currentV.edge->getLength(); j++) {
-            tempV = currentV.edge->getData(j);
+            tempV = *currentV.edge->getData(j);
             if (!isVisited(tempV.row, tempV.column, visited)) {
                 queue.add(tempV);
                 visited.add(EdgePath{currentV.row, currentV.column});
@@ -64,8 +64,8 @@ SimpleList<EdgePath> Kruskal::makeEdges(Graph graph, int currentRow, int current
  */
 EdgePath Kruskal::findePrevEdge(int row, int column, SimpleList<EdgePath> edges) {
     for (int i = 0; i < edges.getLength(); i++) {
-        if (edges.getData(i).row == row && edges.getData(i).column == column) {
-            return edges.getData(i);
+        if (edges.getData(i)->row == row && edges.getData(i)->column == column) {
+            return *edges.getData(i);
         }
     }
 }
@@ -79,7 +79,7 @@ EdgePath Kruskal::findePrevEdge(int row, int column, SimpleList<EdgePath> edges)
  */
 bool Kruskal::isVisited(int row, int column, SimpleList<EdgePath> visited) {
     for (int i = 0; i < visited.getLength(); i++) {
-        if (visited.getData(i).row == row && visited.getData(i).column == column) {
+        if (visited.getData(i)->row == row && visited.getData(i)->column == column) {
             return true;
         }
     }
