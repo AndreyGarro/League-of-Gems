@@ -18,10 +18,13 @@ private:
     int cont = 0;
     int vida = 7;
     int defensa = 5;
-    int ataque = 5;
+    int ataque = 1;
     int rango = 1;
-
 public:
+    void setAtaque(int ataque);
+
+    int getAtaque() const;
+
     Enemy(){};
     Enemy(int x, int y);
     int getPosX() const;

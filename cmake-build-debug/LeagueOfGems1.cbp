@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="LeagueOfGems"/>
+		<Option title="LeagueOfGems1"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -12,16 +12,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,38 +27,29 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="LeagueOfGems">
-				<Option output="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/allegro/5.0.11/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="LeagueOfGems/fast">
-				<Option output="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/LeagueOfGems" prefix_auto="0" extension_auto="0"/>
+			<Target title="LeagueOfGems1">
+				<Option output="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/LeagueOfGems1" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/allegro/5.0.11/include"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/App"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/LineaVista"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -79,102 +60,173 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeagueOfGems1/fast">
+				<Option output="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/LeagueOfGems1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/App"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/LineaVista"/>
+					<Add directory="/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeagueOfGems1/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrew/CLionProjects/LeagueOfGems1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/ImagenesWiki/ClasesLOG.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/ImagenesWiki/Cola.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/ImagenesWiki/Grafos.jpg">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/ImagenesWiki/Pila.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/ImagenesWiki/listas.jpg">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/Red_Nexus.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/attackEast.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/enemy.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/enemyAttackN01.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/gem.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/grassTexture.bmp">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/soldier.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/soldierAttack.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/treeSprite.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/main.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/AStarPathFinding.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/AStarPathFinding.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Dijkstra.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Dijkstra.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Graph.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Graph.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/GraphMaker.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/GraphMaker.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Kruskal.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Kruskal.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Prim.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Algoritmos/Prim.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/App/Aplicacion.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/App/Aplicacion.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/App/Sprite.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/App/Sprite.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/Enemy.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/Enemy.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/EnemyController.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Enemy/EnemyController.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Cola.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/Pila.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Estructuras/SimpleList.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/LineaVista/LineaVista.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/LineaVista/LineaVista.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/Soldier.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/Soldier.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/SoldierController.cpp">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/src/Soldier/SoldierController.h">
-			<Option target="LeagueOfGems"/>
+			<Option target="LeagueOfGems1"/>
 		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
