@@ -55,9 +55,16 @@ int Application::mainLoop(){
                 std::cout << x << " " << y << std::endl;
                 resetMatriz();
                 if (y / 70 > 8 && x / 90 < 4) {
-                    j1.escogerAtaque(y / 70, x / 90);
+
                 } else {
-                    j1.setIJ(y / 70, x / 90, Application::matriz);
+                    j1.setIJ(y / 70, x / 90, Application::matriz, 1);
+                }
+            }
+            else if(oEvent.mouse.button & 1){
+                this->x = oEvent.mouse.x;
+                this->y = oEvent.mouse.y;
+                if (y / 70 > 8 && x / 90 < 4) {
+                    j1.escogerAtaque(y / 70, x / 90);
                 }
             }
         }

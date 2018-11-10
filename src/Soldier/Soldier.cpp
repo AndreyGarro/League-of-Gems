@@ -31,13 +31,25 @@ Soldier::Soldier() {}
  * @param j
  * @param matriz
  */
-void Soldier::setIJ(int i, int j, int matriz[10][15]) {
+void Soldier::setIJ(int i, int j, int matriz[10][15], int nivel) {
+    if (nivel == 0) {
 
-    //calcular Ruta
-    Pair posff = escogerPunto(matriz,i,j);
-    AstarPathfinding AStar = AstarPathfinding();
-    ruta2 = AStar.busquedaAStar(matriz, make_pair(yd/70, xd/90), posff);
-    Application::matriz[posff.first][posff.second] = 4;
+    }
+    else if (nivel == 1) {
+        Pair posff = escogerPunto(matriz, i, j);
+        AstarPathfinding AStar = AstarPathfinding();
+        ruta2 = AStar.busquedaAStar(matriz, make_pair(yd / 70, xd / 90), posff);
+        Application::matriz[posff.first][posff.second] = 4;
+    }
+    else if(nivel == 2){
+        
+    }
+    else if(nivel == 3){
+        
+    }
+    else if (nivel == 4){
+        
+    }
 }
 /**
  * Toma la ruta punto a punto dada por el algoritmo de busquedad
