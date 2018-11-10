@@ -10,11 +10,11 @@
 #include "../Estructuras/SimpleList.h"
 
 /**
- * Clase jugardor controla todos los soldados que se muestran
+ * Clase jugador controla todos los soldados que se muestran
  */
 class SoldierController {
 private:
-    int vida, fast = 1, dano = 1, tiempo = 30;
+    int fast = 1, tiempo = 30;
     int i,j;
     SimpleList<Soldier> listSoldier =  SimpleList<Soldier>();
 

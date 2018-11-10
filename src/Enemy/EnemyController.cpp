@@ -36,6 +36,15 @@ void EnemyController::dibujaEnemigo() {
     for(int i = 0; i < listaEnemigos.getLength(); i++){
         Sprite::dibujaPersonaje(listaEnemigos.getData(i)->getPosX(), listaEnemigos.getData(i)->getPosY(),
                 listaEnemigos.getData(i)->getEnemy(), 2);
+        auto enemigoTemp = listaEnemigos.getData(i);
+        float tempVida = listaEnemigos.getData(i)->getVida() / (listaEnemigos.getData(i)->getVidaMaxima() + 0.0f);
+        if(listaEnemigos.getData(i)->getPosY() == 0){
+            al_draw_filled_rectangle(enemigoTemp->getPosX(), enemigoTemp->getPosY()+5,
+                                     enemigoTemp->getPosX()+(90*tempVida), enemigoTemp->getPosY(), al_map_rgb_f(255, 0, 0));
+        }else{
+            al_draw_filled_rectangle(enemigoTemp->getPosX(), enemigoTemp->getPosY()-5,
+                                     enemigoTemp->getPosX()+(90*tempVida), enemigoTemp->getPosY(), al_map_rgb_f(255, 0, 0));
+        }
     }
     Sprite::dibujaGema(14*86, 0, al_load_bitmap("../img/gem.png"));
 }
@@ -75,8 +84,9 @@ void EnemyController::disminuirVida(SimpleList<pair<int, pair<int, int>>> listaE
         for (int i = 0; i < listaEnemigos.getLength(); ++i) {
             if (listaEnemigos1.getData(0)->second.first == listaEnemigos.getData(i)->getPosY() / 70
                 && listaEnemigos1.getData(0)->second.second == listaEnemigos.getData(i)->getPosX() / 90) {
-                listaEnemigos.getData(i)->setVida(listaEnemigos.getData(i)->getVida() - 1);
-                if(listaEnemigos.getData(i)->getVida() == 0){
+                listaEnemigos.getData(i)->setVida(listaEnemigos.getData(i)->getVida() -
+                (listaEnemigos1.getData(0)->first - listaEnemigos.getData(i)->getDefensa()));
+                if(listaEnemigos.getData(i)->getVida() <= 0){
                     Application::matriz[listaEnemigos.getData(i)->getPosY()/70][listaEnemigos.getData(i)->getPosX()/90] = 1;
                     listaEnemigos.deleteNode(i);
                 }

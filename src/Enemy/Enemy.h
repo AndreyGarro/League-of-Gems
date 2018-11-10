@@ -16,15 +16,16 @@ private:
     int posX;
     int posY;
     int cont = 0;
-    int vida = 7;
+    int vida = 400;
     int defensa = 5;
-    int ataque = 1;
-    int rango = 1;
+    int ataque = 50;
+    int vidaMaxima = 400;
 public:
+    int getDefensa() const;
+    void setDefensa(int defensa);
     void setAtaque(int ataque);
-
     int getAtaque() const;
-
+    int getVidaMaxima() const;
     Enemy(){};
     Enemy(int x, int y);
     int getPosX() const;
@@ -32,11 +33,8 @@ public:
     int getPosY() const;
     ALLEGRO_BITMAP *getEnemy() const;
     pair<int, int> revisaAtaque(int matriz[10][15]);
-
     bool atacando = false;
-
     int getVida() const;
-
     void setVida(int vida);
 };
 

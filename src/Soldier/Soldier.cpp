@@ -146,11 +146,17 @@ void Soldier::dibujarSoldado() {
     else if(yd < tempY){
         tempY -= 5;
     }
+    float tempVida = this->getVida() / (this->getVidaMaxima() + 0.0f);
+    if(tempY == 0){
+        al_draw_filled_rectangle(tempX, tempY+5, tempX+(90*tempVida), tempY, al_map_rgb_f(0, 255, 0));
+    }else{
+        al_draw_filled_rectangle(tempX, tempY-5, tempX+(90*tempVida), tempY, al_map_rgb_f(0, 255, 0));
+    }
     Sprite::dibujaPersonaje(tempX, tempY, image, 3);
     Application::matriz[yd/70][xd/90] = 3;
 }
 /**
- * Revida si es posible atacar a un enemgio dentro del rango
+ * Revisa si es posible atacar a un enemgio dentro del rango
  * @param matriz
  * @return Posicion a la que ataco
  */
@@ -190,6 +196,30 @@ void Soldier::disminuirVida(int vida) {
 
 int Soldier::getVida() const {
     return vida;
+}
+
+int Soldier::getVidaMaxima() const {
+    return vidaMaxima;
+}
+
+void Soldier::setVida(int vida) {
+    Soldier::vida = vida;
+}
+
+int Soldier::getAtaque() const {
+    return ataque;
+}
+
+void Soldier::setAtaque(int ataque) {
+    Soldier::ataque = ataque;
+}
+
+int Soldier::getDefensa() const {
+    return defensa;
+}
+
+void Soldier::setDefensa(int defensa) {
+    Soldier::defensa = defensa;
 }
 
 

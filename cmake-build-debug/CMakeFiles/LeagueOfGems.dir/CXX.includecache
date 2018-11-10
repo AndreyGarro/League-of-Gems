@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/AStarPathFinding.h
 bits/stdc++.h
 -
 ../Estructuras/Pila.h
-/home/christian/Escritorio/LOG/src/Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h
 
-/home/christian/Escritorio/LOG/src/Estructuras/Cola.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Cola.h
 
-/home/christian/Escritorio/LOG/src/Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h
 
-/home/christian/Escritorio/LOG/src/Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/SimpleList.h
 
-/home/christian/Escritorio/LOG/src/Soldier/Soldier.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Soldier/Soldier.h
 ../Estructuras/Cola.h
-/home/christian/Escritorio/LOG/src/Estructuras/Cola.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Cola.h
 ../Estructuras/Pila.h
-/home/christian/Escritorio/LOG/src/Estructuras/Pila.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/Pila.h
 ../Algoritmos/AStarPathFinding.h
-/home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/AStarPathFinding.h
 allegro5/bitmap.h
 -
 allegro5/allegro.h
@@ -32,23 +32,23 @@ allegro5/allegro.h
 utility
 -
 
-/home/christian/Escritorio/LOG/src/Soldier/SoldierController.cpp
+/home/andrew/CLionProjects/LeagueOfGems/src/Soldier/SoldierController.cpp
 allegro5/bitmap.h
 -
 allegro5/allegro.h
 -
 SoldierController.h
-/home/christian/Escritorio/LOG/src/Soldier/SoldierController.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Soldier/SoldierController.h
 string
 -
 allegro5/allegro_image.h
 -
 
-/home/christian/Escritorio/LOG/src/Soldier/SoldierController.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Soldier/SoldierController.h
 allegro5/allegro_primitives.h
 -
 Soldier.h
-/home/christian/Escritorio/LOG/src/Soldier/Soldier.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Soldier/Soldier.h
 ../Estructuras/SimpleList.h
-/home/christian/Escritorio/LOG/src/Estructuras/SimpleList.h
+/home/andrew/CLionProjects/LeagueOfGems/src/Estructuras/SimpleList.h
 

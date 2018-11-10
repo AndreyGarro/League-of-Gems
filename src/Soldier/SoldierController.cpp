@@ -53,16 +53,15 @@ SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][
     for (int k = 0; k < listSoldier.getLength(); ++k) {
         pair<int, int> temp = listSoldier.getData(k)->atacar(matriz,this->fast);
         if (temp.first != -1 && temp.second != -1) {
-            atacados.add(make_pair(this->dano, temp));
+            atacados.add(make_pair(listSoldier.getData(k)->getAtaque(), temp));
         }
     }
 //    for (int l = 0; l < atacados.getLength(); ++l) {
 //        cout << atacados.getData(l)->second.first<<" "<< atacados.getData(l)->second.second<<endl;
 //    }
     if(this->tiempo > 90) {
-        cout << "Tiempo de poder agotado"<< endl;
+//        cout << "Tiempo de poder agotado"<< endl;
         this->tiempo = 0;
-        this->dano = 1;
         this->fast = 1;
     }
     this->tiempo++;
@@ -74,8 +73,8 @@ void SoldierController::disminuirVida(SimpleList<pair<int, pair<int, int>>> list
         for (int k = 0; k < listaAtacados.getLength(); ++k) {
             int numS = buscarSoldado(listaAtacados.getData(k)->second.first, listaAtacados.getData(k)->second.second);
             if(numS != -1){
-                listSoldier.getData(numS)->disminuirVida(listaAtacados.getData(k)->first);
-                if(listSoldier.getData(numS)->getVida() == 0){
+                listSoldier.getData(numS)->disminuirVida(listaAtacados.getData(k)->first - listSoldier.getData(numS)->getDefensa());
+                if(listSoldier.getData(numS)->getVida() <= 0){
                     listSoldier.deleteNode(numS);
                 }
             }
@@ -97,17 +96,22 @@ void SoldierController::escogerAtaque(int i, int j) {
 
     }
     else{
-        if (j == 0) {
-            this->fast = 3;
-            this->dano = 1;
-            cout << "Se eligio fast"<<endl;
-        } else if (j == 1) {
-            this->dano = 3;
-            this->fast = 1;
-            cout << "Se eligio dano"<<endl;
+        if (j == 1) {
+            for (int k = 0; k < listSoldier.getLength(); ++k) {
+                listSoldier.getData(k)->setAtaque(60);
+            }
+            cout << "Se eligio daño"<<endl;
         } else if (j == 2) {
-
+            for (int k = 0; k < listSoldier.getLength(); ++k) {
+                listSoldier.getData(k)->setDefensa(25);
+            }
+            cout << "Se eligio defensa"<<endl;
         } else if (j == 3) {
+            for (int k = 0; k < listSoldier.getLength(); ++k) {
+                listSoldier.getData(k)->setVida(250);
+            }
+            cout << "Se eligio curar"<<endl;
+        } else if (j == 4) {
 
         }
     }

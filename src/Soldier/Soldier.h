@@ -18,16 +18,27 @@ using namespace std;
  */
 class Soldier {
 private:
-    int vida = 7;
+    int vida = 250;
+    int defensa = 10;
+    int ataque = 20;
+    int vidaMaxima = 250;
     int xd, yd, tempX, tempY;
-    bool llegue = false, flagAttack = false;
+    bool llegue = false;
+    bool flagAttack = false;
     int freAtaque = 0;
     ALLEGRO_BITMAP *image;
+
 
     Cola<Pair> ruta = Cola<Pair>();
     Pila<Pair> ruta2 = Pila<Pair>();
 
 public:
+    int getDefensa() const;
+    void setDefensa(int defensa);
+    int getAtaque() const;
+    void setAtaque(int ataque);
+    int getVidaMaxima() const;
+    void setVida(int vida);
     int getVida() const;
     int getXd() const;
     int getYd() const;

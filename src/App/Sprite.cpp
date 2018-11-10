@@ -38,13 +38,15 @@ void Sprite::dibujaGema(int x, int y, ALLEGRO_BITMAP *image) {
 }
 
 void Sprite::dibujaBarraAtaques(int (*matriz)[15]) {
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 15; ++j) {
-            if(matriz[i][j] == 6){
-                float x =  j*90;
-                float y = i*70;
-                al_draw_filled_rectangle(j*90, i*70, j*90+90, i*70+70, al_map_rgb(69,58,102));
-            }
-        }
-    }
+
+    ALLEGRO_BITMAP *ataque = al_load_bitmap("../img/aumentarAtaque.png");
+    ALLEGRO_BITMAP *defensa = al_load_bitmap("../img/aumentarDefensa.png");
+    ALLEGRO_BITMAP *curar = al_load_bitmap("../img/aumentarVida.png");
+    al_draw_scaled_bitmap(ataque, 0, 0, 70, 90, 90, 70*9, 90, 70, 0);
+    al_draw_scaled_bitmap(defensa, 0, 0, 70, 90, 180, 70*9, 90, 70, 0);
+    al_draw_scaled_bitmap(curar, 0, 0, 70, 90, 270, 70*9, 90, 70, 0);
+
+    al_destroy_bitmap(ataque);
+    al_destroy_bitmap(defensa);
+    al_destroy_bitmap(curar);
 }

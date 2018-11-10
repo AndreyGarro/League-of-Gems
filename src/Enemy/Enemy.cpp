@@ -49,6 +49,10 @@ int Enemy::getAtaque() const {
     return ataque;
 }
 
+int Enemy::getVidaMaxima() const {
+    return vidaMaxima;
+}
+
 
 //___________________FIN GETTERS AND SETTERS_________________________________
 
@@ -79,6 +83,14 @@ pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
         this->atacando = false;
     }
     return make_pair(-1, -1);
+}
+
+int Enemy::getDefensa() const {
+    return defensa;
+}
+
+void Enemy::setDefensa(int defensa) {
+    Enemy::defensa = defensa;
 }
 
 
