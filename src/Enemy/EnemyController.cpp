@@ -36,6 +36,13 @@ void EnemyController::dibujaEnemigo() {
     for(int i = 0; i < listaEnemigos.getLength(); i++){
         Sprite::dibujaPersonaje(listaEnemigos.getData(i)->getPosX(), listaEnemigos.getData(i)->getPosY(),
                 listaEnemigos.getData(i)->getEnemy(), 2);
+        if(listaEnemigos.getData(i)->getPosY() == 0){
+            al_draw_filled_rectangle(listaEnemigos.getData(i)->getPosX(), listaEnemigos.getData(i)->getPosY()+5,
+                    listaEnemigos.getData(i)->getPosX()+90, listaEnemigos.getData(i)->getPosY(), al_map_rgb_f(255, 0, 0));
+        }else{
+            al_draw_filled_rectangle(listaEnemigos.getData(i)->getPosX(), listaEnemigos.getData(i)->getPosY()-5,
+                    listaEnemigos.getData(i)->getPosX()+90, listaEnemigos.getData(i)->getPosY(), al_map_rgb_f(255, 0, 0));
+        }
     }
     Sprite::dibujaGema(14*86, 0, al_load_bitmap("../img/gem.png"));
 }

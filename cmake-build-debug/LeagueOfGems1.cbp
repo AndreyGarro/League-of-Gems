@@ -123,6 +123,9 @@
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/enemyAttackN01.png">
 			<Option target="LeagueOfGems1"/>
 		</Unit>
+		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/enemyDead.png">
+			<Option target="LeagueOfGems1"/>
+		</Unit>
 		<Unit filename="/home/andrew/CLionProjects/LeagueOfGems1/img/gem.png">
 			<Option target="LeagueOfGems1"/>
 		</Unit>
