@@ -33,7 +33,7 @@ public:
     int getYd() const;
     Soldier(int x, int y);
     Soldier();
-    void setIJ(int i, int j, int matriz[10][15]);
+    void setIJ(int i, int j, int matriz[10][15], int nivel);
     void dibujarSoldado();
     void seguirRuta();
     Pair escogerPunto(int matriz[10][15], int xd, int yd);

@@ -15,12 +15,12 @@ using namespace std;
  * @param j Columna
  * @param matriz
  */
-void SoldierController::setIJ(int i, int j, int matriz[10][15]) {
+void SoldierController::setIJ(int i, int j, int matriz[10][15], int nivel) {
     if(this->i != i or this->j != j) {
         this->i = i;
         this->j = j;
         for (int k = 0; k < listSoldier.getLength(); ++k) {
-            this->listSoldier.getData(k)->setIJ(i,j, matriz);
+            this->listSoldier.getData(k)->setIJ(i,j, matriz,1);
         }
     }
 }
@@ -59,6 +59,13 @@ SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][
 //    for (int l = 0; l < atacados.getLength(); ++l) {
 //        cout << atacados.getData(l)->second.first<<" "<< atacados.getData(l)->second.second<<endl;
 //    }
+    if(this->tiempo > 90) {
+        cout << "Tiempo de poder agotado"<< endl;
+        this->tiempo = 0;
+        this->dano = 1;
+        this->fast = 1;
+    }
+    this->tiempo++;
     return atacados;
 }
 
@@ -86,10 +93,8 @@ int SoldierController::buscarSoldado(int i, int j) {
 }
 
 void SoldierController::escogerAtaque(int i, int j) {
-    if(tiempo > 30) {
-        this->tiempo = 0;
-        this->dano = 1;
-        this->fast = 1;
+    if(tiempo > 90) {
+
     }
     else{
         if (j == 0) {
@@ -106,7 +111,6 @@ void SoldierController::escogerAtaque(int i, int j) {
 
         }
     }
-    this->tiempo++;
 
 }
 

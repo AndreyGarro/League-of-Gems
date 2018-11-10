@@ -20,10 +20,10 @@ private:
 
 public:
     SoldierController();
-    void setIJ(int i, int j, int matriz[10][15]);
+    void setIJ(int i, int j, int matriz[10][15], int nivel);
     void dibujaJugador();
     SimpleList<pair<int, pair<int ,int >>> atacar (int matriz [10][15]);
-    void disminuirVida(SimpleList<pair<int, pair<int, int>>> listaAtacados );
+    void disminuirVida(SimpleList<pair<int, pair<int, int>>> listaAtacados);
     int buscarSoldado(int i, int j);
     void escogerAtaque(int i, int j);
 
