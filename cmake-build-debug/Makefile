@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andrew/CLionProjects/LeagueOfGems
+CMAKE_SOURCE_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug/CMakeFiles" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,60 @@ src/Algoritmos/Dijkstra.s: src/Algoritmos/Dijkstra.cpp.s
 src/Algoritmos/Dijkstra.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.s
 .PHONY : src/Algoritmos/Dijkstra.cpp.s
+
+src/Algoritmos/GeneticAlgorithm.o: src/Algoritmos/GeneticAlgorithm.cpp.o
+
+.PHONY : src/Algoritmos/GeneticAlgorithm.o
+
+# target to build an object file
+src/Algoritmos/GeneticAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticAlgorithm.cpp.o
+.PHONY : src/Algoritmos/GeneticAlgorithm.cpp.o
+
+src/Algoritmos/GeneticAlgorithm.i: src/Algoritmos/GeneticAlgorithm.cpp.i
+
+.PHONY : src/Algoritmos/GeneticAlgorithm.i
+
+# target to preprocess a source file
+src/Algoritmos/GeneticAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticAlgorithm.cpp.i
+.PHONY : src/Algoritmos/GeneticAlgorithm.cpp.i
+
+src/Algoritmos/GeneticAlgorithm.s: src/Algoritmos/GeneticAlgorithm.cpp.s
+
+.PHONY : src/Algoritmos/GeneticAlgorithm.s
+
+# target to generate assembly for a file
+src/Algoritmos/GeneticAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticAlgorithm.cpp.s
+.PHONY : src/Algoritmos/GeneticAlgorithm.cpp.s
+
+src/Algoritmos/GeneticEnemy.o: src/Algoritmos/GeneticEnemy.cpp.o
+
+.PHONY : src/Algoritmos/GeneticEnemy.o
+
+# target to build an object file
+src/Algoritmos/GeneticEnemy.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticEnemy.cpp.o
+.PHONY : src/Algoritmos/GeneticEnemy.cpp.o
+
+src/Algoritmos/GeneticEnemy.i: src/Algoritmos/GeneticEnemy.cpp.i
+
+.PHONY : src/Algoritmos/GeneticEnemy.i
+
+# target to preprocess a source file
+src/Algoritmos/GeneticEnemy.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticEnemy.cpp.i
+.PHONY : src/Algoritmos/GeneticEnemy.cpp.i
+
+src/Algoritmos/GeneticEnemy.s: src/Algoritmos/GeneticEnemy.cpp.s
+
+.PHONY : src/Algoritmos/GeneticEnemy.s
+
+# target to generate assembly for a file
+src/Algoritmos/GeneticEnemy.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticEnemy.cpp.s
+.PHONY : src/Algoritmos/GeneticEnemy.cpp.s
 
 src/Algoritmos/Graph.o: src/Algoritmos/Graph.cpp.o
 
@@ -519,6 +573,12 @@ help:
 	@echo "... src/Algoritmos/Dijkstra.o"
 	@echo "... src/Algoritmos/Dijkstra.i"
 	@echo "... src/Algoritmos/Dijkstra.s"
+	@echo "... src/Algoritmos/GeneticAlgorithm.o"
+	@echo "... src/Algoritmos/GeneticAlgorithm.i"
+	@echo "... src/Algoritmos/GeneticAlgorithm.s"
+	@echo "... src/Algoritmos/GeneticEnemy.o"
+	@echo "... src/Algoritmos/GeneticEnemy.i"
+	@echo "... src/Algoritmos/GeneticEnemy.s"
 	@echo "... src/Algoritmos/Graph.o"
 	@echo "... src/Algoritmos/Graph.i"
 	@echo "... src/Algoritmos/Graph.s"
