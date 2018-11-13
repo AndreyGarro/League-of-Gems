@@ -40,8 +40,8 @@ void GeneticAlgorithm::crossParents() {
             parameter1 = rand() % 6;
             parameter2 = rand() % 6;
         }
-        EnemyToAnalyze firstParent = survivors.getData(parameter1);
-        EnemyToAnalyze secondParent = survivors.getData(parameter2);
+        EnemyToAnalyze firstParent = *survivors.getData(parameter1);
+        EnemyToAnalyze secondParent = *survivors.getData(parameter2);
 
         parameter1 = rand() % 4;
         parameter2 = rand() % 4;
@@ -164,7 +164,7 @@ void GeneticAlgorithm::makeFirstGeneration() {
 void GeneticAlgorithm::fitnessFunction() {
     EnemyToAnalyze temp;
     for (int i = 0; i < population.getLength(); i++) {
-        temp = population.getData(i);
+        temp = *population.getData(i);
         temp.fitness = (temp.fitnessData[0] / 60.0) + (temp.fitnessData[1] / 60.0) +
                        (temp.fitnessData[2] / 60.0) + (temp.health / (temp.defence + 0.0) / temp.health);
         population.setData(i, temp);
@@ -180,7 +180,7 @@ void GeneticAlgorithm::printEnemiesData() {
     GeneticEnemy temp;
     for (int i = 0; i < enemies.getLength(); i++) {
         std::cout << "---Enemigo " << i + 1 << "---" << std::endl;
-        temp = enemies.getData(i);
+        temp = *enemies.getData(i);
         std::cout << "Defensa: " << temp.getDefence() << std::endl;
         std::cout << "Vida: " << temp.getHealth() << std::endl;
         std::cout << "Daño: " << temp.getDamage() << std::endl;
@@ -196,11 +196,11 @@ void GeneticAlgorithm::sortByFitness() {
     int i, j;
     EnemyToAnalyze enemyTemp;
     for (i = 1; i < population.getLength(); i++) {
-        enemyTemp = population.getData(i);
+        enemyTemp = *population.getData(i);
         j = i - 1;
 
-        while (j >= 0 && population.getData(j).fitness < enemyTemp.fitness) {
-            population.setData(j + 1, population.getData(j));
+        while (j >= 0 && population.getData(j)->fitness < enemyTemp.fitness) {
+            population.setData(j + 1, *population.getData(j));
             j = j - 1;
         }
         population.setData(j + 1, enemyTemp);
@@ -213,7 +213,7 @@ void GeneticAlgorithm::sortByFitness() {
  * @param index
  */
 void GeneticAlgorithm::addFitnessData(int fitnessData[3], int index) {
-    EnemyToAnalyze temp = population.getData(index);
+    EnemyToAnalyze temp = *population.getData(index);
 
     temp.fitnessData[0] = fitnessData[0];
     temp.fitnessData[1] = fitnessData[1];
@@ -231,7 +231,7 @@ SimpleList<EnemyToAnalyze> GeneticAlgorithm::deleteWorseParents() {
     SimpleList<EnemyToAnalyze> temp;
 
     for (int i = 0; i < 6; i++) {
-        temp.add(population.getData(i));
+        temp.add(*population.getData(i));
     }
 
     return temp;
@@ -259,16 +259,16 @@ void GeneticAlgorithm::mutateEnemies() {
             gen = rand() % 4;
             switch (gen) {
                 case 0:
-                    enemies.getData(i).setDefence(rand() % 30);
+                    enemies.getData(i)->setDefence(rand() % 30);
                     break;
                 case 1:
-                    enemies.getData(i).setHealth(rand() % 300 + 100);
+                    enemies.getData(i)->setHealth(rand() % 300 + 100);
                     break;
                 case 2:
-                    enemies.getData(i).setDamage(rand() % 20 + 10);
+                    enemies.getData(i)->setDamage(rand() % 20 + 10);
                     break;
                 default:
-                    enemies.getData(i).setAtackFreq(rand() % 3 + 1);
+                    enemies.getData(i)->setAtackFreq(rand() % 3 + 1);
                     break;
             }
         }

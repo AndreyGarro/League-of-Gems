@@ -25,7 +25,7 @@ Graph GraphMaker::createGraph(int matrix[ROWS][COLUMNS]) {
                     graph.addEdge(row, column, row, column + 1);
                 }
                 if (itsOk(row, column - 1, matrix)) {
-                    graph.addVertex(row, column + 1);
+                    graph.addVertex(row, column - 1);
                     graph.addEdge(row, column, row, column - 1);
                 }
                 if (itsOk(row - 1, column - 1, matrix)) {

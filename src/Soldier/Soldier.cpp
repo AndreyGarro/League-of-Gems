@@ -5,8 +5,14 @@
 #include <allegro5/allegro.h>
 #include "Soldier.h"
 #include "../App/Sprite.h"
-#include "../LineaVista/LineaVista.h"
+#include "../Algoritmos/LineaVista.h"
 #include "../Algoritmos/AStarPathFinding.h"
+#include "../Algoritmos/LineaVista.h"
+#include "../Algoritmos/Kruskal.h"
+#include "../Algoritmos/Prim.h"
+#include "../Algoritmos/GraphMaker.h"
+#include "../App/Aplicacion.h"
+
 /**
  * Construtuor con parametros
  * @param x posicion horizontal donde se dibujara el soldado la primera vez
@@ -32,23 +38,44 @@ Soldier::Soldier() {}
  * @param matriz
  */
 void Soldier::setIJ(int i, int j, int matriz[10][15], int nivel) {
+    Pair posff = escogerPunto(matriz, i, j);
     if (nivel == 0) {
-
+        cout <<"Linea Vista" << endl;
+        LineaVista vista = LineaVista();
+        ruta = vista.lineaVista(yd/70, xd/90, posff.first, posff.second, matriz );
+        Application::matriz[posff.first][posff.second] = 4;
     }
     else if (nivel == 1) {
-        Pair posff = escogerPunto(matriz, i, j);
-        AstarPathfinding AStar = AstarPathfinding();
-        ruta2 = AStar.busquedaAStar(matriz, make_pair(yd / 70, xd / 90), posff);
+        cout <<"Prim" << endl;
+        Prim prim;
+        if (!graphActivo) {
+            GraphMaker maker;
+            graph = maker.createGraph(matriz);
+            this->graphActivo = true;
+        }
+        cout << posff.first<<" "<< posff.second <<" "<< i <<" " << j<<endl;
+        ruta2 = prim.primAlgorithm(yd/70, xd/90, posff.first, posff.second, graph);
         Application::matriz[posff.first][posff.second] = 4;
     }
     else if(nivel == 2){
-        
+        cout <<"Kruscal" << endl;
+        Kruskal kruskal;
+        if (!graphActivo) {
+            GraphMaker maker;
+            graph = maker.createGraph(matriz);
+            this->graphActivo = true;
+        }
+        ruta2 = kruskal.kruskalAlgorithm(yd/70, xd/90, posff.first, posff.second, graph);
+        Application::matriz[posff.first][posff.second] = 4;
     }
     else if(nivel == 3){
-        
+
     }
     else if (nivel == 4){
-        
+        cout <<"A star"<< endl;
+        AstarPathfinding AStar = AstarPathfinding();
+        ruta2 = AStar.busquedaAStar(matriz, make_pair(yd / 70, xd / 90), posff);
+        Application::matriz[posff.first][posff.second] = 4;
     }
 }
 /**
@@ -58,6 +85,14 @@ void Soldier::seguirRuta(){
     if(ruta2.getLenght() > 0) {
         if (this->llegue) {
             Pair coorTemp = ruta2.pop();
+            xd = coorTemp.second * 90;
+            yd = coorTemp.first * 70;
+            this->llegue = false;
+        }
+    }
+    if(ruta.size() > 0) {
+        if (this->llegue) {
+            Pair coorTemp = ruta.pop();
             xd = coorTemp.second * 90;
             yd = coorTemp.first * 70;
             this->llegue = false;

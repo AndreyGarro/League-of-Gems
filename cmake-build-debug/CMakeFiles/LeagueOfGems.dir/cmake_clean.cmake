@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticAlgorithm.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o"
-  "CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o"
+  "CMakeFiles/LeagueOfGems.dir/src/Algoritmos/LineaVista.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o"
   "CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o"

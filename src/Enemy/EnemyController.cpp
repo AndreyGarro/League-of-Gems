@@ -5,6 +5,7 @@
 #include <iostream>
 #include <allegro5/allegro_native_dialog.h>
 #include "EnemyController.h"
+#include "../App/Aplicacion.h"
 
 /**
  * Constructor, carga todas las imagenes de los
@@ -79,20 +80,26 @@ SimpleList<pair<int, pair<int, int>>> EnemyController::atacar(int matriz[10][15]
  * @param display pantalla en la que se está trabajando todos los gráficos
  */
 void EnemyController::disminuirVida(SimpleList<pair<int, pair<int, int>>> listaEnemigos1) {
-
     if(!listaEnemigos1.isEmpty()) {
-        for (int i = 0; i < listaEnemigos.getLength(); ++i) {
-            if (listaEnemigos1.getData(0)->second.first == listaEnemigos.getData(i)->getPosY() / 70
-                && listaEnemigos1.getData(0)->second.second == listaEnemigos.getData(i)->getPosX() / 90) {
-                listaEnemigos.getData(i)->setVida(listaEnemigos.getData(i)->getVida() -
-                (listaEnemigos1.getData(0)->first - listaEnemigos.getData(i)->getDefensa()));
-                if(listaEnemigos.getData(i)->getVida() <= 0){
-                    Application::matriz[listaEnemigos.getData(i)->getPosY()/70][listaEnemigos.getData(i)->getPosX()/90] = 1;
-                    listaEnemigos.deleteNode(i);
+        for (int i = 0; i < listaEnemigos1.getLength(); ++i) {
+            int numEne = buscarEnemy(listaEnemigos1.getData(i)->second.first, listaEnemigos1.getData(i)->second.second);
+            if(numEne != -1){
+                listaEnemigos.getData(numEne)->setVida(listaEnemigos.getData(numEne)->getVida()-listaEnemigos1.getData(i)->first - listaEnemigos.getData(numEne)->getDefensa());
+                if(listaEnemigos.getData(numEne)->getVida() <= 0){
+                    Application::matriz[listaEnemigos.getData(numEne)->getPosY()/70][listaEnemigos.getData(numEne)->getPosX()/90] = 1;
+                    listaEnemigos.deleteNode(numEne);
                 }
-                break;
+
             }
         }
     }
 }
 
+int EnemyController::buscarEnemy(int i, int j) {
+    for (int k = 0; k < listaEnemigos.getLength(); ++k) {
+        if(listaEnemigos.getData(k)->getPosY()/70 == i && listaEnemigos.getData(k)->getPosX()/90 == j){
+            return k;
+        }
+    }
+    return -1;
+}

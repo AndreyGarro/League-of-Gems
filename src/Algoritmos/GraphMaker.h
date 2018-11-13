@@ -7,8 +7,8 @@
 
 #include "Graph.h"
 
-#define ROWS 4
-#define COLUMNS 4
+#define ROWS 10
+#define COLUMNS 15
 
 class GraphMaker {
 private:

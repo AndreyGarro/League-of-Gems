@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Kruskal.h"
 
 /**
@@ -11,17 +12,21 @@
  */
 Pila<pair<int, int>>
 Kruskal::kruskalAlgorithm(int currentRow, int currentColumn, int destRow, int destColumn, Graph graph) {
-
+    if (graph.getVertex(destRow, destColumn).row == -1 && graph.getVertex(destRow, destColumn).column == -1) {
+        return {};
+    }
     Pila<pair<int, int>> stackPath;
     SimpleList<EdgePath> edges = this->makeEdges(graph, currentRow, currentColumn);
     EdgePath temp = findePrevEdge(destRow, destColumn, edges);
-    while (true) {
+    while (!edges.isEmpty()) {
         if (temp.row == currentRow && temp.column == currentColumn) {
+            cout<<"Kruskal encontrado"<<endl;
             return stackPath;
         }
         stackPath.push(make_pair(temp.row, temp.column));
         temp = findePrevEdge(temp.prevRow, temp.prevColumn, edges);
     }
+    return {};
 }
 
 /**
@@ -47,7 +52,7 @@ SimpleList<EdgePath> Kruskal::makeEdges(Graph graph, int currentRow, int current
             tempV = *currentV.edge->getData(j);
             if (!isVisited(tempV.row, tempV.column, visited)) {
                 queue.add(tempV);
-                visited.add(EdgePath{currentV.row, currentV.column});
+                visited.add(EdgePath{tempV.row, tempV.column});
                 edges.add(EdgePath{tempV.row, tempV.column, currentV.row, currentV.column, currentV.weight + 1});
             }
         }
@@ -65,7 +70,9 @@ SimpleList<EdgePath> Kruskal::makeEdges(Graph graph, int currentRow, int current
 EdgePath Kruskal::findePrevEdge(int row, int column, SimpleList<EdgePath> edges) {
     for (int i = 0; i < edges.getLength(); i++) {
         if (edges.getData(i)->row == row && edges.getData(i)->column == column) {
-            return *edges.getData(i);
+            EdgePath temp = *edges.getData(i);
+            edges.deleteNode(i);
+            return temp;
         }
     }
 }
