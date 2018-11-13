@@ -9,9 +9,7 @@
 #include <allegro5/haptic.h>
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
-#include "Sprite.h"
 
-#include "Aplicacion.h"
 
 using namespace std;
 

@@ -2,6 +2,8 @@
 
 #include <string>
 #include "allegro5/allegro5.h"
+#include "../Soldier/SoldierController.h"
+#include "../Enemy/EnemyController.h"
 
 class Application{
 public:
@@ -18,9 +20,11 @@ public:
     void initMatriz();
     void imprimirMatriz();
     void resetMatriz();
+    void subirNivel(int nivel);
 
     // 2 enemigo, 3 soldado, 0 obstaculo, 1 espacio libre
     static int matriz[10][15];
+
 
 private:
     ALLEGRO_EVENT_QUEUE* EventQueue;
@@ -28,6 +32,8 @@ private:
     bool start = false;
     int x,y;
     ALLEGRO_EVENT oEvent;
+    int nivel = 0; bool flagNivel = false;
+
 
     /// Pantalla
     ALLEGRO_DISPLAY *Display = NULL;

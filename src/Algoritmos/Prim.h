@@ -32,6 +32,7 @@ struct Path {
 class Prim {
 private:
     Graph graph;
+    bool graphON = false;
     SimpleList<Vertex> visited;
 
     Pila<pair<int, int>> queueGenerator(int row, int column, int destRow, int destColumn, SimpleList<Path> cola);

@@ -19,7 +19,10 @@ Pila<pair<int, int>> Prim::primAlgorithm(int currentRow, int currentColumn, int 
     if (graph.getVertex(destRow, destColumn).row == -1 && graph.getVertex(destRow, destColumn).column == -1) {
         return {};
     }
-    this->graph = graph;
+    if (!graphON) {
+        this->graph = graph;
+        graphON = true;
+    }
     SimpleList<Vertex> queue;
     Vertex current = this->graph.getVertex(currentRow, currentColumn);
     Vertex temp;

@@ -20,7 +20,7 @@ void SoldierController::setIJ(int i, int j, int matriz[10][15], int nivel) {
         this->i = i;
         this->j = j;
         for (int k = 0; k < listSoldier.getLength(); ++k) {
-            this->listSoldier.getData(k)->setIJ(i,j, matriz,1);
+            this->listSoldier.getData(k)->setIJ(i,j, matriz,nivel);
         }
     }
 }
@@ -56,9 +56,7 @@ SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][
             atacados.add(make_pair(listSoldier.getData(k)->getAtaque(), temp));
         }
     }
-//    for (int l = 0; l < atacados.getLength(); ++l) {
-//        cout << atacados.getData(l)->second.first<<" "<< atacados.getData(l)->second.second<<endl;
-//    }
+
     if(this->tiempo > 90) {
 //        cout << "Tiempo de poder agotado"<< endl;
         this->tiempo = 0;
@@ -106,10 +104,11 @@ void SoldierController::escogerAtaque(int i, int j) {
                 listSoldier.getData(k)->setDefensa(25);
             }
             cout << "Se eligio defensa"<<endl;
-        } else if (j == 3) {
+        } else if (j == 3 && numCuras !=0) {
             for (int k = 0; k < listSoldier.getLength(); ++k) {
                 listSoldier.getData(k)->setVida(250);
             }
+            this->numCuras--;
             cout << "Se eligio curar"<<endl;
         } else if (j == 4) {
 
@@ -117,6 +116,16 @@ void SoldierController::escogerAtaque(int i, int j) {
     }
 
 }
-
-
-
+void SoldierController::subirNivel(int nivel) {
+    while (!listSoldier.isEmpty()){
+        listSoldier.deleteNode(0);
+    }
+    this->listSoldier.add(Soldier(0,490));
+    this->listSoldier.add(Soldier(90,490));
+    this->listSoldier.add(Soldier(180,490));
+    this->listSoldier.add(Soldier(0,560));
+    this->listSoldier.add(Soldier(90,560));
+    this->listSoldier.add(Soldier(180,560));
+    this->tiempo = 30 * nivel;
+    this->numCuras = 3 + nivel;
+}

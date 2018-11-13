@@ -14,7 +14,7 @@
  */
 class SoldierController {
 private:
-    int fast = 1, tiempo = 30;
+    int fast = 1, tiempo = 30, numCuras = 3;
     int i,j;
     SimpleList<Soldier> listSoldier =  SimpleList<Soldier>();
 
@@ -26,7 +26,7 @@ public:
     void disminuirVida(SimpleList<pair<int, pair<int, int>>> listaAtacados);
     int buscarSoldado(int i, int j);
     void escogerAtaque(int i, int j);
-
+    void subirNivel(int nivel);
 };
 
 

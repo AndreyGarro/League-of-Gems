@@ -35,10 +35,9 @@ public:
     Cola<pair<int, int >> lineaVista(int i, int j, int id, int jd, int matix[10][15]);
 
 private:
-    void rodearObstaculo(coordenada *origen, coordenada destino, int matrix[10][15], Cola<pair<int, int>> *ruta);
-    void buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[10][15], Cola<pair<int, int>> *ruta);
+    int rodearObstaculo(coordenada *origen, coordenada destino, int matrix[10][15], Cola<pair<int, int>> *ruta);
+    int buscarRuta(coordenada *ruta1, coordenada destino1, int matrix[10][15], Cola<pair<int, int>> *ruta);
     void buscarRuta(coordenada destino, coordenada origen, int matrix[10][15], Cola<pair<int, int>> *ruta);
-    pair<int, int> escogerPunto(int matriz[10][15], int id, int jd);
 
 };
 

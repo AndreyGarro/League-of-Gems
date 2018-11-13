@@ -1,8 +1,5 @@
 
 #include "Aplicacion.h"
-#include "Sprite.h"
-#include "../Soldier/SoldierController.h"
-#include "../Enemy/EnemyController.h"
 #include <iostream>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_native_dialog.h>
@@ -11,6 +8,10 @@
 
 
 int Application::matriz[10][15] = {};
+/**
+ * Iniciacion de todos los atributos y dependencias
+ *  para utilizar las funcionalidades de allegro
+ */
 void Application::initApp() {
     al_init();
     this->Display = al_create_display(this->Width, this->Height);
@@ -22,6 +23,7 @@ void Application::initApp() {
     al_init_image_addon();
     al_init_primitives_addon();
     al_install_mouse();
+    al_install_keyboard();
     initMatriz();
     imprimirMatriz();
     this->start = true;
@@ -29,35 +31,74 @@ void Application::initApp() {
     this->fondo = al_load_bitmap("../img/grassTexture.bmp");
 }
 
+/**
+ * Ciclo principal de la aplicacion
+ * @return
+ */
 int Application::mainLoop(){
     //
-    SoldierController j1 = SoldierController();
-    EnemyController e1 = EnemyController();
+    SoldierController j1;
+    EnemyController e1;
+
 
     if (iFPS == 0) {
         iFPS = 30;
     }
-
     timer = al_create_timer(1.0 / iFPS);
     this->EventQueue = al_create_event_queue();
     al_register_event_source(this->EventQueue, al_get_mouse_event_source());
     al_register_event_source(this->EventQueue, al_get_display_event_source(this->Display));
     al_register_event_source(this->EventQueue, al_get_timer_event_source(timer));
+    al_register_event_source(this->EventQueue, al_get_keyboard_event_source());
+
     al_start_timer(timer);
 
     while (true) {
         al_wait_for_event(this->EventQueue, &oEvent);
 
+
+        /// Subir de nivel rapido
+        if (oEvent.keyboard.keycode == ALLEGRO_KEY_1 ) {
+            subirNivel(1);
+        }
+        if (oEvent.keyboard.keycode == ALLEGRO_KEY_2 ) {
+            subirNivel(2);
+        }
+        if (oEvent.keyboard.keycode == ALLEGRO_KEY_3 ) {
+            subirNivel(3);
+        }
+        if (oEvent.keyboard.keycode == ALLEGRO_KEY_4 ) {
+            subirNivel(4);
+        }
+
+        if(this->flagNivel){
+            this->flagNivel = false;
+                if(this->nivel == 1){
+                    cout << "subo nivel 1" << endl;
+                    j1.subirNivel(1);
+                }
+                else if(this->nivel == 2){
+                    cout << "subo nivel 2" << endl;
+                    j1.subirNivel(2);
+                }
+                else if(this->nivel ==3) {
+                    cout << "subo nivel 3" << endl;
+                    j1.subirNivel(3);
+                }
+                else  if(this->nivel == 4) {
+                    cout << "subo nivel 4" << endl;
+                    j1.subirNivel(4);
+                }
+        }
         if (oEvent.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
             if (oEvent.mouse.button & 2) {
                 this->x = oEvent.mouse.x;
                 this->y = oEvent.mouse.y;
-                std::cout << x << " " << y << std::endl;
                 resetMatriz();
-                if (y / 70 > 8 && x / 90 < 4) {
+                if (y / 70 > 8 && x / 90 < 4 && x/90 > 0) {
 
                 } else {
-                    j1.setIJ(y / 70, x / 90, Application::matriz, 1);
+                    j1.setIJ(y / 70, x / 90, Application::matriz, this->nivel);
                 }
             }
             else if(oEvent.mouse.button & 1){
@@ -76,7 +117,7 @@ int Application::mainLoop(){
             return 0;
         }
 
-        //// Actualiza la pantalla cada frame de la pantalla
+        //// Actualiza la pantalla cada 30fps de la pantalla
         if (oEvent.type == ALLEGRO_EVENT_TIMER && oEvent.timer.source == timer) {
             al_clear_to_color(al_map_rgb(0,0,0));
             al_draw_bitmap(fondo, 0, 0, 0);
@@ -98,6 +139,9 @@ int Application::mainLoop(){
     }
 }
 
+/**
+ * Iniciar la matriz, reservando los espacios necesarios y colocando obstaculos
+ */
 void Application::initMatriz() {
     srand(static_cast<unsigned int>(time(0)));
     for (int i = 0; i < 10; ++i) {
@@ -110,7 +154,7 @@ void Application::initMatriz() {
             }
             if(i>6 && j < 5){
                 Application::matriz[i][j] = 1;
-            }if(i>8 && j < 4){
+            }if(i>8 && j < 4 && j > 0){
                 Application::matriz[i][j] = 6;
             }
             if(i < 5   && j> 9){
@@ -119,6 +163,9 @@ void Application::initMatriz() {
         }
     }
 }
+/**
+ *
+ */
 void Application::imprimirMatriz(){
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 15; ++j) {
@@ -127,7 +174,9 @@ void Application::imprimirMatriz(){
         std::cout << std::endl;
     }
 }
-
+/**
+ * Limpia las marcas de dejan los soldados
+ */
 void Application::resetMatriz() {
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 15; ++j) {
@@ -138,6 +187,19 @@ void Application::resetMatriz() {
     }
 
 }
+/**
+ * Meetodo que se debe llamar cuando no
+ *  se hayan matado todos los enemigos
+ * @param nivel
+ */
+void Application::subirNivel(int nivel) {
+    this->flagNivel = true;
+    this->nivel = nivel;
+    initMatriz();
+    resetMatriz();
+
+}
 Application::~Application() {
 }
+
 

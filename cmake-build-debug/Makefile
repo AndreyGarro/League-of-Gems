@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/44/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/49/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/49/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT"
+CMAKE_SOURCE_DIR = /home/christian/Escritorio/LOG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/christian/Escritorio/LOG/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos D
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/44/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/49/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/44/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/49/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug/CMakeFiles" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -339,6 +339,33 @@ src/Algoritmos/Kruskal.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.s
 .PHONY : src/Algoritmos/Kruskal.cpp.s
 
+src/Algoritmos/LineaVista.o: src/Algoritmos/LineaVista.cpp.o
+
+.PHONY : src/Algoritmos/LineaVista.o
+
+# target to build an object file
+src/Algoritmos/LineaVista.cpp.o:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/LineaVista.cpp.o
+.PHONY : src/Algoritmos/LineaVista.cpp.o
+
+src/Algoritmos/LineaVista.i: src/Algoritmos/LineaVista.cpp.i
+
+.PHONY : src/Algoritmos/LineaVista.i
+
+# target to preprocess a source file
+src/Algoritmos/LineaVista.cpp.i:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/LineaVista.cpp.i
+.PHONY : src/Algoritmos/LineaVista.cpp.i
+
+src/Algoritmos/LineaVista.s: src/Algoritmos/LineaVista.cpp.s
+
+.PHONY : src/Algoritmos/LineaVista.s
+
+# target to generate assembly for a file
+src/Algoritmos/LineaVista.cpp.s:
+	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Algoritmos/LineaVista.cpp.s
+.PHONY : src/Algoritmos/LineaVista.cpp.s
+
 src/Algoritmos/Prim.o: src/Algoritmos/Prim.cpp.o
 
 .PHONY : src/Algoritmos/Prim.o
@@ -474,33 +501,6 @@ src/Enemy/EnemyController.cpp.s:
 	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.s
 .PHONY : src/Enemy/EnemyController.cpp.s
 
-src/LineaVista/LineaVista.o: src/LineaVista/LineaVista.cpp.o
-
-.PHONY : src/LineaVista/LineaVista.o
-
-# target to build an object file
-src/LineaVista/LineaVista.cpp.o:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.o
-.PHONY : src/LineaVista/LineaVista.cpp.o
-
-src/LineaVista/LineaVista.i: src/LineaVista/LineaVista.cpp.i
-
-.PHONY : src/LineaVista/LineaVista.i
-
-# target to preprocess a source file
-src/LineaVista/LineaVista.cpp.i:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.i
-.PHONY : src/LineaVista/LineaVista.cpp.i
-
-src/LineaVista/LineaVista.s: src/LineaVista/LineaVista.cpp.s
-
-.PHONY : src/LineaVista/LineaVista.s
-
-# target to generate assembly for a file
-src/LineaVista/LineaVista.cpp.s:
-	$(MAKE) -f CMakeFiles/LeagueOfGems.dir/build.make CMakeFiles/LeagueOfGems.dir/src/LineaVista/LineaVista.cpp.s
-.PHONY : src/LineaVista/LineaVista.cpp.s
-
 src/Soldier/Soldier.o: src/Soldier/Soldier.cpp.o
 
 .PHONY : src/Soldier/Soldier.o
@@ -588,6 +588,9 @@ help:
 	@echo "... src/Algoritmos/Kruskal.o"
 	@echo "... src/Algoritmos/Kruskal.i"
 	@echo "... src/Algoritmos/Kruskal.s"
+	@echo "... src/Algoritmos/LineaVista.o"
+	@echo "... src/Algoritmos/LineaVista.i"
+	@echo "... src/Algoritmos/LineaVista.s"
 	@echo "... src/Algoritmos/Prim.o"
 	@echo "... src/Algoritmos/Prim.i"
 	@echo "... src/Algoritmos/Prim.s"
@@ -603,9 +606,6 @@ help:
 	@echo "... src/Enemy/EnemyController.o"
 	@echo "... src/Enemy/EnemyController.i"
 	@echo "... src/Enemy/EnemyController.s"
-	@echo "... src/LineaVista/LineaVista.o"
-	@echo "... src/LineaVista/LineaVista.i"
-	@echo "... src/LineaVista/LineaVista.s"
 	@echo "... src/Soldier/Soldier.o"
 	@echo "... src/Soldier/Soldier.i"
 	@echo "... src/Soldier/Soldier.s"

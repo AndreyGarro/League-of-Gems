@@ -20,6 +20,7 @@ public:
     void dibujaEnemigo();
     SimpleList<pair<int, pair<int, int>>> atacar(int matriz[10][15]);
     void disminuirVida(SimpleList<pair<int, pair<int, int>>> listaEnemigos);
+    int buscarEnemy(int i, int j);
 
 };
 

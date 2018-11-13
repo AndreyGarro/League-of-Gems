@@ -8,6 +8,7 @@
 #include "../Estructuras/Cola.h"
 #include "../Estructuras/Pila.h"
 #include "../Algoritmos/AStarPathFinding.h"
+#include "../Algoritmos/Graph.h"
 #include <allegro5/bitmap.h>
 #include <allegro5/allegro.h>
 #include <utility>
@@ -27,8 +28,8 @@ private:
     bool flagAttack = false;
     int freAtaque = 0;
     ALLEGRO_BITMAP *image;
-
-
+    Graph graph;
+    bool graphActivo = false;
     Cola<Pair> ruta = Cola<Pair>();
     Pila<Pair> ruta2 = Pila<Pair>();
 

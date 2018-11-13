@@ -4,6 +4,7 @@
 #include "Sprite.h"
 #include "Aplicacion.h"
 
+
 void Sprite::dibujaObstaculo(int matriz[10][15]) {
     ALLEGRO_BITMAP *tree = al_load_bitmap("../img/treeSprite.png");
     al_convert_mask_to_alpha(tree, al_map_rgb(1,1,1));
@@ -35,6 +36,8 @@ void Sprite::dibujaPersonaje(int x, int y, ALLEGRO_BITMAP *image, int flag) {
 void Sprite::dibujaGema(int x, int y, ALLEGRO_BITMAP *image) {
     al_draw_scaled_bitmap(image, 0, 0, 100, 100, x, y, 100, 100, 0);
     al_destroy_bitmap(image);
+    Application::matriz[0][13] = 7;
+    Application::matriz[0][14] = 7;
 }
 
 void Sprite::dibujaBarraAtaques(int (*matriz)[15]) {
