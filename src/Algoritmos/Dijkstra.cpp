@@ -1,189 +1,152 @@
 //
-// Created by yenmari11 on 10/31/18.
+// Created by ortegajosant on 13/11/18.
 //
+
 #include "Dijkstra.h"
 
-bool Dijkstra::definirCentro(int x,int y){
-    cout<<"Definiendo centro"<<endl;
-    int xAux;
-    int yAux;
-    for(int i = 0; i<verticesPendientes->size(); i++) {
-        yAux = (verticesPendientes->operator[](i)).posicionYtiles;
-        xAux = (verticesPendientes->operator[](i)).posicionXtiles;
-        if(xAux == x && yAux == y){
-            (verticesPendientes->operator[](i)).distancia = 0.0;
-            cout<<"Centro definido"<<endl;
+/**
+ * Retorna el camino por que se moverá el soldado
+ * @param currentRow Fila actual
+ * @param currentColumn Columna actual
+ * @param destRow Fila destino
+ * @param destColumn Columna destino
+ * @param matriz Matriz del mapa
+ * @return Pila
+ */
+Pila<pair<int, int >>
+Dijkstra::findPath(int currentRow, int currentColumn, int destRow, int destColumn, int (*matriz)[15]) {
+    SimpleList<pair<int, int>> queue;
+    SimpleList<PrevPath> path;
+    queue.add(make_pair(currentRow, currentColumn));
+    visitados.add(make_pair(currentRow, currentColumn));
+    SimpleList<pair<int, int>> adyacentCells;
+    path.add(PrevPath(currentRow, currentColumn, -1, -1));
+    while (!queue.isEmpty()) {
+        pair<int, int> temp = queue.getData(0);
+        queue.deleteNode(0);
+        if (temp.first == destRow && temp.second == destColumn) {
+            return returnFinalPath(destRow, destColumn, path);
+        }
+        adyacentCells = getAdyacentCell(temp.first, temp.second, matriz);
+        for (int i = 0; i < adyacentCells.getLength(); i++) {
+            pair<int, int> tempAdy = adyacentCells.getData(i);
+            if (!isVisited(tempAdy.first, tempAdy.second)) {
+                visitados.add(tempAdy);
+                queue.add(tempAdy);
+                path.add(PrevPath(tempAdy.first, tempAdy.second, temp.first, temp.second));
+            }
+        }
+    }
+
+    return {};
+
+}
+
+/**
+ * Retorna el camino exacto
+ * @param destRow Fila destino
+ * @param destColumn Columna destina
+ * @param path Lista con los patrones
+ * @return Pila
+ */
+Pila<pair<int, int>> Dijkstra::returnFinalPath(int destRow, int destColumn, SimpleList<PrevPath> path) {
+    PrevPath tempPath;
+    for (int i = 0; i < path.getLength(); i++) {
+        PrevPath temp = path.getData(i);
+        if (temp.row == destRow && temp.column == destColumn) {
+            tempPath = temp;
+            break;
+        }
+    }
+    Pila<pair<int, int>> finalPath;
+    while (true) {
+        if (tempPath.prevRow == -1 && tempPath.prevColumn == -1) {
+            return finalPath;
+        }
+        finalPath.push(make_pair(tempPath.row, tempPath.column));
+        tempPath = findPrevPath(tempPath.prevRow, tempPath.prevColumn, path);
+    }
+
+}
+
+/**
+ * Obtiene las celdas adyacentes a la posición actual en la matriz
+ * @param row Fila
+ * @param column Columna
+ * @param matriz Matriz
+ * @return SimpleList
+ */
+SimpleList<pair<int, int>> Dijkstra::getAdyacentCell(int row, int column, int matriz[ROWS][COLUMNS]) {
+    SimpleList<pair<int, int>> adyacent;
+    if (itsOK(row, column, matriz)) {
+        if (itsOK(row, column + 1, matriz)) {
+            adyacent.add(make_pair(row, column + 1));
+        }
+        if (itsOK(row + 1, column, matriz)) {
+            adyacent.add(make_pair(row + 1, column));
+        }
+        if (itsOK(row + 1, column + 1, matriz)) {
+            adyacent.add(make_pair(row + 1, column + 1));
+        }
+        if (itsOK(row - 1, column, matriz)) {
+            adyacent.add(make_pair(row - 1, column));
+        }
+        if (itsOK(row, column - 1, matriz)) {
+            adyacent.add(make_pair(row, column - 1));
+        }
+        if (itsOK(row - 1, column - 1, matriz)) {
+            adyacent.add(make_pair(row - 1, column - 1));
+        }
+        if (itsOK(row + 1, column - 1, matriz)) {
+            adyacent.add(make_pair(row + 1, column - 1));
+        }
+        if (itsOK(row - 1, column + 1, matriz)) {
+            adyacent.add(make_pair(row - 1, column + 1));
+        }
+    }
+    return adyacent;
+}
+
+/**
+ * Verifica que la posición sea válida
+ * @param row Fila
+ * @param column COlumna
+ * @param matriz Matriz
+ * @return bool
+ */
+bool Dijkstra::itsOK(int row, int column, int matriz[ROWS][COLUMNS]) {
+    return row >= 0 && row < ROWS && column >= 0 && column < COLUMNS && matriz[row][column] == 1;
+}
+
+/**
+ * Verifica que la posición no haya sido visitada
+ * @param row Fila
+ * @param column Columna
+ * @return bool
+ */
+bool Dijkstra::isVisited(int row, int column) {
+    for (int i = 0; i < visitados.getLength(); i++) {
+        pair<int, int> temp = visitados.getData(i);
+        if (temp.first == row && temp.second == column) {
             return true;
         }
     }
-    cout<<"No se puede definir centro en esa posicion"<<endl;
     return false;
 }
 
-void Dijkstra::evaluarVecinos(int posicionX, int posicionY, double peso){
-    double dist = INF;
-    for(int y = posicionY-1; y <= posicionY+1; y++){
-        for(int x = posicionX-1; x <= posicionX+1; x++){
-            if(y < 0 || x < 0 || y > FilasMapa-1 || x > ColumnasMapa-1){
-            }else if(x == posicionX && y == posicionY){
-            }else{
-                Vertice aux{};
-
-                for(int i = 0; i<verticesPendientes->size(); i++) {
-                    aux = verticesPendientes->operator[](i);
-                    if (aux.posicionXtiles == x && aux.posicionYtiles == y) {
-                        if(aux.distancia == INF){
-                            if(x != posicionX && y != posicionY){
-                                //dist = DIAGONAL;
-                            }else{
-                                dist = 1.0;
-                                (verticesPendientes->operator[](i)).distancia = peso + dist;
-                            }
-                        }
-                    }
-                }
-            }
+/**
+ * Retorna la posición anterior en el patron
+ * @param row Fila
+ * @param column Columna
+ * @param path Patron
+ * @return PrevPath
+ */
+PrevPath Dijkstra::findPrevPath(int row, int column, SimpleList<PrevPath> path) {
+    for (int i = 0; i < path.getLength(); i++) {
+        PrevPath temp = path.getData(i);
+        if (temp.row == row && temp.column == column) {
+            return temp;
         }
     }
-}
-
-
-Vertice Dijkstra::retornarVecinoMenor(int posicionX, int posicionY, double peso){
-    double dist = peso;
-    Vertice verticeAux1{};
-    Vertice verticeAux2{};
-    verticeAux1.distancia = peso;
-    verticeAux1.posicionXtiles = posicionX;
-    verticeAux1.posicionYtiles = posicionY;
-    for(int y = posicionY-1; y <= posicionY+1; y++){
-        for(int x = posicionX-1; x <= posicionX+1; x++){
-            if(y < 0 || x < 0 || y > FilasMapa-1 || x > ColumnasMapa-1){
-            }else if(x == posicionX && y == posicionY){
-            }else{
-                for(int i = 0; i<verticesPendientes->size(); i++) {
-                    verticeAux2 = verticesPendientes->operator[](i);
-                    if (verticeAux2.posicionXtiles == x && verticeAux2.posicionYtiles == y) {
-                        if(verticeAux2.distancia < dist){
-                            if(!(x != posicionX && y != posicionY)) {
-                                dist = verticeAux2.distancia;
-                                verticeAux1 = verticeAux2;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return verticeAux1;
-}
-
-
-Dijkstra::Dijkstra(int matriz[FilasMapa][ColumnasMapa]){
-
-}
-
-void Dijkstra::setMap(int matriz[10][15]) {
-    verticesMapa->clear();
-    for (int y = 0; y < FilasMapa; y++){
-        for (int x = 0; x < ColumnasMapa; x++){
-            if(matriz[y][x] == 0) {
-                Vertice vertice{};
-                vertice.distancia = INF;
-                vertice.posicionXtiles = x;
-                vertice.posicionYtiles = y;
-                vertice.visitado = false;
-                verticesMapa->push_back(vertice);
-            }
-        }
-    }
-}
-
-void Dijkstra::definirPesos(int x, int y){
-    if(y<FilasMapa && x<ColumnasMapa){
-        verticesPendientes->clear();
-        for(int i = 0; i<verticesMapa->size(); i++) {
-            verticesPendientes->push_back(verticesMapa->operator[](i));
-        }
-        if(definirCentro(x,y)) {
-            Vertice aux{};
-            for(int i = 0; i < 55; i++) {
-                for (int i = 0; i < verticesPendientes->size(); i++) {
-                    aux = verticesPendientes->operator[](i);
-                    if (aux.distancia != INF) {
-                        evaluarVecinos(aux.posicionXtiles, aux.posicionYtiles, aux.distancia);
-                        (verticesPendientes->operator[](i)).visitado = true;
-                    }
-                }
-            }
-        }
-    }
-}
-
-int Dijkstra::definirRutaOptima(int x, int y) {
-    if (y < FilasMapa && x < ColumnasMapa) {
-        int xAux;
-        int yAux;
-        Vertice verticeActual = {};
-        Vertice vertAux{};
-        verticeActual.distancia = INF;
-        ruta->clear();
-        contador = 0;
-
-        for (int i = 0; i < verticesPendientes->size(); i++) {
-            vertAux = verticesPendientes->operator[](i);
-            yAux = vertAux.posicionYtiles;
-            xAux = vertAux.posicionXtiles;
-            if (xAux == x && yAux == y) {
-                verticeActual = vertAux;
-                break;
-            }
-        }
-
-        if (verticeActual.distancia == INF) {
-            cout << "Fuera de rango" << endl;
-            return 0;
-        } else if (verticeActual.distancia == 0.0) {
-            ruta->push_back(verticeActual);
-        } else {
-            ruta->push_back(verticeActual);
-            bool flag = true;
-            cout<<"Si es este while"<<endl;
-            while (flag) {
-                verticeActual = retornarVecinoMenor(verticeActual.posicionXtiles,
-                                                    verticeActual.posicionYtiles, verticeActual.distancia);
-                cout<<verticeActual.distancia<<endl;
-                if (verticeActual.distancia == 0.0) {
-                    ruta->push_back(verticeActual);
-                    flag = false;
-                } else {
-                    ruta->push_back(verticeActual);
-                }
-            }
-            cout<<"No es este while"<<endl;
-        }
-
-        cout << "{" << endl;
-        for (int i = 0; i < ruta->size(); i++) {
-            cout << "(Vertice" << i << ": X = " << (ruta->operator[](i)).posicionXtiles << "," << "Y = "
-                 << (ruta->operator[](i)).posicionYtiles << ", Peso = " << (ruta->operator[](i)).distancia << "),"
-                 << endl;
-        }
-        cout << "}" << endl;
-        return 1;
-    }
-    return 0;
-}
-
-Vertice Dijkstra::obtenerSiguienteVertice(){
-    Vertice aux{};
-    aux.posicionXtiles = -1;
-    aux.posicionYtiles = -1;
-
-    if(contador < ruta->size()) {
-        aux = ruta->operator[](contador);
-    }
-    contador++;
-
-
-    return aux;
+    return {};
 }
