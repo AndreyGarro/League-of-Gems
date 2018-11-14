@@ -115,7 +115,7 @@ int Application::mainLoop(){
             al_flip_display();
         }
         if(this->nivel +1 == 5 && flagNivel){
-            al_show_native_message_box(Display, "Ganaste!!!", "Felicidades ganaste el juego", "", NULL, ALLEGRO_MESSAGEBOX_OK_CANCEL);
+            al_show_native_message_box(Display, "Ganaste!!!", "Felicidades ganaste el juego", "", NULL, NULL);
             this->start = false;
             al_flip_display();
         }

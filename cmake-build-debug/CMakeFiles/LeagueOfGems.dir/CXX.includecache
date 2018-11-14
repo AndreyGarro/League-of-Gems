@@ -6,11 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/home/christian/Escritorio/LOG git/main.cpp
+cstdlib
+-
+string
+-
+allegro5/allegro_image.h
+-
+src/App/Aplicacion.h
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+
 /home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
 bits/stdc++.h
 -
 ../Estructuras/Pila.h
 /home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+
+/home/christian/Escritorio/LOG git/src/Algoritmos/Dijkstra.h
+../Estructuras/SimpleList.h
+/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+../Estructuras/Pila.h
+/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+iostream
+-
 
 /home/christian/Escritorio/LOG git/src/Algoritmos/GeneticAlgorithm.h
 ../Estructuras/SimpleList.h
@@ -23,6 +41,56 @@ GeneticEnemy.h
 /home/christian/Escritorio/LOG git/src/Algoritmos/Graph.h
 ../Estructuras/SimpleList.h
 /home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+
+/home/christian/Escritorio/LOG git/src/Algoritmos/GraphMaker.h
+Graph.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/Graph.h
+
+/home/christian/Escritorio/LOG git/src/Algoritmos/Kruskal.h
+vector
+-
+../Estructuras/Pila.h
+/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+Graph.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/Graph.h
+
+/home/christian/Escritorio/LOG git/src/Algoritmos/LineaVista.cpp
+LineaVista.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/LineaVista.h
+AStarPathFinding.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
+../App/Aplicacion.h
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+
+/home/christian/Escritorio/LOG git/src/Algoritmos/LineaVista.h
+iostream
+-
+math.h
+-
+stdio.h
+-
+limits.h
+-
+stdbool.h
+-
+string
+-
+../Estructuras/Cola.h
+/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
+
+/home/christian/Escritorio/LOG git/src/Algoritmos/Prim.h
+vector
+-
+../Estructuras/SimpleList.h
+/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+climits
+-
+Graph.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/Graph.h
+../Estructuras/Pila.h
+/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+bits/stdc++.h
+-
 
 /home/christian/Escritorio/LOG git/src/App/Aplicacion.cpp
 Aplicacion.h
@@ -54,6 +122,12 @@ allegro5/allegro5.h
 ../Enemy/EnemyController.h
 /home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
 
+/home/christian/Escritorio/LOG git/src/App/Sprite.cpp
+Sprite.h
+/home/christian/Escritorio/LOG git/src/App/Sprite.h
+Aplicacion.h
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+
 /home/christian/Escritorio/LOG git/src/App/Sprite.h
 string
 -
@@ -70,6 +144,16 @@ allegro5/allegro_primitives.h
 ../Estructuras/SimpleList.h
 /home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
 
+/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.cpp
+iostream
+-
+allegro5/allegro_native_dialog.h
+-
+EnemyController.h
+/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
+../App/Aplicacion.h
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+
 /home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
 ../Estructuras/SimpleList.h
 /home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
@@ -83,6 +167,30 @@ Enemy.h
 /home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
 
 /home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+
+/home/christian/Escritorio/LOG git/src/Soldier/Soldier.cpp
+allegro5/allegro.h
+-
+Soldier.h
+/home/christian/Escritorio/LOG git/src/Soldier/Soldier.h
+../App/Sprite.h
+/home/christian/Escritorio/LOG git/src/App/Sprite.h
+../Algoritmos/LineaVista.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/LineaVista.h
+../Algoritmos/AStarPathFinding.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
+../Algoritmos/LineaVista.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/LineaVista.h
+../Algoritmos/Kruskal.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/Kruskal.h
+../Algoritmos/Prim.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/Prim.h
+../Algoritmos/GraphMaker.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/GraphMaker.h
+../App/Aplicacion.h
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+../Algoritmos/Dijkstra.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/Dijkstra.h
 
 /home/christian/Escritorio/LOG git/src/Soldier/Soldier.h
 ../Estructuras/Cola.h
@@ -98,6 +206,18 @@ allegro5/bitmap.h
 allegro5/allegro.h
 -
 utility
+-
+
+/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.cpp
+allegro5/bitmap.h
+-
+allegro5/allegro.h
+-
+SoldierController.h
+/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.h
+string
+-
+allegro5/allegro_image.h
 -
 
 /home/christian/Escritorio/LOG git/src/Soldier/SoldierController.h

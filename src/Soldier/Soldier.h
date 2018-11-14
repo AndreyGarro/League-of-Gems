@@ -22,7 +22,7 @@ class Soldier {
 private:
     int vida = 200;
     int defensa = 10;
-    int ataque = 100;
+    int ataque = 30;
     int vidaMaxima = 200;
     int xd, yd, tempX, tempY;
     bool llegue = false;
