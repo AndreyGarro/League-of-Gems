@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/christian/Escritorio/LOG git/src/Algoritmos/GeneticAlgorithm.cpp
-ctime
+/home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
+bits/stdc++.h
 -
-iostream
--
-GeneticAlgorithm.h
-/home/christian/Escritorio/LOG git/src/Algoritmos/GeneticAlgorithm.h
+../Estructuras/Pila.h
+/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
 
 /home/christian/Escritorio/LOG git/src/Algoritmos/GeneticAlgorithm.h
 ../Estructuras/SimpleList.h
@@ -22,5 +20,91 @@ GeneticEnemy.h
 
 /home/christian/Escritorio/LOG git/src/Algoritmos/GeneticEnemy.h
 
+/home/christian/Escritorio/LOG git/src/Algoritmos/Graph.h
+../Estructuras/SimpleList.h
+/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.cpp
+Aplicacion.h
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+iostream
+-
+allegro5/allegro_primitives.h
+-
+allegro5/allegro_native_dialog.h
+-
+allegro5/allegro_image.h
+-
+math.h
+-
+allegro5/allegro_font.h
+-
+allegro5/allegro_ttf.h
+-
+allegro5/allegro_native_dialog.h
+-
+
+/home/christian/Escritorio/LOG git/src/App/Aplicacion.h
+string
+-
+allegro5/allegro5.h
+/home/christian/Escritorio/LOG git/src/App/allegro5/allegro5.h
+../Soldier/SoldierController.h
+/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.h
+../Enemy/EnemyController.h
+/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
+
+/home/christian/Escritorio/LOG git/src/App/Sprite.h
+string
+-
+allegro5/haptic.h
+-
+allegro5/allegro.h
+-
+allegro5/allegro_primitives.h
+-
+
+/home/christian/Escritorio/LOG git/src/Enemy/Enemy.h
+../App/Sprite.h
+/home/christian/Escritorio/LOG git/src/App/Sprite.h
+../Estructuras/SimpleList.h
+/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+
+/home/christian/Escritorio/LOG git/src/Enemy/EnemyController.h
+../Estructuras/SimpleList.h
+/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+Enemy.h
+/home/christian/Escritorio/LOG git/src/Enemy/Enemy.h
+../Algoritmos/GeneticAlgorithm.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/GeneticAlgorithm.h
+
+/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
+
+/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+
+/home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
+
+/home/christian/Escritorio/LOG git/src/Soldier/Soldier.h
+../Estructuras/Cola.h
+/home/christian/Escritorio/LOG git/src/Estructuras/Cola.h
+../Estructuras/Pila.h
+/home/christian/Escritorio/LOG git/src/Estructuras/Pila.h
+../Algoritmos/AStarPathFinding.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/AStarPathFinding.h
+../Algoritmos/Graph.h
+/home/christian/Escritorio/LOG git/src/Algoritmos/Graph.h
+allegro5/bitmap.h
+-
+allegro5/allegro.h
+-
+utility
+-
+
+/home/christian/Escritorio/LOG git/src/Soldier/SoldierController.h
+allegro5/allegro_primitives.h
+-
+Soldier.h
+/home/christian/Escritorio/LOG git/src/Soldier/Soldier.h
+../Estructuras/SimpleList.h
 /home/christian/Escritorio/LOG git/src/Estructuras/SimpleList.h
 

@@ -46,11 +46,8 @@ T Pila<T>::pop() {
     nodo<T> *aux;
     aux = tope;
     tope = tope->anterior;
-    T dato;
-    dato = aux->dato;
-    free(aux);
     this->lenght --;
-    return dato;
+    return aux->dato;
 }
 
 template<typename T>

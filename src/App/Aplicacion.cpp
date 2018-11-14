@@ -5,7 +5,12 @@
 #include <allegro5/allegro_native_dialog.h>
 #include <allegro5/allegro_image.h>
 #include <math.h>
+//
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
+#include <allegro5/allegro_native_dialog.h>
 
+//
 
 int Application::matriz[10][15] = {};
 /**
@@ -24,6 +29,8 @@ void Application::initApp() {
     al_init_primitives_addon();
     al_install_mouse();
     al_install_keyboard();
+    al_init_font_addon();
+    al_init_ttf_addon();
     initMatriz();
     imprimirMatriz();
     this->start = true;
@@ -53,64 +60,24 @@ int Application::mainLoop(){
 
     al_start_timer(timer);
 
-    while (true) {
+    while (start) {
         al_wait_for_event(this->EventQueue, &oEvent);
-
-
-//        /// Subir de nivel rapido
-//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_1 ) {
-//            subirNivel(1);
-//            j1.subirNivel(1);
-//            e1.subirNivel();
-//        }
-//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_2 ) {
-//            subirNivel(2);
-//            j1.subirNivel(2);
-//            e1.subirNivel();
-//        }
-//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_3 ) {
-//            subirNivel(3);
-//            j1.subirNivel(3);
-//            e1.subirNivel();
-//        }
-//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_4 ) {
-//            subirNivel(4);
-//            j1.subirNivel(4);
-//            e1.subirNivel();
-//        }
-
         if(this->flagNivel){
+            al_show_native_message_box(Display, "Ganaste la Gema!", "Pasaste al siguiente Nivel", "", NULL, NULL);
             this->flagNivel = false;
             if(this->nivel + 1 < 5){
                 subirNivel(nivel + 1);
                 j1.subirNivel(nivel + 1);
                 e1.subirNivel();
             }
-//                if(this->nivel == 1){
-//                    cout << "subo nivel 1" << endl;
-//                    j1.subirNivel(1);
-//                }
-//                else if(this->nivel == 2){
-//                    cout << "subo nivel 2" << endl;
-//                    j1.subirNivel(2);
-//                }
-//                else if(this->nivel ==3) {
-//                    cout << "subo nivel 3" << endl;
-//                    j1.subirNivel(3);
-//                }
-//                else  if(this->nivel == 4) {
-//                    cout << "subo nivel 4" << endl;
-//                    j1.subirNivel(4);
-//                }
         }
         if (oEvent.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
             if (oEvent.mouse.button & 2) {
                 this->x = oEvent.mouse.x;
                 this->y = oEvent.mouse.y;
                 resetMatriz();
-                if (y / 70 > 8 && x / 90 < 4 && x/90 > 0) {
-
-                } else {
+                if (y / 70 > 8 && x / 90 < 4 && x/90 > 0) {}
+                else {
                     j1.setIJ(y / 70, x / 90, Application::matriz, this->nivel);
                 }
             }
@@ -146,8 +113,11 @@ int Application::mainLoop(){
             flagNivel = e1.disminuirVida(listaSoldados);
             j1.disminuirVida(listaEnemigos);
             al_flip_display();
-//            cout<<endl;
-//            imprimirMatriz();
+        }
+        if(this->nivel +1 == 5 && flagNivel){
+            al_show_native_message_box(Display, "Ganaste!!!", "Felicidades ganaste el juego", "", NULL, ALLEGRO_MESSAGEBOX_OK_CANCEL);
+            this->start = false;
+            al_flip_display();
         }
     }
 }
@@ -208,6 +178,7 @@ void Application::resetMatriz() {
 void Application::subirNivel(int nivel) {
     this->nivel = nivel;
     initMatriz();
+    resetMatriz();
 }
 
 

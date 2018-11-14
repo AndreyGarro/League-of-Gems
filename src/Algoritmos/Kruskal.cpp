@@ -20,7 +20,6 @@ Kruskal::kruskalAlgorithm(int currentRow, int currentColumn, int destRow, int de
     EdgePath temp = findePrevEdge(destRow, destColumn, edges);
     while (!edges.isEmpty()) {
         if (temp.row == currentRow && temp.column == currentColumn) {
-            cout<<"Kruskal encontrado"<<endl;
             return stackPath;
         }
         stackPath.push(make_pair(temp.row, temp.column));
