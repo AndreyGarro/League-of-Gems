@@ -131,7 +131,7 @@ void EnemyController::subirNivel() {
     while (!listaEnemigos.isEmpty()){
         listaEnemigos.deleteNode(0);
     }
-//    genetic->printEnemiesData();
+    genetic->printEnemiesData();
     SimpleList<GeneticEnemy> listaGenetica = genetic->makeNewEnemies(false);
     crearEnemigos();
     establecerCaracteristicas(listaGenetica);
