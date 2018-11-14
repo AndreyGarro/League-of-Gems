@@ -1,57 +1,49 @@
+//
+// Created by ortegajosant on 13/11/18.
+//
+
+#ifndef ALGORITMOS_DIJKSTRA_H
+#define ALGORITMOS_DIJKSTRA_H
 
 
-#ifndef LEAGUEOFGEMS_DIJKSTRA_H
-#define LEAGUEOFGEMS_DIJKSTRA_H
-
-
+#include "../Estructuras/SimpleList.h"
+#include "../Estructuras/Pila.h"
 #include <iostream>
-#include <stdio.h>
-#include <vector>
-#include <queue>
-#define ColumnasMapa 15
-#define FilasMapa 10
 
-const double INF = 99999.0;
-const double DIAGONAL = 1.42412;
+
+#define ROWS 10
+#define COLUMNS 15
 
 using namespace std;
 
-struct Vertice{
-    double distancia;
-    int posicionXtiles;
-    int posicionYtiles;
-    bool visitado;
+struct PrevPath {
+    PrevPath(int row, int column, int prevRow, int prevColumn) {
+        this->row = row;
+        this->column = column;
+        this->prevRow = prevRow;
+        this->prevColumn = prevColumn;
+    }
+
+    PrevPath() {
+        this->row = -1;
+        this->column = -1;
+        this->prevRow = -1;
+        this->prevColumn = -1;
+    }
+    int row, column, prevRow, prevColumn;
 };
 
 class Dijkstra {
 private:
-    vector<Vertice> verticesMapa[FilasMapa*ColumnasMapa];
-    vector<Vertice> verticesPendientes[FilasMapa*ColumnasMapa];
-    vector<Vertice> ruta[1];
-    int contador = 0;
-
-    bool definirCentro(int x,int y);
-
-    void evaluarVecinos(int posicionX, int posicionY, double peso);
-
-    Vertice retornarVecinoMenor(int posicionX, int posicionY, double peso);
-
-
+    SimpleList<pair<int, int>> getAdyacentCell(int row, int column, int matriz[ROWS][COLUMNS]);
+    bool itsOK(int row, int column, int matriz[ROWS][COLUMNS]);
+    SimpleList<pair<int, int>> visitados;
+    bool isVisited(int row, int column);
+    Pila<pair<int, int>> returnFinalPath(int destRow, int destColumn, SimpleList<PrevPath> path);
+    PrevPath findPrevPath(int row, int column, SimpleList<PrevPath> path);
 public:
-    Dijkstra(int matriz[FilasMapa][ColumnasMapa]);
-
-    Dijkstra(){}
-
-    void setMap(int matriz[10][15]);
-
-    void definirPesos(int x, int y);
-
-    int definirRutaOptima(int x, int y);
-
-    Vertice obtenerSiguienteVertice();
-
+    Pila<pair<int, int >> findPath(int currentRow, int currentColumn, int destRow, int destColumn, int matriz[ROWS][COLUMNS]);
 };
 
 
-#endif //LEAGUEOFGEMS_DIJKSTRA_H
-
+#endif //ALGORITMOS_DIJKSTRA_H
