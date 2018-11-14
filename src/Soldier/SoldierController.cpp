@@ -33,7 +33,7 @@ void SoldierController::dibujaJugador() {
     }
 }
 /**
- * Costructor
+ * Constructor
  */
 SoldierController::SoldierController() {
     listSoldier.add(Soldier(0,490));
@@ -56,7 +56,6 @@ SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][
             atacados.add(make_pair(listSoldier.getData(k)->getAtaque(), temp));
         }
     }
-
     if(this->tiempo > 90) {
         this->tiempo = 0;
         this->fast = 1;
@@ -64,13 +63,17 @@ SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][
     this->tiempo++;
     return atacados;
 }
-
+/**
+ * Revisa la lista con los soldados atacados por los enemigos
+ *
+ * @param listaAtacados
+ */
 void SoldierController::disminuirVida(SimpleList<pair<int, pair<int, int>>> listaAtacados) {
     if(!listaAtacados.isEmpty()){
         for (int k = 0; k < listaAtacados.getLength(); ++k) {
             int numS = buscarSoldado(listaAtacados.getData(k)->second.first, listaAtacados.getData(k)->second.second);
             if(numS != -1){
-                listSoldier.getData(numS)->disminuirVida(listaAtacados.getData(k)->first - listSoldier.getData(numS)->getDefensa());
+                listSoldier.getData(numS)->disminuirVida(abs(listaAtacados.getData(k)->first - listSoldier.getData(numS)->getDefensa()));
                 if(listSoldier.getData(numS)->getVida() <= 0){
                     listSoldier.deleteNode(numS);
                 }
@@ -79,6 +82,13 @@ void SoldierController::disminuirVida(SimpleList<pair<int, pair<int, int>>> list
     }
 
 }
+/**
+ * Complementario para buscar el soldado atacado por los enemigos
+ *
+ * @param i Fila en la que se ataco
+ * @param j Columna en la que se ataco
+ * @return Numero de la lista donde esta el soldado que se ataco
+ */
 int SoldierController::buscarSoldado(int i, int j) {
     for (int k = 0; k < listSoldier.getLength(); ++k) {
         if(listSoldier.getData(k)->getYd()/70 == i && listSoldier.getData(k)->getXd()/90 == j){
@@ -87,7 +97,11 @@ int SoldierController::buscarSoldado(int i, int j) {
     }
     return -1;
 }
-
+/**
+ * Valida cual poder selecciono de la barra de ataques
+ * @param i numero de fila
+ * @param j numero de columna
+ */
 void SoldierController::escogerAtaque(int i, int j) {
     if(tiempo > 90) {
 
@@ -115,9 +129,16 @@ void SoldierController::escogerAtaque(int i, int j) {
     }
 
 }
+/**
+ * Elimina la lista de soldados y crea una nueva para el siguiente nivel
+ * Aumenta los poderes.
+ *
+ * @param nivel
+ */
 void SoldierController::subirNivel(int nivel) {
     while (!listSoldier.isEmpty()){
         listSoldier.deleteNode(0);
+        cout << "eliminado" << endl;
     }
     this->listSoldier.add(Soldier(0,490));
     this->listSoldier.add(Soldier(90,490));

@@ -16,7 +16,6 @@ private:
     SimpleList<Enemy> listaEnemigos;
     int contAtaque = 0;
     GeneticAlgorithm *genetic = new GeneticAlgorithm();
-
 public:
     EnemyController();
     void dibujaEnemigo();

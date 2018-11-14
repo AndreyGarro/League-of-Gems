@@ -15,17 +15,24 @@
 class SoldierController {
 private:
     int fast = 1, tiempo = 30, numCuras = 3;
-    int i,j;
-    SimpleList<Soldier> listSoldier =  SimpleList<Soldier>();
+    int i, j;
+    SimpleList<Soldier> listSoldier = SimpleList<Soldier>();
 
 public:
     SoldierController();
+
     void setIJ(int i, int j, int matriz[10][15], int nivel);
+
     void dibujaJugador();
-    SimpleList<pair<int, pair<int ,int >>> atacar (int matriz [10][15]);
+
+    SimpleList<pair<int, pair<int, int >>> atacar(int matriz[10][15]);
+
     void disminuirVida(SimpleList<pair<int, pair<int, int>>> listaAtacados);
+
     int buscarSoldado(int i, int j);
+
     void escogerAtaque(int i, int j);
+
     void subirNivel(int nivel);
 };
 

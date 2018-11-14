@@ -27,6 +27,12 @@ private:
     int fitnessData[3];
 
 public:
+    Enemy(){};
+    Enemy(int x, int y);
+    bool atacando = false;
+    int getPosX() const;
+    void setEnemy(ALLEGRO_BITMAP *enemy);
+    int getPosY() const;
     int getPosLista() const;
     void setPosLista(int posLista);
     int getFrecuenciaAtaque() const;
@@ -37,19 +43,13 @@ public:
     void setAtaque(int ataque);
     int getAtaque() const;
     int getVidaMaxima() const;
-    Enemy(){};
-    Enemy(int x, int y);
-    int getPosX() const;
-    void setEnemy(ALLEGRO_BITMAP *enemy);
-    int getPosY() const;
-    ALLEGRO_BITMAP *getEnemy() const;
-    pair<int, int> revisaAtaque(int matriz[10][15]);
-    bool atacando = false;
     int getVida() const;
     void setVida(int vida);
     void moreDamage(int);
     void moreDefense();
     int *getFitnessData();
+    ALLEGRO_BITMAP *getEnemy() const;
+    pair<int, int> revisaAtaque(int matriz[10][15]);
 };
 
 

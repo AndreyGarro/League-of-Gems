@@ -152,7 +152,7 @@ void GeneticAlgorithm::makeFirstGeneration() {
         defence = rand() % 30;
         damage = rand() % 20 + 10;
         atackFreq = rand() % 3 + 1;
-        health = rand() % 100 + 300;
+        health = rand() % 100 + 400;
         enemies.add(GeneticEnemy(defence, health, damage, atackFreq));
         population.add(EnemyToAnalyze(defence, damage, atackFreq, health));
     }
@@ -242,7 +242,6 @@ SimpleList<EnemyToAnalyze> GeneticAlgorithm::deleteWorseParents() {
  */
 void GeneticAlgorithm::eraseEnemies() {
     for (int i = 0; i < MAXENEMIES; i++) {
-        std::cout << enemies.getLength() << std::endl;
         enemies.deleteNode(0);
     }
 }
@@ -262,7 +261,7 @@ void GeneticAlgorithm::mutateEnemies() {
                     enemies.getData(i)->setDefence(rand() % 30);
                     break;
                 case 1:
-                    enemies.getData(i)->setHealth(rand() % 300 + 100);
+                    enemies.getData(i)->setHealth(rand() % 100 + 400);
                     break;
                 case 2:
                     enemies.getData(i)->setDamage(rand() % 20 + 10);

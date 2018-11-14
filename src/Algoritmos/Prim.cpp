@@ -84,7 +84,6 @@ Prim::queueGenerator(int row, int column, int destRow, int destColumn, SimpleLis
     }
     while (true) {
         if (tempPath.row == row && tempPath.column == column) {
-            cout << "Encontrado" << endl;
             break;
         }
         pila.push(make_pair(tempPath.row, tempPath.column));
