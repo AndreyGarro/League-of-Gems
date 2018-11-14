@@ -12,6 +12,7 @@
 #include "../Algoritmos/Prim.h"
 #include "../Algoritmos/GraphMaker.h"
 #include "../App/Aplicacion.h"
+#include "../Algoritmos/Dijkstra.h"
 
 /**
  * Construtuor con parametros
@@ -69,7 +70,9 @@ void Soldier::setIJ(int i, int j, int matriz[10][15], int nivel) {
         Application::matriz[posff.first][posff.second] = 4;
     }
     else if(nivel == 3){
-
+        Dijkstra dijkstra;
+        ruta2 = dijkstra.findPath(yd/70, xd/90, posff.first, posff.second,matriz);
+        Application::matriz[posff.first][posff.second] = 4;
     }
     else if (nivel == 4){
         cout <<"A star"<< endl;

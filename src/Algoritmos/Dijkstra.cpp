@@ -22,14 +22,14 @@ Dijkstra::findPath(int currentRow, int currentColumn, int destRow, int destColum
     SimpleList<pair<int, int>> adyacentCells;
     path.add(PrevPath(currentRow, currentColumn, -1, -1));
     while (!queue.isEmpty()) {
-        pair<int, int> temp = queue.getData(0);
+        pair<int, int> temp = *queue.getData(0);
         queue.deleteNode(0);
         if (temp.first == destRow && temp.second == destColumn) {
             return returnFinalPath(destRow, destColumn, path);
         }
         adyacentCells = getAdyacentCell(temp.first, temp.second, matriz);
         for (int i = 0; i < adyacentCells.getLength(); i++) {
-            pair<int, int> tempAdy = adyacentCells.getData(i);
+            pair<int, int> tempAdy = *adyacentCells.getData(i);
             if (!isVisited(tempAdy.first, tempAdy.second)) {
                 visitados.add(tempAdy);
                 queue.add(tempAdy);
@@ -52,7 +52,7 @@ Dijkstra::findPath(int currentRow, int currentColumn, int destRow, int destColum
 Pila<pair<int, int>> Dijkstra::returnFinalPath(int destRow, int destColumn, SimpleList<PrevPath> path) {
     PrevPath tempPath;
     for (int i = 0; i < path.getLength(); i++) {
-        PrevPath temp = path.getData(i);
+        PrevPath temp = *path.getData(i);
         if (temp.row == destRow && temp.column == destColumn) {
             tempPath = temp;
             break;
@@ -126,7 +126,7 @@ bool Dijkstra::itsOK(int row, int column, int matriz[ROWS][COLUMNS]) {
  */
 bool Dijkstra::isVisited(int row, int column) {
     for (int i = 0; i < visitados.getLength(); i++) {
-        pair<int, int> temp = visitados.getData(i);
+        pair<int, int> temp = *visitados.getData(i);
         if (temp.first == row && temp.second == column) {
             return true;
         }
@@ -143,7 +143,7 @@ bool Dijkstra::isVisited(int row, int column) {
  */
 PrevPath Dijkstra::findPrevPath(int row, int column, SimpleList<PrevPath> path) {
     for (int i = 0; i < path.getLength(); i++) {
-        PrevPath temp = path.getData(i);
+        PrevPath temp = *path.getData(i);
         if (temp.row == row && temp.column == column) {
             return temp;
         }

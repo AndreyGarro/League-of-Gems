@@ -1,4 +1,4 @@
-# Install script for directory: /home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT
+# Install script for directory: /home/christian/Escritorio/LOG git
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto II/ProyectoGIT/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/christian/Escritorio/LOG git/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
