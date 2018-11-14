@@ -57,38 +57,51 @@ int Application::mainLoop(){
         al_wait_for_event(this->EventQueue, &oEvent);
 
 
-        /// Subir de nivel rapido
-        if (oEvent.keyboard.keycode == ALLEGRO_KEY_1 ) {
-            subirNivel(1);
-        }
-        if (oEvent.keyboard.keycode == ALLEGRO_KEY_2 ) {
-            subirNivel(2);
-        }
-        if (oEvent.keyboard.keycode == ALLEGRO_KEY_3 ) {
-            subirNivel(3);
-        }
-        if (oEvent.keyboard.keycode == ALLEGRO_KEY_4 ) {
-            subirNivel(4);
-        }
+//        /// Subir de nivel rapido
+//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_1 ) {
+//            subirNivel(1);
+//            j1.subirNivel(1);
+//            e1.subirNivel();
+//        }
+//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_2 ) {
+//            subirNivel(2);
+//            j1.subirNivel(2);
+//            e1.subirNivel();
+//        }
+//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_3 ) {
+//            subirNivel(3);
+//            j1.subirNivel(3);
+//            e1.subirNivel();
+//        }
+//        if (oEvent.keyboard.keycode == ALLEGRO_KEY_4 ) {
+//            subirNivel(4);
+//            j1.subirNivel(4);
+//            e1.subirNivel();
+//        }
 
         if(this->flagNivel){
             this->flagNivel = false;
-                if(this->nivel == 1){
-                    cout << "subo nivel 1" << endl;
-                    j1.subirNivel(1);
-                }
-                else if(this->nivel == 2){
-                    cout << "subo nivel 2" << endl;
-                    j1.subirNivel(2);
-                }
-                else if(this->nivel ==3) {
-                    cout << "subo nivel 3" << endl;
-                    j1.subirNivel(3);
-                }
-                else  if(this->nivel == 4) {
-                    cout << "subo nivel 4" << endl;
-                    j1.subirNivel(4);
-                }
+            if(this->nivel + 1 < 5){
+                subirNivel(nivel + 1);
+                j1.subirNivel(nivel + 1);
+                e1.subirNivel();
+            }
+//                if(this->nivel == 1){
+//                    cout << "subo nivel 1" << endl;
+//                    j1.subirNivel(1);
+//                }
+//                else if(this->nivel == 2){
+//                    cout << "subo nivel 2" << endl;
+//                    j1.subirNivel(2);
+//                }
+//                else if(this->nivel ==3) {
+//                    cout << "subo nivel 3" << endl;
+//                    j1.subirNivel(3);
+//                }
+//                else  if(this->nivel == 4) {
+//                    cout << "subo nivel 4" << endl;
+//                    j1.subirNivel(4);
+//                }
         }
         if (oEvent.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
             if (oEvent.mouse.button & 2) {
@@ -130,7 +143,7 @@ int Application::mainLoop(){
             SimpleList<pair<int, pair<int, int>>> listaSoldados;
             listaEnemigos = e1.atacar(matriz);
             listaSoldados = j1.atacar(matriz);
-            e1.disminuirVida(listaSoldados);
+            flagNivel = e1.disminuirVida(listaSoldados);
             j1.disminuirVida(listaEnemigos);
             al_flip_display();
 //            cout<<endl;
@@ -188,18 +201,15 @@ void Application::resetMatriz() {
 
 }
 /**
- * Meetodo que se debe llamar cuando no
+ * Metodo que se debe llamar cuando no
  *  se hayan matado todos los enemigos
  * @param nivel
  */
 void Application::subirNivel(int nivel) {
-    this->flagNivel = true;
     this->nivel = nivel;
     initMatriz();
-    resetMatriz();
-
 }
+
+
 Application::~Application() {
 }
-
-

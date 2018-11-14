@@ -9,6 +9,7 @@
  * Cromosoma del Algoritmo genético
  */
 class GeneticEnemy {
+
 private:
     int defence;
     int health;
@@ -16,6 +17,7 @@ private:
     int atackFreq;
     double fitness = 0;
     int fitnessData[3];
+
 public:
     GeneticEnemy(int defence, int health, int damage, int atackFreq);
 

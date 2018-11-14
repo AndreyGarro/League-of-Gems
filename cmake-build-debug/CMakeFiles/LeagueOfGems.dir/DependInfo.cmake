@@ -4,22 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/christian/Escritorio/LOG/main.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/AStarPathFinding.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/Dijkstra.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/GeneticAlgorithm.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticAlgorithm.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/GeneticEnemy.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticEnemy.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/Graph.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/GraphMaker.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/Kruskal.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/LineaVista.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/LineaVista.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Algoritmos/Prim.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o"
-  "/home/christian/Escritorio/LOG/src/App/Aplicacion.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o"
-  "/home/christian/Escritorio/LOG/src/App/Sprite.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Enemy/Enemy.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Enemy/EnemyController.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Soldier/Soldier.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o"
-  "/home/christian/Escritorio/LOG/src/Soldier/SoldierController.cpp" "/home/christian/Escritorio/LOG/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/main.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/main.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/AStarPathFinding.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/AStarPathFinding.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/Dijkstra.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Dijkstra.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/GeneticAlgorithm.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticAlgorithm.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/GeneticEnemy.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GeneticEnemy.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/Graph.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Graph.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/GraphMaker.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/GraphMaker.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/Kruskal.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Kruskal.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/LineaVista.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/LineaVista.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Algoritmos/Prim.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Algoritmos/Prim.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/App/Aplicacion.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/App/Aplicacion.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/App/Sprite.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/App/Sprite.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Enemy/Enemy.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Enemy/Enemy.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Enemy/EnemyController.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Enemy/EnemyController.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Soldier/Soldier.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier/Soldier.cpp.o"
+  "/home/andrew/CLionProjects/LeagueOfGems/src/Soldier/SoldierController.cpp" "/home/andrew/CLionProjects/LeagueOfGems/cmake-build-debug/CMakeFiles/LeagueOfGems.dir/src/Soldier/SoldierController.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

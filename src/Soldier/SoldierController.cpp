@@ -58,7 +58,6 @@ SimpleList<pair<int, pair<int, int >>> SoldierController::atacar(int matriz[10][
     }
 
     if(this->tiempo > 90) {
-//        cout << "Tiempo de poder agotado"<< endl;
         this->tiempo = 0;
         this->fast = 1;
     }
@@ -106,9 +105,9 @@ void SoldierController::escogerAtaque(int i, int j) {
             cout << "Se eligio defensa"<<endl;
         } else if (j == 3 && numCuras !=0) {
             for (int k = 0; k < listSoldier.getLength(); ++k) {
-                listSoldier.getData(k)->setVida(250);
+                listSoldier.getData(k)->setVida(listSoldier.getData(k)->getVidaMaxima());
             }
-            this->numCuras--;
+//            this->numCuras--;
             cout << "Se eligio curar"<<endl;
         } else if (j == 4) {
 

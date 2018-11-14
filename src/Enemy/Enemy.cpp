@@ -13,6 +13,9 @@
 Enemy::Enemy(int x, int y) {
     this->posX = x;
     this->posY = y;
+    this->fitnessData[0] = 0;
+    this->fitnessData[1] = 0;
+    this->fitnessData[2] = 0;
 }
 
 //_________________________GETTERS AND SETTERS__________________________________
@@ -53,6 +56,37 @@ int Enemy::getVidaMaxima() const {
     return vidaMaxima;
 }
 
+int Enemy::getDefensa() const {
+    return defensa;
+}
+
+void Enemy::setDefensa(int defensa) {
+    Enemy::defensa = defensa;
+}
+
+void Enemy::setVidaMaxima(int vidaMaxima) {
+    Enemy::vidaMaxima = vidaMaxima;
+}
+
+int Enemy::getFrecuenciaAtaque() const {
+    return frecuenciaAtaque;
+}
+
+void Enemy::setFrecuenciaAtaque(int frecuenciaAtaque) {
+    Enemy::frecuenciaAtaque = frecuenciaAtaque;
+}
+
+int *Enemy::getFitnessData() {
+    return fitnessData;
+}
+int Enemy::getPosLista() const {
+    return posLista;
+}
+
+void Enemy::setPosLista(int posLista) {
+    Enemy::posLista = posLista;
+}
+
 
 //___________________FIN GETTERS AND SETTERS_________________________________
 
@@ -67,7 +101,7 @@ pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
         this->cont = 0;
     }
     this->cont ++;
-    if(this->cont <= 1) {
+    if(this->cont <= this->frecuenciaAtaque) {
         int posIX = (this->getPosX() / 90) - 1;
         int posIY = (this->getPosY() / 70) - 1;
         for (int i = 0; i < 3; ++i) {
@@ -85,12 +119,23 @@ pair<int, int> Enemy::revisaAtaque(int matriz[10][15]) {
     return make_pair(-1, -1);
 }
 
-int Enemy::getDefensa() const {
-    return defensa;
+
+/**
+ * Aumenta el daño hecho por cromosoma
+ * @param damage
+ */
+void Enemy::moreDamage(int damage) {
+    fitnessData[1] += damage;
+    fitnessData[2]++;
+
 }
 
-void Enemy::setDefensa(int defensa) {
-    Enemy::defensa = defensa;
+/**
+ * Aumenta la cantidad de ataque infligido por el cromosoma
+ */
+void Enemy::moreDefense() {
+    fitnessData[0] += this->defensa;
 }
+
 
 

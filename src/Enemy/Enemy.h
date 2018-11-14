@@ -13,14 +13,25 @@ class Enemy {
 
 private:
     ALLEGRO_BITMAP *enemy = al_load_bitmap("../img/enemy.png");
+    int posLista = 0;
+
+private:
     int posX;
     int posY;
     int cont = 0;
-    int vida = 400;
-    int defensa = 5;
-    int ataque = 50;
-    int vidaMaxima = 400;
+    int vida = 0;
+    int defensa = 0;
+    int ataque = 0;
+    int vidaMaxima = 0;
+    int frecuenciaAtaque = 0;
+    int fitnessData[3];
+
 public:
+    int getPosLista() const;
+    void setPosLista(int posLista);
+    int getFrecuenciaAtaque() const;
+    void setFrecuenciaAtaque(int frecuenciaAtaque);
+    void setVidaMaxima(int vidaMaxima);
     int getDefensa() const;
     void setDefensa(int defensa);
     void setAtaque(int ataque);
@@ -36,6 +47,9 @@ public:
     bool atacando = false;
     int getVida() const;
     void setVida(int vida);
+    void moreDamage(int);
+    void moreDefense();
+    int *getFitnessData();
 };
 
 

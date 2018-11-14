@@ -19,10 +19,10 @@ using namespace std;
  */
 class Soldier {
 private:
-    int vida = 250;
+    int vida = 170;
     int defensa = 10;
-    int ataque = 20;
-    int vidaMaxima = 250;
+    int ataque = 10;
+    int vidaMaxima = 170;
     int xd, yd, tempX, tempY;
     bool llegue = false;
     bool flagAttack = false;
